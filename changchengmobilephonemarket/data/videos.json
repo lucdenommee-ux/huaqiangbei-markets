@@ -1,11 +1,19 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Chang Cheng Mobile Phone Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "changchengmobilephonemarket",
-    "market_name": "Chang Cheng Mobile Phone Market",
-    "site_domain": "changchengmobilephonemarket.com"
-  }
+﻿[
+    {
+        "thumbnail":  "https://img.youtube.com/vi/VIDEO_ID_3/maxresdefault.jpg",
+        "market_name":  "Chang Cheng Mobile Phone Market",
+        "date":  "2026-04-14",
+        "summary":  "Complete guide for sourcing electronics in Shenzhen",
+        "title":  "Chang Cheng Mobile Phone Market - How to Source Electronics in Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/VIDEO_ID_3"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Chang Cheng Mobile Phone Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "changchengmobilephonemarket",
+        "market_name":  "Chang Cheng Mobile Phone Market",
+        "site_domain":  "changchengmobilephonemarket.com"
+    }
 ]

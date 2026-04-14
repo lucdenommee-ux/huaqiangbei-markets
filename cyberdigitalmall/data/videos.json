@@ -1,11 +1,19 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Hua Nan Tong Mobile Phone Accessories Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "huanantongmobilephoneaccessoriesmarket",
-    "market_name": "Hua Nan Tong Mobile Phone Accessories Market",
-    "site_domain": "huanantongmobilephoneaccessoriesmarket.com"
-  }
+﻿[
+    {
+        "thumbnail":  "https://img.youtube.com/vi/VIDEO_ID_3/maxresdefault.jpg",
+        "market_name":  "Hua Nan Tong Mobile Phone Accessories Market",
+        "date":  "2026-04-14",
+        "summary":  "Complete guide for sourcing electronics in Shenzhen",
+        "title":  "Hua Nan Tong Mobile Phone Accessories Market - How to Source Electronics in Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/VIDEO_ID_3"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Hua Nan Tong Mobile Phone Accessories Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "huanantongmobilephoneaccessoriesmarket",
+        "market_name":  "Hua Nan Tong Mobile Phone Accessories Market",
+        "site_domain":  "huanantongmobilephoneaccessoriesmarket.com"
+    }
 ]

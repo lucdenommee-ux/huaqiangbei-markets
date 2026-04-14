@@ -1,11 +1,19 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Ai Hua Electronic Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "aihuaelectronicmarket",
-    "market_name": "Ai Hua Electronic Market",
-    "site_domain": "aihuaelectronicmarket.com"
-  }
+﻿[
+    {
+        "thumbnail":  "https://img.youtube.com/vi/VIDEO_ID_2/maxresdefault.jpg",
+        "market_name":  "Ai Hua Electronic Market",
+        "date":  "2026-04-14",
+        "summary":  "Explore the famous SEG Electronics Market",
+        "title":  "Ai Hua Electronic Market - SEG Plaza - Inside Shenzhen\u0027s Silicon Valley",
+        "url":  "https://www.youtube.com/embed/VIDEO_ID_2"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Ai Hua Electronic Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "aihuaelectronicmarket",
+        "market_name":  "Ai Hua Electronic Market",
+        "site_domain":  "aihuaelectronicmarket.com"
+    }
 ]
