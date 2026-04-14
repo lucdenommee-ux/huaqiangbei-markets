@@ -115,12 +115,7 @@
     <div class="wrap">
         <div class="hero">
             <h1>🏭 China Manufacturing Hub</h1>
-            <p>Verified factories and suppliers from Shenzhen, Huaqiangbei, and across China. Updated daily from our proprietary database.</p>
-            <div class="badges">
-                <span class="pill"><strong>5000+</strong> Suppliers</span>
-                <span class="pill">📍 Shenzhen & China</span>
-                <span class="pill">✓ Verified</span>
-            </div>
+            <p>Verified factories and suppliers from Shenzhen, Huaqiangbei, and across China.</p>
         </div>
 
         <div class="filters">
@@ -134,7 +129,6 @@
                 <option value="textile">Textile & Garment</option>
                 <option value="automotive">Automotive</option>
                 <option value="energy">Energy & Battery</option>
-                <option value="chemical">Chemical</option>
             </select>
         </div>
 
@@ -167,13 +161,15 @@
             
             try {
                 const response = await fetch('data/suppliers.json');
+                if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
                 suppliers = data.suppliers || [];
-                console.log('Loaded ' + suppliers.length + ' suppliers');
                 resultCount.textContent = suppliers.length;
             } catch (e) {
-                console.error('Error loading suppliers:', e);
-                grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">Error loading suppliers. Please try again.</div>';
+                console.error('Error:', e);
+                grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">Loading suppliers...</div>';
+                // Essayer de recharger
+                setTimeout(loadSuppliers, 2000);
                 return;
             }
             
@@ -201,7 +197,6 @@
                         <div class="location">📍 ${s.city || 'China'}</div>
                         ${s.verified ? '<span class="verified">✓ Verified Supplier</span>' : ''}
                         ${s.website ? `<div class="website"><a href="${s.website}" target="_blank">Visit Website →</a></div>` : ''}
-                        ${s.phones ? `<div style="margin-top:8px;color:var(--muted);font-size:12px;">📞 ${s.phones}</div>` : ''}
                     </div>
                 `).join('');
             }
