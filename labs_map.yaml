@@ -1,0 +1,27 @@
+﻿labs:
+  director_lab:
+    role: "orchestration locale"
+    entrypoints:
+      - main.py
+      - director_server.py
+      - main_bridge.py
+    support:
+      - clipboard watchers
+      - ngrok bridge
+      - logs
+      - pids
+
+  communication_director_chatgpt_lab:
+    role: "messagerie inter-agents"
+    entrypoints:
+      - main.py
+      - bridge.py
+      - master_orchestrator.ps1
+    channels:
+      - master_inbox
+      - runtime_output
+    backend_modules:
+      - analytics
+      - anticensor
+      - streaming
+      - translation
