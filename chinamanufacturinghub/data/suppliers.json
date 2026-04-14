@@ -1,0 +1,1036 @@
+{
+  "updated": "2026-04-14 16:50:28",
+  "total_suppliers": 147,
+  "source": "OPV Lab Factory Database",
+  "suppliers": [
+    {
+      "name": "Qinyang City Shunfu Paper Making Machinery Co., Ltd.",
+      "city": "China",
+      "category": "machinery",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Xuchang Xinjiuzhou Intelligent Equipment Co., Ltd.",
+      "city": "China",
+      "category": "machinery",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Fujian Minghui Machinery Co., Ltd.",
+      "city": "Xiamen",
+      "category": "machinery",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Zhengzhou Perfect Co., Ltd.",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Maxsen Intelligent Equipment (Jiangsu) Co., Ltd.",
+      "city": "Suzhou",
+      "category": "machinery",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Shanghai Farfly Energy Technology Co., Ltd.",
+      "city": "Shanghai",
+      "category": "electronics",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Anyang Zhengcheng Mechanical Co., Ltd.",
+      "city": "China",
+      "category": "machinery",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Henan Zoomjo International Trade Co., Ltd.",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "Technical Complexity",
+      "city": "China",
+      "category": "electronics",
+      "source": "Accio - China Factories List",
+      "verified": true
+    },
+    {
+      "name": "BBK Electronics",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Beida Jade Bird Universal Sci-Tech",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "China National Erzhong Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Chint Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Cosun Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Dongfang Electric",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Feiyue Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Frestech",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "GMY Lighting Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Itel Mobile",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Jereh Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Jetion Holdings",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Luoyang Glass",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Nanfu Battery",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Phoenix (bicycle company)",
+      "city": "China",
+      "category": "automotive",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shandong Molong Petroleum Machinery",
+      "city": "China",
+      "category": "machinery",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shanghai Electric",
+      "city": "Shanghai",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Suntech Power",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Telesail Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Trina Solar",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Wanfeng Auto Holding Group",
+      "city": "China",
+      "category": "automotive",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Xinyi Solar",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "ZGC Motors",
+      "city": "China",
+      "category": "automotive",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Alcatel Mobile",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "AUX (company)",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Baofeng (company)",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "BOE Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "BYD Company",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "China Aerospace International Holdings",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "China Electronics Technology Group Corporation",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "China Hualu Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Coolpad",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "ExcelStor Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Founder Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Gree Electric",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Haier",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Hengdian Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Hisense",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Huawei",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Kejian Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Konka Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "List of OnePlus products",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Midea Group",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Netac Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Nubia Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "OnePlus",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Opple Lighting",
+      "city": "China",
+      "category": "lighting",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Panda Electronics",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Poco (smartphone)",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Realme",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "RIGOL Technologies",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shenzhen Kaifa Technology Co., Ltd.",
+      "city": "Shenzhen",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shenzhen Microgate Technology",
+      "city": "Shenzhen",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Smartisan",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "TCL Electronics",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "TCL Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Tinno Mobile",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Vivo (technology company)",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Xiaomi",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "YI Technology",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Zhuzhou CRRC Times Electric",
+      "city": "China",
+      "category": "energy",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Zini Mobiles",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "ZUK Mobile",
+      "city": "China",
+      "category": "electronics",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Key considerations",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Understanding China&#x27;s Manufacturing Landscape: Regional Specializations and Ecosystem",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Volume &amp; Cost-Benefit Analysis",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "The Role of Sourcing Agents: Expert Guidance for Complex Sourcing",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Benefits and Challenges of Manufacturing in China",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Benefits of Manufacturing in China",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Challenges of Manufacturing in China",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "China vs. Domestic Sourcing: A Comparative Analysis",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Comprehensive Supplier Verification Checklist",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "The China Sourcing Process: From Concept to Delivery",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Nuances of Communication and Cultural Differences with Chinese Suppliers",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Ensure Export Compliance",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Analysis and Recommendations:",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Case Study 1: Eco-Friendly Packaging for a US Retailer",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Case Study 2: High-Volume Electronics Component Sourcing",
+      "city": "China",
+      "category": "electronics",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "How can I tell if a supplier is a real manufacturer or a trading company?",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "What are the common shipping methods from China and their costs?",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "How can I avoid communication breakdowns with Chinese suppliers?",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Are US companies moving manufacturing out of China?",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Discover",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "Accio - China Factories List",
+      "verified": false
+    },
+    {
+      "name": "Airmate",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Ampace",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "APsystems",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Bacup Shoe Company",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "CaDA Bricks",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Chen Hsong",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "China Zhongwang",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Dragonite International",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Duoyuan Global Water",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Flying Pigeon",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Goldwind",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "GRG Banking",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Hengan International",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Kerui Petroleum",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Leyard",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Lonking",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Qiao Xing",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Sanhua",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "SEPCO3",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Silicon Module Super League",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Sunten",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Tianqi Lithium",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Tibet Huayu Mining",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Tibet Mineral Development",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Trinx Bikes",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Zhejiang Wanma",
+      "city": "China",
+      "category": "Manufacturing_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Manufacturing",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "US Company Benchmarking",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Canadian Provinces",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Canada Province Economic Profiles",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Accommodation and Catering",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Construction",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Information Transmission, Computer Services and Software",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "Management of Water Conservation, Environment and Public Facilities",
+      "city": "China",
+      "category": "manufacturing",
+      "source": "IBISWorld - China Industries",
+      "verified": false
+    },
+    {
+      "name": "8BitDo",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Changhong",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Cogobuy",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "GameSir",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "GigaDevice",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Goertek",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Hikvision",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Lemote",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Leshi Zhixin",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Luxshare",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Moore Threads",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Royalstar",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shenzhen Picea Robotics",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Shinco",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Skyworth",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Tecsun",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Ugreen",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Umidigi",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "Unihertz",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "WindBooster",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    },
+    {
+      "name": "XP-PEN",
+      "city": "China",
+      "category": "Electronics_companies_of_China",
+      "source": "wikipedia",
+      "verified": true
+    }
+  ]
+}
