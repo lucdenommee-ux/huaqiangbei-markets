@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect to segplaza.com
+RewriteCond %{HTTP_HOST} !^segplaza\.com [NC]
+RewriteRule ^(.*)$ https://segplaza.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^segplazalive\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^sege-market\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^saigeguangchanglive\.com$ [NC,OR]

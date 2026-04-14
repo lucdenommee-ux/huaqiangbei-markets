@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to manhaelectronicmarket.com
+RewriteCond %{HTTP_HOST} !^manhaelectronicmarket\.com [NC]
+RewriteRule ^(.*)$ https://manhaelectronicmarket.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^manhacommercialplaza\.com$ [NC,OR]

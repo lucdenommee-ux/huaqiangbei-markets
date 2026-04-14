@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to hqmartshenzhen.com
+RewriteCond %{HTTP_HOST} !^hqmartshenzhen\.com [NC]
+RewriteRule ^(.*)$ https://hqmartshenzhen.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^hqmartlive\.com$ [NC,OR]

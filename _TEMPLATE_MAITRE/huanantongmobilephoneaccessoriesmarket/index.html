@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Market Site</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1 id="site-title">Market Site</h1>
+    <p class="muted" id="site-sub">Huaqiangbei market micro-site • news • videos • photos</p>
+  </div>
+</header>
+
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" data-nav="home">Home / 首页</a>
+    <a href="market.html" data-nav="market">Market / 市场</a>
+    <a href="news.html" data-nav="news">News / 新闻</a>
+    <a href="videos.html" data-nav="videos">Videos / 视频</a>
+    <a href="photos.html" data-nav="photos">Photos / 照片</a>
+    <a href="https://shenzhenelectronicmarkets.com/live.html" target="_blank" rel="noopener">Live / 直播 (hub)</a>
+  </div>
+</nav>
+
+<main>
+  <section class="card">
+    <h2 id="market-title">Market / 市场</h2>
+    <p class="muted">Standardized micro-site. Publish news/videos/photos by editing JSON files.</p>
+    <div class="grid" style="margin-top:12px">
+      <div class="card" style="grid-column:span 12;">
+        <h3>Latest on this market</h3>
+        <div class="grid">
+          <div class="card" style="grid-column:span 12;"><h3>News / 新闻</h3><div id="home-news" class="list"></div></div>
+          <div class="card" style="grid-column:span 6;"><h3>Videos / 视频</h3><div id="home-videos" class="list"></div></div>
+          <div class="card" style="grid-column:span 6;"><h3>Photos / 照片</h3><div id="home-photos" class="list"></div></div>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 12;">
+        <h3>Hub</h3>
+        <p class="muted">Directory, cross-market news, and live streams:</p>
+        <p><a href="https://shenzhenelectronicmarkets.com/" target="_blank" rel="noopener">shenzhenelectronicmarkets.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="small">
+      <div><b>Luc Junior Dénommée</b> • WhatsApp: +86 135 0155 2311 • Email: contact@segplaza.com</div>
+      <div class="muted">© 2026 All rights reserved — Quantum NeoDev</div>
+      <img src="assets/wechat-qr.png" width="150" alt="WeChat QR code">
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script>window.SEM && window.SEM.setActiveNav('home'); window.SEM && window.SEM.renderHome();</script>
+</body>
+</html>
+
+

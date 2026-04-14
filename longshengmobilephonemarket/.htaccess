@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect to longshengmobilephonemarket.com
+RewriteCond %{HTTP_HOST} !^longshengmobilephonemarket\.com [NC]
+RewriteRule ^(.*)$ https://longshengmobilephonemarket.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^longshengmarket\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^longshengaccessoriesstreet\.com$ [NC,OR]

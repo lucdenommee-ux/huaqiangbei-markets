@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to shenzhenclocksandwatchesmarket.com
+RewriteCond %{HTTP_HOST} !^shenzhenclocksandwatchesmarket\.com [NC]
+RewriteRule ^(.*)$ https://shenzhenclocksandwatchesmarket.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^shenzhenclocksandwatchespeitaomarket\.com$ [NC,OR]

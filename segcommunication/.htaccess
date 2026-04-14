@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to segcommunication.com
+RewriteCond %{HTTP_HOST} !^segcommunication\.com [NC]
+RewriteRule ^(.*)$ https://segcommunication.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^segcommunicationmarket\.com$ [NC,OR]

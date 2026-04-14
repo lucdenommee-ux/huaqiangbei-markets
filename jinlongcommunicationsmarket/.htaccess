@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to jinlongcommunicationsmarket.com
+RewriteCond %{HTTP_HOST} !^jinlongcommunicationsmarket\.com [NC]
+RewriteRule ^(.*)$ https://jinlongcommunicationsmarket.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^kinglongcommunicationsmarket\.com$ [NC,OR]

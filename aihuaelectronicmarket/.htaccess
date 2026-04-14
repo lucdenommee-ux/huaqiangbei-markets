@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to aihuaelectronicmarket.com
+RewriteCond %{HTTP_HOST} !^aihuaelectronicmarket\.com [NC]
+RewriteRule ^(.*)$ https://aihuaelectronicmarket.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^aihuacomputerbuilding\.com$ [NC,OR]

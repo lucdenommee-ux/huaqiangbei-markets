@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect to huaqiangelectronicsworld.com
+RewriteCond %{HTTP_HOST} !^huaqiangelectronicsworld\.com [NC]
+RewriteRule ^(.*)$ https://huaqiangelectronicsworld.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^huaqiangworldelectronicmarket\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^huaqiangworldelectronicsmarket\.com$ [NC,OR]

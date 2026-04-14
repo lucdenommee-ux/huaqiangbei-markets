@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect to shenzhenelectronicmarkets.com
+RewriteCond %{HTTP_HOST} !^shenzhenelectronicmarkets\.com [NC]
+RewriteRule ^(.*)$ https://shenzhenelectronicmarkets.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^segelectronicmarket\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^segemarket\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^sege-market\.com$ [NC,OR]

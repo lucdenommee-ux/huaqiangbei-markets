@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect to shenzhenhightechindustrialpark.com
+RewriteCond %{HTTP_HOST} !^shenzhenhightechindustrialpark\.com [NC]
+RewriteRule ^(.*)$ https://shenzhenhightechindustrialpark.com/$1 [R=301,L]
+
+# Specific alias redirects
+RewriteCond %{HTTP_HOST} ^shenzhenhightechpark\.com$ [NC,OR]
