@@ -1,6 +1,18 @@
 ﻿[
     {
         "district_en":  "Huaqiangbei, Futian, Shenzhen",
+        "domain":  "mingtongdigitalcity.com",
+        "name_en":  "Ming Tong Digital City",
+        "name_zh":  "明通数码城",
+        "site":  "https://mingtongdigitalcity.com",
+        "district_zh":  "深圳市 福田区 华强北",
+        "categories":  [
+                           "digital",
+                           "electronics"
+                       ]
+    },
+    {
+        "district_en":  "Huaqiangbei, Futian, Shenzhen",
         "domain":  "aihuaelectronicmarket.com",
         "name_en":  "",
         "name_zh":  "",
