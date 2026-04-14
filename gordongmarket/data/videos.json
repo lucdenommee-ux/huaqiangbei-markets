@@ -1,11 +1,19 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Gor Dong Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "gordongmarket",
-    "market_name": "Gor Dong Market",
-    "site_domain": "gordongmarket.com"
-  }
+﻿[
+    {
+        "thumbnail":  "https://img.youtube.com/vi/2Lq5L_4QFqE/maxresdefault.jpg",
+        "market_name":  "Gor Dong Market",
+        "date":  "2026-04-14",
+        "summary":  "Documentary exploring the famous electronics district",
+        "title":  "Inside Shenzhen\u0027s Silicon Valley - Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/2Lq5L_4QFqE"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Gor Dong Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "gordongmarket",
+        "market_name":  "Gor Dong Market",
+        "site_domain":  "gordongmarket.com"
+    }
 ]
