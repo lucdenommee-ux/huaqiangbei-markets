@@ -18,7 +18,7 @@
             border: 1px solid var(--border);
             border-radius: var(--radius);
             padding: 20px;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: transform 0.2s;
         }
         .supplier-card:hover {
             transform: translateY(-3px);
@@ -47,8 +47,6 @@
         .supplier-card .verified {
             color: #6ee7b7;
             font-size: 12px;
-            display: inline-block;
-            margin-top: 8px;
         }
         .supplier-card .website {
             margin-top: 12px;
@@ -91,9 +89,35 @@
             color: var(--text);
             font-weight: 700;
         }
+        .lang-switcher {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(11,16,32,0.9);
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .lang-switcher a {
+            color: #fff;
+            margin-right: 12px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-switcher a:last-child {
+            color: #93c5fd;
+            margin-right: 0;
+        }
     </style>
 </head>
 <body>
+    <div class="lang-switcher">
+        <a href="index.html">EN</a>
+        <a href="index-zh.html">中文</a>
+    </div>
+
     <div class="topbar">
         <div class="topbar-inner">
             <div class="brand">
@@ -116,6 +140,11 @@
         <div class="hero">
             <h1>🏭 China Manufacturing Hub</h1>
             <p>Verified factories and suppliers from Shenzhen, Huaqiangbei, and across China.</p>
+            <div class="badges">
+                <span class="pill"><strong>5000+</strong> Suppliers</span>
+                <span class="pill">📍 Shenzhen & China</span>
+                <span class="pill">✓ Verified</span>
+            </div>
         </div>
 
         <div class="filters">
@@ -161,15 +190,11 @@
             
             try {
                 const response = await fetch('data/suppliers.json');
-                if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
                 suppliers = data.suppliers || [];
                 resultCount.textContent = suppliers.length;
             } catch (e) {
-                console.error('Error:', e);
-                grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">Loading suppliers...</div>';
-                // Essayer de recharger
-                setTimeout(loadSuppliers, 2000);
+                grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">Error loading suppliers.</div>';
                 return;
             }
             
@@ -186,7 +211,7 @@
                 resultCount.textContent = filtered.length;
                 
                 if (filtered.length === 0) {
-                    grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">No suppliers found. Try a different search.</div>';
+                    grid.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:40px;">No suppliers found.</div>';
                     return;
                 }
                 
