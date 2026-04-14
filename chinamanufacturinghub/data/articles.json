@@ -1,0 +1,75 @@
+﻿[
+  {
+    "slug": "what-is-china-manufacturing-hub",
+    "title": "What is China Manufacturing Hub?",
+    "type": "overview",
+    "updated": "2026-04-14",
+    "summary": "China Manufacturing Hub is a structured knowledge portal about sourcing, suppliers, industrial categories, and manufacturing ecosystems in China.",
+    "sections": [
+      {
+        "heading": "Overview",
+        "content": "China Manufacturing Hub is designed as a reference site covering industrial ecosystems, sourcing practices, verified suppliers, and practical buying knowledge."
+      },
+      {
+        "heading": "Purpose",
+        "content": "The site helps buyers, researchers, and entrepreneurs understand manufacturing categories, supplier networks, and sourcing workflows."
+      },
+      {
+        "heading": "Scope",
+        "content": "Its content includes supplier listings, guides, industrial categories, timelines, glossary entries, and related articles."
+      }
+    ],
+    "related": [
+      "supplier-verification-guide",
+      "how-to-source-from-china"
+    ]
+  },
+  {
+    "slug": "how-to-source-from-china",
+    "title": "How to Source from China",
+    "type": "guide",
+    "updated": "2026-04-14",
+    "summary": "A practical introduction to supplier research, qualification, communication, sampling, and logistics.",
+    "sections": [
+      {
+        "heading": "Research",
+        "content": "Start by identifying the product category, minimum order expectations, and the relevant industrial cluster."
+      },
+      {
+        "heading": "Supplier Screening",
+        "content": "Check business identity, product fit, communication quality, and production capability before moving to sampling."
+      },
+      {
+        "heading": "Sampling and Verification",
+        "content": "Request samples, compare specifications, and confirm consistency before placing larger orders."
+      }
+    ],
+    "related": [
+      "supplier-verification-guide"
+    ]
+  },
+  {
+    "slug": "supplier-verification-guide",
+    "title": "Supplier Verification Guide",
+    "type": "guide",
+    "updated": "2026-04-14",
+    "summary": "Key steps for checking whether a supplier is credible, relevant, and operationally suitable.",
+    "sections": [
+      {
+        "heading": "Identity",
+        "content": "Verify the company name, city, category, and available contact channels."
+      },
+      {
+        "heading": "Capability",
+        "content": "Check whether the supplier's product scope matches your actual sourcing requirement."
+      },
+      {
+        "heading": "Risk Control",
+        "content": "Use staged orders, sample validation, and clear written requirements to reduce sourcing risk."
+      }
+    ],
+    "related": [
+      "how-to-source-from-china"
+    ]
+  }
+]

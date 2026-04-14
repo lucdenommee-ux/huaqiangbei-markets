@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "Electronics",
+    "description": "Manufacturing and sourcing information related to electronic products and components."
+  },
+  {
+    "name": "Accessories",
+    "description": "Product ecosystems related to phone accessories, peripherals, and supporting goods."
+  },
+  {
+    "name": "Industrial Supply",
+    "description": "Supplier and manufacturing knowledge related to production and sourcing operations."
+  }
+]

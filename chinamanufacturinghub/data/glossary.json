@@ -1,0 +1,17 @@
+﻿[
+  {
+    "term": "OEM",
+    "definition": "Original Equipment Manufacturer.",
+    "category": "manufacturing"
+  },
+  {
+    "term": "MOQ",
+    "definition": "Minimum Order Quantity.",
+    "category": "sourcing"
+  },
+  {
+    "term": "Sample Order",
+    "definition": "A small test order used to verify product quality and supplier capability.",
+    "category": "procurement"
+  }
+]
