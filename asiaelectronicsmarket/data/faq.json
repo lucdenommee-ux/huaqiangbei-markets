@@ -1,12 +1,6 @@
-﻿{
-  "faq": [
-    { "id": "faq_001", "question": "What are the opening hours of this market?", "question_cn": "这个市场的营业时间是几点？", "answer": "Most shops open from 9:00 AM to 6:00 PM daily. Some vendors may close earlier on Sundays.", "answer_cn": "大多数店铺每天上午9:00至下午6:00营业。部分商户周日可能提前关门。" },
-    { "id": "faq_002", "question": "Do vendors accept credit cards or only cash?", "question_cn": "商家接受信用卡还是只收现金？", "answer": "Most transactions are cash-based. Some larger vendors accept WeChat Pay and Alipay. Credit cards are rarely accepted.", "answer_cn": "大多数交易以现金进行。部分大型商户接受微信支付和支付宝。信用卡很少被接受。" },
-    { "id": "faq_003", "question": "Is it possible to get a tax refund (VAT) for exports?", "question_cn": "出口可以办理退税吗？", "answer": "Yes, VAT refund is available for qualified exports. You must request a 'Fapiao' (official invoice) from the vendor and work with a licensed export agent.", "answer_cn": "是的，符合条件的出口可以办理增值税退税。您必须向商家索取官方发票，并与持牌出口代理合作。" },
-    { "id": "faq_004", "question": "What is the nearest metro station?", "question_cn": "最近的地铁站是哪个？", "answer": "Huaqiang North Station (Lines 2 and 7). Take Exit A, B, C, D, or E depending on your target market.", "answer_cn": "华强北站（2号线和7号线）。根据您的目标市场选择A、B、C、D或E出口。" },
-    { "id": "faq_005", "question": "Do I need to speak Chinese to buy here?", "question_cn": "在这里购物需要会说中文吗？", "answer": "Basic English is understood by many vendors. We recommend using a translation app or hiring a local sourcing agent for complex negotiations.", "answer_cn": "许多商家懂基础英语。我们建议使用翻译应用或聘请本地采购代理进行复杂谈判。" },
-    { "id": "faq_006", "question": "What is the minimum order quantity (MOQ)?", "question_cn": "最小起订量是多少？", "answer": "MOQ varies by vendor and product. Small items may have MOQs of 100-500 units, while larger components may be sold individually.", "answer_cn": "最小起订量因商家和产品而异。小件商品可能要求100-500件起订，而大型元件可以单件购买。" },
-    { "id": "faq_007", "question": "Can I get samples before placing a bulk order?", "question_cn": "下大订单前可以拿样品吗？", "answer": "Yes, most vendors offer samples at a higher unit price. Sample cost is often deductible from future bulk orders.", "answer_cn": "是的，大多数商家以较高的单价提供样品。样品费用通常可以在后续批量订单中抵扣。" },
-    { "id": "faq_008", "question": "Where can I ship my purchases internationally?", "question_cn": "在哪里可以将购买的商品国际运输？", "answer": "Several shipping companies (DHL, FedEx, SF Express) have offices near the markets. Sourcing agents can also handle logistics.", "answer_cn": "多家快递公司（DHL、FedEx、顺丰）在市场附近设有办事处。采购代理也可以处理物流。" }
-  ]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:25.486400",
+  "site": "asiaelectronicsmarket",
+  "questions": []
 }

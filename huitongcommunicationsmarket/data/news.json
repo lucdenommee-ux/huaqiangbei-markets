@@ -1,11 +1,5 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Hui Tong Communications Market — first news item",
-    "summary": "Replace this with your real update.",
-    "source_url": "https://en.wikipedia.org/wiki/Huaqiangbei",
-    "market_slug": "huitongcommunicationsmarket",
-    "market_name": "Hui Tong Communications Market",
-    "site_domain": "huitongcommunicationsmarket.com"
-  }
-]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:29.855016",
+  "site": "huitongcommunicationsmarket"
+}

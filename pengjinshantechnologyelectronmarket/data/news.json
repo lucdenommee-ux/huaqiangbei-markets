@@ -1,11 +1,5 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Peng Jin Shan Technology Electron Market — first news item",
-    "summary": "Replace this with your real update.",
-    "source_url": "https://en.wikipedia.org/wiki/Huaqiangbei",
-    "market_slug": "pengjinshantechnologyelectronmarket",
-    "market_name": "Peng Jin Shan Technology Electron Market",
-    "site_domain": "pengjinshantechnologyelectronmarket.com"
-  }
-]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:33.626598",
+  "site": "pengjinshantechnologyelectronmarket"
+}

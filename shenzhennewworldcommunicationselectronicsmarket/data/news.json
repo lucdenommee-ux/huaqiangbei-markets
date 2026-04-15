@@ -1,11 +1,5 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Shenzhen New World Communications Electronics Market — first news item",
-    "summary": "Replace this with your real update.",
-    "source_url": "https://en.wikipedia.org/wiki/Huaqiangbei",
-    "market_slug": "shenzhennewworldcommunicationselectronicsmarket",
-    "market_name": "Shenzhen New World Communications Electronics Market",
-    "site_domain": "shenzhennewworldcommunicationselectronicsmarket.com"
-  }
-]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:37.381346",
+  "site": "shenzhennewworldcommunicationselectronicsmarket"
+}

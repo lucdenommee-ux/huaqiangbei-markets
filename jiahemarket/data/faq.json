@@ -1,12 +1,6 @@
-﻿{
-  "faq": [
-    { "id": "faq_001", "question": "What are the opening hours of this market?", "question_cn": "这个市场的营业时间是几点？", "answer": "Most shops open from 9:00 AM to 6:00 PM daily.", "answer_cn": "大多数店铺每天上午9:00至下午6:00营业。" },
-    { "id": "faq_002", "question": "Do vendors accept credit cards?", "question_cn": "商家接受信用卡吗？", "answer": "Mostly cash. Some accept WeChat Pay and Alipay.", "answer_cn": "大多数只收现金。部分接受微信支付和支付宝。" },
-    { "id": "faq_003", "question": "Is VAT refund available for exports?", "question_cn": "出口可以办理退税吗？", "answer": "Yes, request a 'Fapiao' from the vendor.", "answer_cn": "是的，向商家索取发票。" },
-    { "id": "faq_004", "question": "What is the nearest metro station?", "question_cn": "最近的地铁站是哪个？", "answer": "Huaqiang North Station (Lines 2 and 7).", "answer_cn": "华强北站（2号线和7号线）。" },
-    { "id": "faq_005", "question": "Do I need to speak Chinese?", "question_cn": "需要会说中文吗？", "answer": "Basic English is understood. Use a translation app.", "answer_cn": "基础英语可沟通。建议使用翻译应用。" },
-    { "id": "faq_006", "question": "What is the minimum order quantity?", "question_cn": "最小起订量是多少？", "answer": "Varies by vendor. Small items: 100-500 units.", "answer_cn": "因商家而异。小件商品：100-500件。" },
-    { "id": "faq_007", "question": "Can I get samples before bulk order?", "question_cn": "下大订单前可以拿样品吗？", "answer": "Yes, at a higher unit price.", "answer_cn": "是的，单价较高。" },
-    { "id": "faq_008", "question": "Where can I ship internationally?", "question_cn": "在哪里可以国际运输？", "answer": "DHL, FedEx, SF Express offices nearby.", "answer_cn": "附近有DHL、FedEx、顺丰网点。" }
-  ]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:30.295043",
+  "site": "jiahemarket",
+  "questions": []
 }

@@ -1,11 +1,5 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Ming Tong Digital Mall — first news item",
-    "summary": "Replace this with your real update.",
-    "source_url": "https://en.wikipedia.org/wiki/Huaqiangbei",
-    "market_slug": "mingtongdigitalmall",
-    "market_name": "Ming Tong Digital Mall",
-    "site_domain": "mingtongdigitalmall.com"
-  }
-]
+{
+  "status": "success",
+  "timestamp": "2026-04-15T21:22:32.722270",
+  "site": "mingtongdigitalmall"
+}
