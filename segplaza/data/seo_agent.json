@@ -1,8 +1,8 @@
 {
   "status": "success",
-  "timestamp": "2026-04-16T00:30:03.196764",
+  "timestamp": "2026-04-16T00:30:03.198152",
   "site": "segplaza",
-  "agent": "news_agent",
+  "agent": "seo_agent",
   "content": "Erreur generation: Expecting value: line 1 column 1 (char 0)",
   "generated_by": "ChatGPT (via Think Tank 2.2)"
 }
