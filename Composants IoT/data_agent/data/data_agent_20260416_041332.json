@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "timestamp": "2026-04-16T04:13:32.319563",
+  "site": "Composants IoT",
+  "agent": "data_agent",
+  "subject": "Fournisseurs IoT",
+  "keywords": "sensor, MCU, connectivity",
+  "content": "Erreur: Expecting value: line 1 column 1 (char 0)",
+  "generated_by": "Full Content Pipeline via Think Tank 2.2"
+}

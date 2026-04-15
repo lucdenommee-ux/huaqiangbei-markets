@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "timestamp": "2026-04-16T04:15:06.659691",
+  "site": "Accessoires Mobile",
+  "agent": "faq_agent",
+  "subject": "Nouveautés accessoires",
+  "keywords": [
+    "coque",
+    "chargeur",
+    "power bank",
+    "câble"
+  ],
+  "content": "Erreur génération: Expecting value: line 1 column 1 (char 0)",
+  "generated_by": "Think Tank 2.2 / Pipeline Ultime"
+}

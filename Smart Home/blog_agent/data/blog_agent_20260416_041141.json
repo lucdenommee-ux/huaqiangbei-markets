@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "timestamp": "2026-04-16T04:11:41.574788",
+  "site": "Smart Home",
+  "agent": "blog_agent",
+  "subject": "Domotique",
+  "keywords": "capteur, assistant vocal, sécurité",
+  "content": "Erreur: Expecting value: line 1 column 1 (char 0)",
+  "generated_by": "Full Content Pipeline via Think Tank 2.2"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "timestamp": "2026-04-16T04:15:06.274989",
+  "site": "Composants IoT",
+  "agent": "faq_agent",
+  "subject": "Fournisseurs IoT",
+  "keywords": [
+    "sensor",
+    "MCU",
+    "connectivity",
+    "module"
+  ],
+  "content": "Erreur génération: Expecting value: line 1 column 1 (char 0)",
+  "generated_by": "Think Tank 2.2 / Pipeline Ultime"
+}
