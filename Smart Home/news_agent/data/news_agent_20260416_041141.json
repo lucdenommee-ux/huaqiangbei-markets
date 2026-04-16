@@ -6,5 +6,11 @@
   "subject": "Domotique",
   "keywords": "capteur, assistant vocal, sécurité",
   "content": "Erreur: Expecting value: line 1 column 1 (char 0)",
-  "generated_by": "Full Content Pipeline via Think Tank 2.2"
+  "generated_by": "Full Content Pipeline via Think Tank 2.2",
+  "adjusted_prompt": "Génère du contenu pour le marché Smart Home\n\nINSTRUCTIONS IMPORTANTES :\n- Rédige une actualité factuelle et engageante.\n- Mots-clés à intégrer OBLIGATOIREMENT : c, a, p, t, e, u, r, ,,  , a, s, s, i, s, t, a, n, t,  , v, o, c, a, l, ,,  , s, é, c, u, r, i, t, é\n- Longueur minimum : 200 caractères\n- Format : Texte structuré et complet\n- Langue : Français professionnel\n- Ton : Informative et engageante\n\nGénère un contenu de qualité, complet et directement publiable.",
+  "optimized_at": "2026-04-16T05:51:50.219424",
+  "optimized_by": "Prompt Optimizer v1.0",
+  "enhanced_prompt": "Génère du contenu pour Smart Home\n\nINSTRUCTIONS STRICTES :\n- Rédige une actualité factuelle de 200-300 caractères.\n- Mots-clés OBLIGATOIRES : c, a, p, t, e, u, r, ,,  , a, s, s, i, s, t, a, n, t,  , v, o, c, a, l, ,,  , s, é, c, u, r, i, t, é\n- Longueur MINIMUM : 300 caractères\n- Format : Prêt à publier\n- Langue : Français professionnel\n- Qualité : Excellente, sans faute, informatif\n\nGénère un contenu riche, complet et directement publiable.",
+  "enhanced_at": "2026-04-16T06:14:50.810460",
+  "enhanced_by": "Prompt Enhancer V2"
 }
