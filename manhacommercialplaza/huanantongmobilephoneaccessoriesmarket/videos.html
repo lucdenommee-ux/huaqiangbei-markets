@@ -29,7 +29,7 @@
 
 <main>
   <section class="card">
-    <h2>Videos (this market)</h2>
+    <h2>Videos</h2>
     <p class="muted">Edit <span class='kbd'>data/videos.json</span> to add video links for this market.</p>
     <div id="videos-list" class="list"></div>
   </section>
@@ -63,14 +63,14 @@
         </div>
     </div>
     <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家
+        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Marketss · 华强北市场外贸专家
     </p>
 </div>
 
 <footer>
     <div class="wrap">
         <div class="small">
-            <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
+            <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Marketss · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
             <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
         </div>
     </div>
@@ -81,6 +81,34 @@
 
 
 </div>
+
+
+<!-- INJECTION DYNAMIQUE DES DONNÉES AGENTS -->
+<script>
+(function() {
+    const sections = [
+        { id: 'news-container', file: 'news.json' },
+        { id: 'blog-container', file: 'blog.json' },
+        { id: 'faq-container', file: 'faq.json' },
+        { id: 'products-container', file: 'products.json' },
+        { id: 'guide-container', file: 'guides.json' },
+        { id: 'video-container', file: 'video.json' },
+        { id: 'visual-container', file: 'visual.json' }
+    ];
+    sections.forEach(s => {
+        const container = document.getElementById(s.id);
+        if (container) {
+            fetch('data/' + s.file)
+                .then(r => r.ok ? r.json() : Promise.reject())
+                .then(data => {
+                    if (data.news) { /* adapter selon la structure */ }
+                    if (data.content) container.innerHTML = data.content;
+                })
+                .catch(() => {});
+        }
+    });
+})();
+</script>
 
 </body>
 </html>

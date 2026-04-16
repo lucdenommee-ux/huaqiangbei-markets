@@ -3,30 +3,30 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>SEG Electronics Market - guide</title>
+<title>Shenzhen Electronic Markets - Guides</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="alternate" hreflang="en" href="guide.html">
 <link rel="alternate" hreflang="zh" href="guide-zh.html"></head>
 <body>
 <div class="container">
   <div class="nav">
-    <div class="brand"><a href="index.html">SEG Electronics Market</a></div>
+    <div class="brand"><a href="index.html">Shenzhen Electronic Markets</a></div>
     <div class="links">
-      <a class="pill" href="market.html">Market</a>
+      <a class="pill" href="market.html">Markets</a>
       <a class="pill" href="news.html">News</a>
       <a class="pill" href="videos.html">Videos</a>
       <a class="pill" href="photos.html">Photos</a>
       <a class="pill" href="directory.html">Directory</a>
-      <a class="pill" href="guide.html">Guide</a>
+      <a class="pill" href="guide.html">Guides</a>
     </div>
   </div>
   <div class="hero">
-    <h1>SEG Electronics Market</h1>
+    <h1>Shenzhen Electronic Markets</h1>
     <p>The flagship electronics market in Huaqiangbei, offering everything from IC chips to consumer electronics.</p>
   </div>
   <div class="content">
-    <h2> guide.Value.ToUpper() uide</h2>
-    <p>Content coming soon.</p>
+    <h2> Huaqiangbei Electronic Markets Directory</h2>
+    <p>Guides</p>
   </div>
   <div class="footer">© 2026 shenzhenelectronicmarkets.com • All rights reserved.</div>
 </div>
@@ -61,9 +61,37 @@
         </div>
     </div>
     <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家
+        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Marketsss · 华强北市场外贸专家
     </p>
 </div>
+
+
+<!-- INJECTION DYNAMIQUE DES DONNÉES AGENTS -->
+<script>
+(function() {
+    const sections = [
+        { id: 'news-container', file: 'news.json' },
+        { id: 'blog-container', file: 'blog.json' },
+        { id: 'faq-container', file: 'faq.json' },
+        { id: 'products-container', file: 'products.json' },
+        { id: 'guide-container', file: 'guides.json' },
+        { id: 'video-container', file: 'video.json' },
+        { id: 'visual-container', file: 'visual.json' }
+    ];
+    sections.forEach(s => {
+        const container = document.getElementById(s.id);
+        if (container) {
+            fetch('data/' + s.file)
+                .then(r => r.ok ? r.json() : Promise.reject())
+                .then(data => {
+                    if (data.news) { /* adapter selon la structure */ }
+                    if (data.content) container.innerHTML = data.content;
+                })
+                .catch(() => {});
+        }
+    });
+})();
+</script>
 
 </body>
 </html>
