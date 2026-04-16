@@ -1,9 +1,0 @@
-﻿{
-  "news": [
-    { "id": "news_001", "title": "New Import Regulations for Electronic Components in 2026", "title_cn": "2026年电子元件进口新规", "date": "2026-04-10", "source": "Shenzhen Customs", "summary": "Updated tariffs and documentation requirements.", "summary_cn": "更新的关税和文件要求。", "url": "https://shenzhenelectronicmarkets.com/news/import-regulations-2026" },
-    { "id": "news_002", "title": "Huaqiangbei Metro Expansion: New Exit Opens", "title_cn": "华强北地铁扩建：新出口开放", "date": "2026-04-12", "source": "Shenzhen Metro", "summary": "Exit E connects directly to SEG Plaza.", "summary_cn": "E出口直接连接赛格广场。", "url": "https://shenzhenelectronicmarkets.com/news/metro-expansion" },
-    { "id": "news_003", "title": "LED Component Prices Drop 15% in Q2 2026", "title_cn": "2026年第二季度LED元件价格下降15%", "date": "2026-04-14", "source": "Market Report", "summary": "Oversupply leads to price reductions.", "summary_cn": "供过于求导致价格下降。", "url": "https://shenzhenelectronicmarkets.com/news/led-price-drop" },
-    { "id": "news_004", "title": "New Security Checks at Market Entrances", "title_cn": "市场入口新增安检措施", "date": "2026-04-01", "source": "Market Administration", "summary": "Enhanced security protocols.", "summary_cn": "加强安检措施。", "url": "https://shenzhenelectronicmarkets.com/news/security-checks" },
-    { "id": "news_005", "title": "AI Chip Demand Surges in Shenzhen Manufacturing", "title_cn": "深圳制造业AI芯片需求激增", "date": "2026-04-15", "source": "Industry Report", "summary": "Factories increase orders.", "summary_cn": "工厂增加订单。", "url": "https://shenzhenelectronicmarkets.com/news/ai-chip-demand" }
-  ]
-}
