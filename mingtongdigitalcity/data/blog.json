@@ -1,6 +1,16 @@
-{
-  "status": "success",
-  "timestamp": "2026-04-15T21:22:32.392816",
-  "site": "mingtongdigitalcity",
-  "posts": []
+﻿{
+  "blog": [
+    {
+      "id": "blog_001",
+      "title": "Ultimate Guide to Sourcing Components at SEG Plaza",
+      "title_cn": "赛格广场元器件采购终极指南",
+      "date": "2026-04-01",
+      "author": "Luc Junior Denommee",
+      "excerpt": "Navigate the 12 floors of SEG Plaza like a pro. Floor-by-floor breakdown and negotiation tips.",
+      "excerpt_cn": "像专业人士一样逛遍赛格广场12层。逐层详解及议价技巧。",
+      "content": "SEG Plaza is the heart of Huaqiangbei. Floors 1-3: consumer electronics and accessories. Floors 4-7: ICs, PCBs, and electronic components. Floors 8-10: specialized industrial parts. Floors 11-12: offices and B2B showrooms.",
+      "content_cn": "赛格广场是华强北的核心。1-3楼：消费电子及配件。4-7楼：IC、PCB及电子元件。8-10楼：专业工业零件。11-12楼：办公室及B2B展厅。"
+    }
+  ],
+  "updated": "2026-04-16T19:00:00"
 }

@@ -1,6 +1,26 @@
-{
-  "status": "success",
-  "timestamp": "2026-04-15T21:22:26.193068",
-  "site": "cyberdigitalmall",
-  "questions": []
+﻿{
+  "faq": [
+    {
+      "id": "faq_001",
+      "question": "What are the opening hours of SEG Plaza?",
+      "question_cn": "赛格广场的营业时间是几点？",
+      "answer": "Most shops open from 9:30 AM to 6:30 PM daily. Some vendors may close earlier on Sundays.",
+      "answer_cn": "大多数店铺每天上午9:30至下午6:30营业。部分商户周日可能提前关门。"
+    },
+    {
+      "id": "faq_002",
+      "question": "Which floor has IC chips and electronic components?",
+      "question_cn": "哪一层有IC芯片和电子元件？",
+      "answer": "Floors 4 through 7 are dedicated to ICs, semiconductors, and passive components.",
+      "answer_cn": "4至7楼专门经营IC、半导体和无源元件。"
+    },
+    {
+      "id": "faq_003",
+      "question": "Can I get a VAT refund for exports?",
+      "question_cn": "出口可以办理增值税退税吗？",
+      "answer": "Yes, request a 'Fapiao' from the vendor and work with a licensed export agent.",
+      "answer_cn": "是的，向商家索取发票并与持牌出口代理合作。"
+    }
+  ],
+  "updated": "2026-04-16T19:00:00"
 }
