@@ -1,0 +1,43 @@
+﻿{
+    "google_products":  {
+                            "market":  "Fei Yang Times",
+                            "models":  [
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 6",
+                                               "file":  "Google_Pixel_6.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 6 Pro",
+                                               "file":  "Google_Pixel_6_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 7a",
+                                               "file":  "Google_Pixel_7a.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 8",
+                                               "file":  "Google_Pixel_8.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 8a",
+                                               "file":  "Google_Pixel_8a.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Google Pixel 8 Pro",
+                                               "file":  "Google_Pixel_8_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           }
+                                       ]
+                        }
+}

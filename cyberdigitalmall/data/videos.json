@@ -1,27 +1,19 @@
 [
     {
-        "thumbnail":  "https://img.youtube.com/vi/2Lq5L_4QFqE/maxresdefault.jpg",
-        "market_name":  "Hua Nan Tong Mobile Phone Accessories Market",
+        "thumbnail":  "https://img.youtube.com/vi/J8HrE5mM9WU/maxresdefault.jpg",
+        "market_name":  "Fei Yang Times Communication Market",
         "date":  "2026-04-14",
-        "summary":  "Documentary exploring the famous electronics district",
-        "title":  "Inside Shenzhen\u0027s Silicon Valley - Huaqiangbei",
-        "url":  "https://www.youtube.com/embed/2Lq5L_4QFqE"
-    },
-    {
-        "thumbnail":  "https://img.youtube.com/vi/VIDEO_ID_3/maxresdefault.jpg",
-        "market_name":  "Hua Nan Tong Mobile Phone Accessories Market",
-        "date":  "2026-04-14",
-        "summary":  "Complete guide for sourcing electronics in Shenzhen",
-        "title":  "Hua Nan Tong Mobile Phone Accessories Market - How to Source Electronics in Huaqiangbei",
-        "url":  "https://www.youtube.com/embed/VIDEO_ID_3"
+        "summary":  "Complete guide for sourcing components and products",
+        "title":  "How to Source Electronics in Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/J8HrE5mM9WU"
     },
     {
         "date":  "2026-03-06",
-        "title":  "Template: Hua Nan Tong Mobile Phone Accessories Market 鈥?first video",
+        "title":  "Template: Fei Yang Times Communication Market 鈥?first video",
         "platform":  "YouTube",
         "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "market_slug":  "huanantongmobilephoneaccessoriesmarket",
-        "market_name":  "Hua Nan Tong Mobile Phone Accessories Market",
-        "site_domain":  "huanantongmobilephoneaccessoriesmarket.com"
+        "market_slug":  "feiyangtimescommunicationmarket",
+        "market_name":  "Fei Yang Times Communication Market",
+        "site_domain":  "feiyangtimescommunicationmarket.com"
     }
 ]

@@ -1,0 +1,520 @@
+{
+  "generated_at": "2026-04-18T01:58:16.197011",
+  "total_sites": 69,
+  "total_entries": 258,
+  "by_site": {
+    "Accessoires Mobile": {
+      "total_entries": 25,
+      "agents_found": {
+        "news_agent": 5,
+        "blog_agent": 5,
+        "faq_agent": 5,
+        "video_agent": 5,
+        "visual_agent": 5
+      }
+    },
+    "aihuaelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "asiaelectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "changchengmobilephonemarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "chinamanufacturinghub": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "Composants IoT": {
+      "total_entries": 25,
+      "agents_found": {
+        "news_agent": 5,
+        "blog_agent": 5,
+        "faq_agent": 5,
+        "video_agent": 5,
+        "visual_agent": 5
+      }
+    },
+    "cyberdigitalmall": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "data_agent_output": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "duhuielectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "Electronique Shenzhen": {
+      "total_entries": 25,
+      "agents_found": {
+        "news_agent": 5,
+        "blog_agent": 5,
+        "faq_agent": 5,
+        "video_agent": 5,
+        "visual_agent": 5
+      }
+    },
+    "feiyangtimescommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "gaokedelectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "golcondaelectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "gordongmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "greatwallcommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "hqbforeigntradeplaza": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "hqmartshenzhen": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huanantongmobilephoneaccessoriesmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huaqiangbeicomputercity": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huaqiangelectronicsworld": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huaqiangnorthelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huaqiangworldelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huaqiangworldelectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "huitongcommunicationsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "internationalsecurityelectroniccity": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "jiahemarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "jinlongcommunicationsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "jixiangcommunicationsfittingmarkets": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "kinglongcommunicationsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "longshengaccessoriesstreet": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "longshengmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "longshengmobilephonemarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "manhacommercialplaza": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "manhaelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "mingtongdigitalcity": {
+      "total_entries": 5,
+      "agents_found": {
+        "news_agent": 1,
+        "blog_agent": 1,
+        "faq_agent": 1,
+        "video_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "mingtongdigitalmall": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "modernwindowdigitalplaza": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "newasiaelectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "pacificsecurityprotectionmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "pengjinshantechnologyelectronmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "pengketechnologymarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "pongyuencommunicationaccessoriesmall": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "qingchuangcommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "Robotics": {
+      "total_entries": 7,
+      "agents_found": {
+        "news_agent": 2,
+        "blog_agent": 1,
+        "faq_agent": 1,
+        "video_agent": 1,
+        "visual_agent": 2
+      }
+    },
+    "Robotics Shenzhen": {
+      "total_entries": 20,
+      "agents_found": {
+        "news_agent": 4,
+        "blog_agent": 4,
+        "faq_agent": 4,
+        "video_agent": 4,
+        "visual_agent": 4
+      }
+    },
+    "rongdamarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "sangdaelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "sedelectroniccommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "segcommunication": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "segcommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "segplaza": {
+      "total_entries": 4,
+      "agents_found": {
+        "news_agent": 1,
+        "blog_agent": 1,
+        "faq_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenaichipmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenbatteryhub": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenclocksandwatchesmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenelectronicmarkets": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenhightechindustrialpark": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenledmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhennewworldcommunicationselectronicsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenroboticsmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "shenzhenzhenhuamobilephonemarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "Smart Home": {
+      "total_entries": 25,
+      "agents_found": {
+        "news_agent": 5,
+        "blog_agent": 5,
+        "faq_agent": 5,
+        "video_agent": 5,
+        "visual_agent": 5
+      }
+    },
+    "sunasiaelectronicmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "taixingcommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "think_tank_market_yamls": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "tongtiandicommunicationmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "wanshangcomputercenter": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "yitongmobileaccessoriesmarket": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "yuanwangdigitalmall": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    },
+    "zhongxindigitalmall": {
+      "total_entries": 2,
+      "agents_found": {
+        "news_agent": 1,
+        "visual_agent": 1
+      }
+    }
+  },
+  "by_agent": {
+    "news_agent": 89,
+    "blog_agent": 27,
+    "faq_agent": 27,
+    "video_agent": 26,
+    "visual_agent": 89
+  }
+}

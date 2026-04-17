@@ -1,25 +1,5 @@
-﻿{
-  "news": [
-    {
-      "id": "news_001",
-      "title": "SEG Plaza Renovation Completed: New Floors Open",
-      "title_cn": "赛格广场装修完成：新楼层开放",
-      "date": "2026-04-15",
-      "source": "SEG Plaza Management",
-      "summary": "Floors 8-10 have been renovated and now host over 200 new component vendors.",
-      "summary_cn": "8至10楼已完成翻新，新增200多家元器件商户。",
-      "url": "https://segplaza.com/news/renovation-completed"
-    },
-    {
-      "id": "news_002",
-      "title": "New Metro Exit E Connects Directly to SEG Plaza",
-      "title_cn": "地铁E出口直达赛格广场",
-      "date": "2026-04-10",
-      "source": "Shenzhen Metro",
-      "summary": "Exit E of Huaqiang North Station now opens directly into SEG Plaza B1.",
-      "summary_cn": "华强北站E出口现已直通赛格广场负一楼。",
-      "url": "https://segplaza.com/news/metro-exit-e"
-    }
-  ],
-  "updated": "2026-04-16T19:00:00"
+{
+  "status": "success",
+  "timestamp": "2026-04-16T00:30:02.770796",
+  "site": "longshengmobilephonemarket"
 }

@@ -1,0 +1,37 @@
+﻿{
+    "oneplus_products":  {
+                             "market":  "Fei Yang Times",
+                             "models":  [
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus 10 Pro",
+                                                "file":  "OnePlus_10_Pro.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus 11",
+                                                "file":  "OnePlus_11.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus 12",
+                                                "file":  "OnePlus_12.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus 13",
+                                                "file":  "OnePlus_13.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus Nord 4",
+                                                "file":  "OnePlus_Nord_4.jpg",
+                                                "condition":  "Refurbished"
+                                            }
+                                        ]
+                         }
+}
