@@ -6,7 +6,6 @@
     <title>Mobile Phones · 手机产品</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* Ajustements spécifiques à la page mobile */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -14,12 +13,16 @@
             margin-top: 20px;
         }
         .product-card {
+            display: block;
             background: rgba(255,255,255,0.03);
             border: 1px solid var(--border);
             border-radius: 18px;
             padding: 16px 12px;
             text-align: center;
             transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
         }
         .product-card:hover {
             background: rgba(255,255,255,0.06);
@@ -45,14 +48,6 @@
             border-radius: 30px;
             font-size: 0.75rem;
             font-weight: 500;
-        }
-        .floor-badge {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid var(--border);
-            border-radius: 30px;
-            padding: 8px 16px;
-            margin-bottom: 20px;
-            display: inline-block;
         }
         .tips-box {
             background: rgba(147,197,253,0.05);
@@ -108,23 +103,18 @@
             </div>
         </div>
 
-        <!-- Description du marché -->
         <div class="card" id="market-description-card">
             <p id="market-description"></p>
         </div>
 
-        <!-- Liste des modèles iPhone -->
         <h2 style="margin-top: 30px;">📱 iPhone Models / iPhone 型号</h2>
         <div class="product-grid" id="iphone-grid"></div>
 
-        <!-- Autres marques -->
         <h2 style="margin-top: 40px;">📱 Other Brands / 其他品牌</h2>
         <div id="other-brands-container" style="margin-bottom: 20px;"></div>
 
-        <!-- Conseils d'achat -->
         <div class="tips-box" id="buying-tips"></div>
 
-        <!-- Contact universel -->
         <div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
             <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
             <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
@@ -155,93 +145,128 @@
     </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const elements = {
-            marketTitle: document.getElementById('market-title'),
-            marketSubtitle: document.getElementById('market-subtitle'),
-            heroTitle: document.getElementById('hero-title'),
-            heroDesc: document.getElementById('hero-desc'),
-            marketDesc: document.getElementById('market-description'),
-            floorInfo: document.getElementById('floor-info'),
-            iphoneGrid: document.getElementById('iphone-grid'),
-            brandsContainer: document.getElementById('other-brands-container'),
-            tipsDiv: document.getElementById('buying-tips')
+        const MOBILE_DATA = {
+            market: "Fei Yang Times Communication Market",
+            market_cn: "飞扬时代通讯市场",
+            description: "World's largest refurbished iPhone wholesale center.",
+            description_cn: "全球最大的二手iPhone批发中心。",
+            floors: {
+                "1F-2F": { "en": "Accessories, Parts, Repair", "cn": "配件、零件、维修" },
+                "3F-4F": { "en": "Wholesale iPhones", "cn": "iPhone批发" }
+            },
+            models: [
+                { "name": "iPhone 16 Pro Max", "year": 2024, "condition": "New / Like New", "condition_cn": "全新 / 充新" },
+                { "name": "iPhone 16 Pro", "year": 2024, "condition": "New / Like New", "condition_cn": "全新 / 充新" },
+                { "name": "iPhone 16", "year": 2024, "condition": "New / Like New", "condition_cn": "全新 / 充新" },
+                { "name": "iPhone 15 Pro Max", "year": 2023, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 15 Pro", "year": 2023, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 15", "year": 2023, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 14 Pro Max", "year": 2022, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 14 Pro", "year": 2022, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 14", "year": 2022, "condition": "Used / Refurbished", "condition_cn": "二手 / 翻新" },
+                { "name": "iPhone 13 Pro Max", "year": 2021, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 13 Pro", "year": 2021, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 13", "year": 2021, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 12 Pro Max", "year": 2020, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 12 Pro", "year": 2020, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 12", "year": 2020, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 11 Pro Max", "year": 2019, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 11 Pro", "year": 2019, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 11", "year": 2019, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone XS Max", "year": 2018, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone XS", "year": 2018, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone XR", "year": 2018, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone X", "year": 2017, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 8 Plus", "year": 2017, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 8", "year": 2017, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 7 Plus", "year": 2016, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 7", "year": 2016, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone SE (2020/2022)", "year": 2020, "condition": "Used", "condition_cn": "二手" },
+                { "name": "iPhone 6s Plus", "year": 2015, "condition": "Used / Classic", "condition_cn": "二手 / 经典" },
+                { "name": "iPhone 6s", "year": 2015, "condition": "Used / Classic", "condition_cn": "二手 / 经典" }
+            ],
+            other_brands: ["Huawei", "Xiaomi", "OPPO", "vivo", "Samsung", "Google Pixel"],
+            buying_tips: {
+                grades: { "en": "A, B, C, D (A = like new)", "cn": "A, B, C, D (A级=充新)" },
+                test_before_pay: { "en": "Always test screen, battery, cameras, and buttons", "cn": "务必测试屏幕、电池、摄像头和按键" },
+                icloud: { "en": "Ensure iCloud/FRP is removed", "cn": "确认已退出iCloud/FRP锁" }
+            }
         };
 
-        function showError(message) {
-            if (elements.iphoneGrid) {
-                elements.iphoneGrid.innerHTML = `<p class="muted" style="color: #fca5a5;">⚠️ ${message}</p>`;
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = {
+                marketTitle: document.getElementById('market-title'),
+                marketSubtitle: document.getElementById('market-subtitle'),
+                heroTitle: document.getElementById('hero-title'),
+                heroDesc: document.getElementById('hero-desc'),
+                marketDesc: document.getElementById('market-description'),
+                floorInfo: document.getElementById('floor-info'),
+                iphoneGrid: document.getElementById('iphone-grid'),
+                brandsContainer: document.getElementById('other-brands-container'),
+                tipsDiv: document.getElementById('buying-tips')
+            };
+
+            const content = MOBILE_DATA;
+
+            if (elements.marketTitle) elements.marketTitle.textContent = content.market || 'Mobile Phones';
+            if (elements.marketSubtitle) elements.marketSubtitle.textContent = content.market_cn || '';
+            if (elements.heroTitle) elements.heroTitle.textContent = content.market || 'Mobile Phones';
+            if (elements.heroDesc) elements.heroDesc.textContent = content.description || '';
+            if (elements.marketDesc) {
+                elements.marketDesc.innerHTML = `${content.description || ''}<br><span class="muted">${content.description_cn || ''}</span>`;
             }
-            console.error('❌ mobile.html:', message);
-        }
 
-        fetch('data/mobile.json')
-            .then(response => {
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return response.json();
-            })
-            .then(data => {
-                const content = data.mobile_products;
-                if (!content) throw new Error('Structure JSON invalide');
-
-                if (elements.marketTitle) elements.marketTitle.textContent = content.market || 'Mobile Phones';
-                if (elements.marketSubtitle) elements.marketSubtitle.textContent = content.market_cn || '';
-                if (elements.heroTitle) elements.heroTitle.textContent = content.market || 'Mobile Phones';
-                if (elements.heroDesc) elements.heroDesc.textContent = content.description || '';
-                if (elements.marketDesc) {
-                    elements.marketDesc.innerHTML = `${content.description || ''}<br><span class="muted">${content.description_cn || ''}</span>`;
+            if (elements.floorInfo && content.floors) {
+                elements.floorInfo.innerHTML = '';
+                for (const [floor, names] of Object.entries(content.floors)) {
+                    elements.floorInfo.innerHTML += `<span class="pill"><strong>🏢 ${floor}</strong> ${names.en} · ${names.cn}</span>`;
                 }
+            }
 
-                if (elements.floorInfo && content.floors) {
-                    elements.floorInfo.innerHTML = '';
-                    for (const [floor, names] of Object.entries(content.floors)) {
-                        elements.floorInfo.innerHTML += `<span class="pill"><strong>🏢 ${floor}</strong> ${names.en} · ${names.cn}</span>`;
-                    }
-                }
-
-                if (elements.iphoneGrid && Array.isArray(content.models)) {
-                    elements.iphoneGrid.innerHTML = '';
-                    if (content.models.length === 0) {
-                        elements.iphoneGrid.innerHTML = '<p class="muted">Aucun modèle listé.</p>';
-                    } else {
-                        content.models.forEach(model => {
-                            const card = document.createElement('div');
-                            card.className = 'product-card';
-                            card.innerHTML = `
-                                <div class="product-name">${model.name || ''}</div>
-                                <div class="product-year">${model.year || ''}</div>
-                                <div class="product-condition">${model.condition || ''} · ${model.condition_cn || ''}</div>
-                            `;
-                            elements.iphoneGrid.appendChild(card);
-                        });
-                    }
-                }
-
-                if (elements.brandsContainer && Array.isArray(content.other_brands)) {
-                    elements.brandsContainer.innerHTML = '';
-                    content.other_brands.forEach(brand => {
-                        const span = document.createElement('span');
-                        span.className = 'brand-tag';
-                        span.textContent = brand;
-                        elements.brandsContainer.appendChild(span);
+            if (elements.iphoneGrid && Array.isArray(content.models)) {
+                elements.iphoneGrid.innerHTML = '';
+                if (content.models.length === 0) {
+                    elements.iphoneGrid.innerHTML = '<p class="muted">Aucun modèle listé.</p>';
+                } else {
+                    content.models.forEach(model => {
+                        const link = document.createElement('a');
+                        link.href = 'https://support.apple.com/en-us/108044';
+                        link.target = '_blank';
+                        link.rel = 'noopener';
+                        link.className = 'product-card';
+                        link.style.textDecoration = 'none';
+                        link.style.color = 'inherit';
+                        link.innerHTML = `
+                            <div class="product-name">${model.name || ''}</div>
+                            <div class="product-year">${model.year || ''}</div>
+                            <div class="product-condition">${model.condition || ''} · ${model.condition_cn || ''}</div>
+                        `;
+                        elements.iphoneGrid.appendChild(link);
                     });
                 }
+            }
 
-                if (elements.tipsDiv && content.buying_tips) {
-                    const tips = content.buying_tips;
-                    elements.tipsDiv.innerHTML = `
-                        <h3>💡 Buying Tips / 购买建议</h3>
-                        <p><strong>📊 Grades / 成色等级:</strong> ${tips.grades?.en || ''} · ${tips.grades?.cn || ''}</p>
-                        <p><strong>🔍 Test Before Pay / 付款前测试:</strong> ${tips.test_before_pay?.en || ''} · ${tips.test_before_pay?.cn || ''}</p>
-                        <p><strong>🔐 iCloud/FRP:</strong> ${tips.icloud?.en || ''} · ${tips.icloud?.cn || ''}</p>
-                    `;
-                }
-                console.log('✅ Page mobile.html mise à jour.');
-            })
-            .catch(error => {
-                showError(`Erreur: ${error.message}`);
-            });
-    });
-</script>
+            if (elements.brandsContainer && Array.isArray(content.other_brands)) {
+                elements.brandsContainer.innerHTML = '';
+                content.other_brands.forEach(brand => {
+                    const span = document.createElement('span');
+                    span.className = 'brand-tag';
+                    span.textContent = brand;
+                    elements.brandsContainer.appendChild(span);
+                });
+            }
+
+            if (elements.tipsDiv && content.buying_tips) {
+                const tips = content.buying_tips;
+                elements.tipsDiv.innerHTML = `
+                    <h3>💡 Buying Tips / 购买建议</h3>
+                    <p><strong>📊 Grades / 成色等级:</strong> ${tips.grades?.en || ''} · ${tips.grades?.cn || ''}</p>
+                    <p><strong>🔍 Test Before Pay / 付款前测试:</strong> ${tips.test_before_pay?.en || ''} · ${tips.test_before_pay?.cn || ''}</p>
+                    <p><strong>🔐 iCloud/FRP:</strong> ${tips.icloud?.en || ''} · ${tips.icloud?.cn || ''}</p>
+                `;
+            }
+            console.log('✅ Page mobile.html chargée avec liens cliquables.');
+        });
+    </script>
 </body>
 </html>
