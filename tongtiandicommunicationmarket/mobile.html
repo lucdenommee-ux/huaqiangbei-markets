@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -141,35 +141,35 @@
     </div>
 
     <script>
-        (async function() {
-            const elements = {
-                marketTitle: document.getElementById('market-title'),
-                marketSubtitle: document.getElementById('market-subtitle'),
-                heroTitle: document.getElementById('hero-title'),
-                heroDesc: document.getElementById('hero-desc'),
-                marketDesc: document.getElementById('market-description'),
-                floorInfo: document.getElementById('floor-info'),
-                iphoneGrid: document.getElementById('iphone-grid'),
-                brandsContainer: document.getElementById('other-brands-container'),
-                tipsDiv: document.getElementById('buying-tips')
-            };
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = {
+            marketTitle: document.getElementById('market-title'),
+            marketSubtitle: document.getElementById('market-subtitle'),
+            heroTitle: document.getElementById('hero-title'),
+            heroDesc: document.getElementById('hero-desc'),
+            marketDesc: document.getElementById('market-description'),
+            floorInfo: document.getElementById('floor-info'),
+            iphoneGrid: document.getElementById('iphone-grid'),
+            brandsContainer: document.getElementById('other-brands-container'),
+            tipsDiv: document.getElementById('buying-tips')
+        };
 
-            function showError(message) {
-                if (elements.iphoneGrid) {
-                    elements.iphoneGrid.innerHTML = `<p class="muted" style="color: #fca5a5;">⚠️ ${message}</p>`;
-                }
-                console.error('❌ mobile.html:', message);
+        function showError(message) {
+            if (elements.iphoneGrid) {
+                elements.iphoneGrid.innerHTML = `<p class="muted" style="color: #fca5a5;">⚠️ ${message}</p>`;
             }
+            console.error('❌ mobile.html:', message);
+        }
 
-            try {
-                console.log('🔄 Chargement de data/mobile.json...');
-                const response = await fetch('data/mobile.json');
+        fetch('data/mobile.json')
+            .then(response => {
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                const data = await response.json();
+                return response.json();
+            })
+            .then(data => {
                 const content = data.mobile_products;
                 if (!content) throw new Error('Structure JSON invalide');
 
-                // Mise à jour des titres
                 if (elements.marketTitle) elements.marketTitle.textContent = content.market || 'Mobile Phones';
                 if (elements.marketSubtitle) elements.marketSubtitle.textContent = content.market_cn || '';
                 if (elements.heroTitle) elements.heroTitle.textContent = content.market || 'Mobile Phones';
@@ -178,7 +178,6 @@
                     elements.marketDesc.innerHTML = `${content.description || ''}<br><span class="muted">${content.description_cn || ''}</span>`;
                 }
 
-                // Info étages
                 if (elements.floorInfo && content.floors) {
                     elements.floorInfo.innerHTML = '';
                     for (const [floor, names] of Object.entries(content.floors)) {
@@ -186,7 +185,6 @@
                     }
                 }
 
-                // Grille iPhone
                 if (elements.iphoneGrid && Array.isArray(content.models)) {
                     elements.iphoneGrid.innerHTML = '';
                     if (content.models.length === 0) {
@@ -205,7 +203,6 @@
                     }
                 }
 
-                // Autres marques
                 if (elements.brandsContainer && Array.isArray(content.other_brands)) {
                     elements.brandsContainer.innerHTML = '';
                     content.other_brands.forEach(brand => {
@@ -216,7 +213,6 @@
                     });
                 }
 
-                // Conseils d'achat
                 if (elements.tipsDiv && content.buying_tips) {
                     const tips = content.buying_tips;
                     elements.tipsDiv.innerHTML = `
@@ -227,10 +223,11 @@
                     `;
                 }
                 console.log('✅ Page mobile.html mise à jour.');
-            } catch (error) {
+            })
+            .catch(error => {
                 showError(`Erreur: ${error.message}`);
-            }
-        })();
-    </script>
+            });
+    });
+</script>
 </body>
 </html>
