@@ -2,11 +2,11 @@
   "mobile_products": {
     "market": "Fei Yang Times Communication Market",
     "market_cn": "飞扬时代通讯市场",
-    "description": "World's largest refurbished iPhone wholesale center. Find all iPhone models from the latest to classics.",
-    "description_cn": "全球最大的二手iPhone批发中心。从最新款到经典款，所有iPhone型号一应俱全。",
+    "description": "World's largest refurbished iPhone wholesale center.",
+    "description_cn": "全球最大的二手iPhone批发中心。",
     "floors": {
       "1F-2F": { "en": "Accessories, Parts, Repair", "cn": "配件、零件、维修" },
-      "3F-4F": { "en": "Wholesale iPhones (3F: Under warranty, 4F: Bulk used)", "cn": "iPhone批发 (3楼: 在保, 4楼: 二手散货)" }
+      "3F-4F": { "en": "Wholesale iPhones", "cn": "iPhone批发" }
     },
     "models": [
       { "name": "iPhone 16 Pro Max", "year": 2024, "condition": "New / Like New", "condition_cn": "全新 / 充新" },
