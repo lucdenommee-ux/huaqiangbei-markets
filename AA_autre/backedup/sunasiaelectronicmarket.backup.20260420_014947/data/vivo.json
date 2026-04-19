@@ -1,0 +1,79 @@
+﻿{
+    "vivo_products":  {
+                          "market":  "Fei Yang Times",
+                          "models":  [
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo V29",
+                                             "file":  "vivo_V29.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo V30",
+                                             "file":  "vivo_V30.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo V40",
+                                             "file":  "vivo_V40.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo V50",
+                                             "file":  "vivo_V50.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo X100",
+                                             "file":  "vivo_X100.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo X100 Pro",
+                                             "file":  "vivo_X100_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo X200",
+                                             "file":  "vivo_X200.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo X200 Pro",
+                                             "file":  "vivo_X200_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo X90 Pro",
+                                             "file":  "vivo_X90_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo Y100",
+                                             "file":  "vivo_Y100.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo Y200",
+                                             "file":  "vivo_Y200.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo Y300",
+                                             "file":  "vivo_Y300.jpg",
+                                             "condition":  "Refurbished"
+                                         }
+                                     ]
+                      }
+}
