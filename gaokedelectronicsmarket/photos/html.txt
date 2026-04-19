@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>MacBook Air 13 M2</title></head>
+<body>
+<h1>MacBook Air 13" M2</h1>
+<img src="../images/Apple/MacBook_Air_13_M2.jpg" style="max-width:100%;">
+<p>Refurbished · 翻新</p>
+<a href="../laptops.html">← Retour</a>
+</body>
+</html>

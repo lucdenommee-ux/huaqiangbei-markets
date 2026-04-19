@@ -1,0 +1,49 @@
+﻿{
+    "airpods_products":  {
+                             "market":  "Fei Yang Times",
+                             "models":  [
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods 2",
+                                                "file":  "AirPods_2.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods 3",
+                                                "file":  "AirPods_3.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods 4",
+                                                "file":  "AirPods_4.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods 4 ANC",
+                                                "file":  "AirPods_4_ANC.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods Max",
+                                                "file":  "AirPods_Max.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods Pro",
+                                                "file":  "AirPods_Pro.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "AirPods Pro 2",
+                                                "file":  "AirPods_Pro_2.jpg",
+                                                "condition":  "Refurbished"
+                                            }
+                                        ]
+                         }
+}

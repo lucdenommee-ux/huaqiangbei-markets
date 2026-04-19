@@ -1,0 +1,55 @@
+﻿{
+    "oppo_products":  {
+                          "market":  "Fei Yang Times",
+                          "models":  [
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO A3",
+                                             "file":  "OPPO_A3.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO A5 Pro",
+                                             "file":  "OPPO_A5_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Find X6 Pro",
+                                             "file":  "OPPO_Find_X6_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Find X7",
+                                             "file":  "OPPO_Find_X7.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Find X7 Ultra",
+                                             "file":  "OPPO_Find_X7_Ultra.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Find X8",
+                                             "file":  "OPPO_Find_X8.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Find X8 Pro",
+                                             "file":  "OPPO_Find_X8_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Reno 14 Pro",
+                                             "file":  "OPPO_Reno_14_Pro.jpg",
+                                             "condition":  "Refurbished"
+                                         }
+                                     ]
+                      }
+}

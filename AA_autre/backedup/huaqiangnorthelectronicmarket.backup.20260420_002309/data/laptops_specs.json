@@ -1,0 +1,117 @@
+{
+  "laptops": {
+    "MacBook_Air_13_M2": {
+      "processor": "Apple M2",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "display": "13.6\" Liquid Retina",
+      "year": "2022"
+    },
+    "MacBook_Pro_14_M3": {
+      "processor": "Apple M3",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14.2\" Liquid Retina XDR",
+      "year": "2023"
+    },
+    "ThinkPad_X1_Carbon_Gen12": {
+      "processor": "Intel Core Ultra 7",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14\" WUXGA IPS",
+      "year": "2024"
+    },
+    "ThinkPad_P1_Gen8": {
+      "processor": "Intel Core i7-13700H",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "16\" WQUXGA IPS",
+      "year": "2023"
+    },
+    "Dell_XPS_13_Plus_9350": {
+      "processor": "Intel Core Ultra 7",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "13.4\" OLED Touch",
+      "year": "2024"
+    },
+    "HP_Spectre_x360_14": {
+      "processor": "Intel Core Ultra 7",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "14\" OLED Touch",
+      "year": "2024"
+    },
+    "Surface_Laptop_7": {
+      "processor": "Snapdragon X Elite",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "13.8\" PixelSense Flow",
+      "year": "2024"
+    }
+  },
+  "tablettes": {
+    "iPad_Pro_13_M5": {
+      "processor": "Apple M5",
+      "ram": "8GB",
+      "storage": "256GB",
+      "display": "13\" Ultra Retina XDR",
+      "year": "2025"
+    },
+    "iPad_Pro_11_M5": {
+      "processor": "Apple M5",
+      "ram": "8GB",
+      "storage": "256GB",
+      "display": "11\" Ultra Retina XDR",
+      "year": "2025"
+    },
+    "iPad_Air_7_11": {
+      "processor": "Apple M3",
+      "ram": "8GB",
+      "storage": "128GB",
+      "display": "11\" Liquid Retina",
+      "year": "2025"
+    },
+    "iPad_mini_8": {
+      "processor": "Apple A17 Pro",
+      "ram": "6GB",
+      "storage": "128GB",
+      "display": "8.3\" Liquid Retina",
+      "year": "2025"
+    },
+    "Galaxy_Tab_S10_Ultra": {
+      "processor": "MediaTek Dimensity 9300+",
+      "ram": "12GB",
+      "storage": "256GB",
+      "display": "14.6\" Dynamic AMOLED 2X",
+      "year": "2024"
+    },
+    "Galaxy_Tab_S10_Plus": {
+      "processor": "MediaTek Dimensity 9300+",
+      "ram": "12GB",
+      "storage": "256GB",
+      "display": "12.4\" Dynamic AMOLED 2X",
+      "year": "2024"
+    }
+  },
+  "airpods": {
+    "AirPods_Pro_2": {
+      "chip": "Apple H2",
+      "battery": "6h (30h avec boîtier)",
+      "features": "ANC, Adaptive Audio, USB-C",
+      "year": "2022"
+    },
+    "AirPods_4": {
+      "chip": "Apple H2",
+      "battery": "5h (30h avec boîtier)",
+      "features": "Audio spatial personnalisé, USB-C",
+      "year": "2024"
+    },
+    "AirPods_Max": {
+      "chip": "Apple H1",
+      "battery": "20h",
+      "features": "ANC, Audio spatial, USB-C",
+      "year": "2024"
+    }
+  }
+}

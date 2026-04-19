@@ -1,11 +1,19 @@
 [
-  {
-    "date": "2026-03-06",
-    "title": "Template: Sun Asia Electronic Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "sunasiaelectronicmarket",
-    "market_name": "Sun Asia Electronic Market",
-    "site_domain": "sunasiaelectronicmarket.com"
-  }
+    {
+        "thumbnail":  "https://img.youtube.com/vi/J8HrE5mM9WU/maxresdefault.jpg",
+        "market_name":  "Fei Yang Times Communication Market",
+        "date":  "2026-04-14",
+        "summary":  "Complete guide for sourcing components and products",
+        "title":  "How to Source Electronics in Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/J8HrE5mM9WU"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Fei Yang Times Communication Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "feiyangtimescommunicationmarket",
+        "market_name":  "Fei Yang Times Communication Market",
+        "site_domain":  "feiyangtimescommunicationmarket.com"
+    }
 ]

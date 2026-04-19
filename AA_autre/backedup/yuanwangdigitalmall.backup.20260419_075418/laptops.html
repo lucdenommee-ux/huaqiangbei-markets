@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuan Wang Digital Mall - Laptops & iPads</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .product-card {
+            display: block;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 12px;
+            text-align: center;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(147,197,253,0.3);
+            transform: translateY(-2px);
+        }
+        .product-image {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            background: rgba(0,0,0,0.1);
+            padding: 8px;
+        }
+        .product-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        .product-year {
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+        .product-condition {
+            display: inline-block;
+            background: rgba(147,197,253,0.15);
+            color: var(--accent);
+            padding: 3px 8px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+        .brand-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 4px 12px;
+            margin: 4px;
+            font-size: 0.8rem;
+        }
+        .tips-box {
+            background: rgba(147,197,253,0.05);
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .brand-section {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title" id="market-title">Yuan Wang Digital Mall</div>
+                    <div class="subtitle" id="market-subtitle">远望数码城</div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home / 首页</a>
+                <a href="market.html">Market / 市场</a>
+                <a href="mobile.html">Mobile / 手机</a>
+                <a href="accessories.html">Accessories / 配件</a>
+                <a href="laptops.html" class="active">Laptops / 笔记本</a>
+                <a href="directory.html">Directory / 目录</a>
+                <a href="news.html">News / 新闻</a>
+                <a href="videos.html">Videos / 视频</a>
+                <a href="photos.html">Photos / 照片</a>
+                <a href="guide.html">Guide / 指南</a>
+            </div>
+            <div class="lang">
+                <a href="#" class="active">EN</a>
+                <a href="#">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="hero slim">
+            <div>
+                <h1 id="hero-title">Yuan Wang Digital Mall</h1>
+                <p class="muted" id="hero-desc">Global center for mobile phones, laptops, tablets and consumer electronics.</p>
+                <div class="badges" id="floor-info"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p id="market-description">Global center for mobile phones, laptops, tablets and consumer electronics.<br><span class="muted">全球手机、笔记本、平板及消费电子产品交易中心。</span></p>
+        </div>
+
+        <!-- MacBook Models -->
+        <div class="brand-section">
+            <h2>💻 MacBook / 苹果笔记本</h2>
+            <div class="product-grid" id="macbook-grid"></div>
+        </div>
+
+        <!-- iPad Models -->
+        <div class="brand-section">
+            <h2>📱 iPad / 苹果平板</h2>
+            <div class="product-grid" id="ipad-grid"></div>
+        </div>
+
+        <!-- ThinkPad Models -->
+        <div class="brand-section">
+            <h2>💻 Lenovo ThinkPad / 联想 ThinkPad</h2>
+            <div class="product-grid" id="thinkpad-grid"></div>
+        </div>
+
+        <!-- Dell XPS Models -->
+        <div class="brand-section">
+            <h2>💻 Dell XPS / 戴尔 XPS</h2>
+            <div class="product-grid" id="dell-grid"></div>
+        </div>
+
+        <!-- HP EliteBook / Spectre -->
+        <div class="brand-section">
+            <h2>💻 HP EliteBook & Spectre / 惠普 精英 & 幽灵</h2>
+            <div class="product-grid" id="hp-grid"></div>
+        </div>
+
+        <!-- Microsoft Surface -->
+        <div class="brand-section">
+            <h2>💻 Microsoft Surface / 微软 Surface</h2>
+            <div class="product-grid" id="surface-grid"></div>
+        </div>
+
+        <!-- Other Brands -->
+        <h2 style="margin-top: 40px;">💻 Other Laptop Brands / 其他笔记本品牌</h2>
+        <div id="other-brands-container" style="margin-bottom: 20px;"></div>
+
+        <div class="tips-box" id="buying-tips"></div>
+
+        <div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
+            <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
+                    <div style="text-align:left;"><strong style="color:var(--text);">WhatsApp</strong><br><span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span></div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
+                    <div style="text-align:left;"><strong style="color:var(--text);">WeChat / 微信</strong><br><span style="color:var(--muted); font-family:monospace;">luc-2025</span></div>
+                </div>
+                <div style="text-align:left;">
+                    <strong style="color:var(--text);">📧 Email / 邮箱</strong><br><a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
+                    <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong><a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
+                </div>
+            </div>
+            <p style="color:var(--muted); margin-top:20px; font-size:14px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家</p>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="small">
+                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
+                    <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const LAPTOP_DATABASE = {
+            macbook: [
+                { name: "MacBook Pro 16\" M5", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "MacBook Pro 14\" M5", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "MacBook Air 15\" M4", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "MacBook Air 13\" M4", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "MacBook Pro 16\" M3", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "MacBook Pro 14\" M3", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "MacBook Air 15\" M3", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "MacBook Air 13\" M3", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "MacBook Pro 14\" M2", year: 2023, condition: "Used", condition_cn: "二手" },
+                { name: "MacBook Air 13\" M2", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "MacBook Pro 14\" M1", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "MacBook Air M1", year: 2020, condition: "Used", condition_cn: "二手" },
+                { name: "MacBook Pro 16\" Intel", year: 2019, condition: "Used / Classic", condition_cn: "二手 / 经典" },
+                { name: "MacBook Pro 13\" Intel", year: 2020, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            ipad: [
+                { name: "iPad Pro 13\" M5", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "iPad Pro 11\" M5", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "iPad Air 7 11\"", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "iPad 11", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "iPad mini 8", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 官翻" },
+                { name: "iPad Pro 13\" M4", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPad Pro 11\" M4", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPad Air 6 11\"", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPad Air 6 13\"", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPad 10", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "iPad Pro 12.9\" M2", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "iPad Pro 11\" M2", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "iPad Air 5", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "iPad 9", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPad mini 6", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPad Pro 12.9\" M1", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPad Air 4", year: 2020, condition: "Used", condition_cn: "二手" }
+            ],
+            thinkpad: [
+                { name: "ThinkPad X1 Carbon Gen 13", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "ThinkPad X1 Yoga Gen 10", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "ThinkPad T14s Gen 6", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "ThinkPad P1 Gen 8", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "ThinkPad X1 Carbon Gen 12", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "ThinkPad T14 Gen 5", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "ThinkPad X1 Carbon Gen 11", year: 2023, condition: "Used", condition_cn: "二手" },
+                { name: "ThinkPad T490", year: 2019, condition: "Used / Classic", condition_cn: "二手 / 经典" },
+                { name: "ThinkPad X280", year: 2018, condition: "Used / Classic", condition_cn: "二手 / 经典" },
+                { name: "ThinkPad T480", year: 2018, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            dell: [
+                { name: "Dell XPS 16 9650", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Dell XPS 14 9450", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Dell XPS 13 Plus 9350", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Dell XPS 15 9530", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "Dell XPS 13 9340", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "Dell XPS 17 9730", year: 2023, condition: "Used", condition_cn: "二手" },
+                { name: "Dell XPS 15 9520", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "Dell XPS 13 9315", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "Dell XPS 13 9310", year: 2020, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            hp: [
+                { name: "HP EliteBook 1040 G12", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "HP EliteBook 840 G11", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "HP Spectre x360 14", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "HP EliteBook 840 G10", year: 2023, condition: "Used", condition_cn: "二手" },
+                { name: "HP EliteBook 850 G8", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "HP Spectre x360 13", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "HP EliteBook 840 G7", year: 2020, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            surface: [
+                { name: "Surface Laptop 7", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Surface Pro 11", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Surface Laptop Studio 3", year: 2025, condition: "New / Refurbished", condition_cn: "全新 / 翻新" },
+                { name: "Surface Laptop 6", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "Surface Pro 10", year: 2024, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "Surface Laptop 5", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "Surface Pro 9", year: 2022, condition: "Used", condition_cn: "二手" },
+                { name: "Surface Laptop 4", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "Surface Pro 8", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "Surface Pro 7", year: 2019, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            other_brands: ["Acer", "ASUS", "MSI", "Razer", "LG Gram", "Huawei MateBook", "Xiaomi Notebook", "Honor MagicBook", "Samsung Galaxy Book", "Framework", "Chuwi"]
+        };
+
+        // Logo URLs for brands (reliable CDN)
+        const BRAND_LOGOS = {
+            macbook: 'https://img.icons8.com/color/96/000000/mac-os--v1.png',
+            ipad: 'https://img.icons8.com/color/96/000000/ipad.png',
+            thinkpad: 'https://img.icons8.com/color/96/000000/lenovo.png',
+            dell: 'https://img.icons8.com/color/96/000000/dell.png',
+            hp: 'https://img.icons8.com/color/96/000000/hp.png',
+            surface: 'https://img.icons8.com/color/96/000000/microsoft.png'
+        };
+
+        const MARKET_DATA = {
+            market: "Yuan Wang Digital Mall",
+            market_cn: "远望数码城",
+            description: "Global center for mobile phones, laptops, tablets and consumer electronics.",
+            description_cn: "全球手机、笔记本、平板及消费电子产品交易中心。",
+            floors: { "2F-3F": { "en": "Laptops, Tablets & Accessories", "cn": "笔记本、平板及配件" } },
+            buying_tips: {
+                grades: { "en": "A, B, C (A = like new, B = minor scratches, C = visible wear)", "cn": "A, B, C (A级=充新, B级=轻微划痕, C级=明显使用痕迹)" },
+                test_before_pay: { "en": "Always test screen, keyboard, trackpad, ports, and battery health", "cn": "务必测试屏幕、键盘、触控板、接口和电池健康度" },
+                activation_lock: { "en": "Ensure no iCloud/Find My Mac lock on Apple devices", "cn": "确认苹果设备已退出iCloud/查找我的Mac" }
+            }
+        };
+        
+        function renderProductGrid(gridId, models, brandLogoKey) {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+            grid.innerHTML = '';
+            const logoUrl = BRAND_LOGOS[brandLogoKey] || 'https://placehold.co/100x100/1a1a2e/93c5fd?text=Product';
+            models.forEach(model => {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'product-card';
+                link.innerHTML = `
+                    <img src="${logoUrl}" alt="${model.name}" class="product-image" loading="lazy">
+                    <div class="product-name">${model.name}</div>
+                    <div class="product-year">${model.year || ''}</div>
+                    <div class="product-condition">${model.condition} · ${model.condition_cn}</div>
+                `;
+                grid.appendChild(link);
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('market-title').textContent = MARKET_DATA.market;
+            document.getElementById('market-subtitle').textContent = MARKET_DATA.market_cn;
+            document.getElementById('hero-title').textContent = MARKET_DATA.market;
+            document.getElementById('hero-desc').textContent = MARKET_DATA.description;
+            document.getElementById('market-description').innerHTML = `${MARKET_DATA.description}<br><span class="muted">${MARKET_DATA.description_cn}</span>`;
+            
+            const floorDiv = document.getElementById('floor-info');
+            if (floorDiv) {
+                floorDiv.innerHTML = '';
+                for (const [floor, names] of Object.entries(MARKET_DATA.floors)) {
+                    floorDiv.innerHTML += `<span class="pill"><strong>🏢 ${floor}</strong> ${names.en} · ${names.cn}</span>`;
+                }
+            }
+            
+            renderProductGrid('macbook-grid', LAPTOP_DATABASE.macbook, 'macbook');
+            renderProductGrid('ipad-grid', LAPTOP_DATABASE.ipad, 'ipad');
+            renderProductGrid('thinkpad-grid', LAPTOP_DATABASE.thinkpad, 'thinkpad');
+            renderProductGrid('dell-grid', LAPTOP_DATABASE.dell, 'dell');
+            renderProductGrid('hp-grid', LAPTOP_DATABASE.hp, 'hp');
+            renderProductGrid('surface-grid', LAPTOP_DATABASE.surface, 'surface');
+            
+            const brandsDiv = document.getElementById('other-brands-container');
+            if (brandsDiv) {
+                brandsDiv.innerHTML = '';
+                LAPTOP_DATABASE.other_brands.forEach(brand => {
+                    const span = document.createElement('span');
+                    span.className = 'brand-tag';
+                    span.textContent = brand;
+                    brandsDiv.appendChild(span);
+                });
+            }
+            
+            const tipsDiv = document.getElementById('buying-tips');
+            if (tipsDiv) {
+                const tips = MARKET_DATA.buying_tips;
+                tipsDiv.innerHTML = `
+                    <h3>💡 Buying Tips / 购买建议</h3>
+                    <p><strong>📊 Grades / 成色等级:</strong> ${tips.grades.en} · ${tips.grades.cn}</p>
+                    <p><strong>🔍 Test Before Pay / 付款前测试:</strong> ${tips.test_before_pay.en} · ${tips.test_before_pay.cn}</p>
+                    <p><strong>🔐 Activation Lock / 激活锁:</strong> ${tips.activation_lock.en} · ${tips.activation_lock.cn}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
+

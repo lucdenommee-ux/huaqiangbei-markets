@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Mobile Test</title><style>body{background:#111;color:white;padding:20px;font-family:Arial;}</style></head>
+<body>
+    <h1>📱 MOBILE TEST - FEIYANG</h1>
+    <p>Si tu vois ce texte, la page charge.</p>
+    <div style="background:#222;padding:15px;margin:10px 0;">iPhone 16 Pro Max</div>
+    <div style="background:#222;padding:15px;margin:10px 0;">Galaxy S24 Ultra</div>
+    <p>Luc +86 135 0155 2311</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fei Yang Times Communication Market - Mobile Phones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .product-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 16px 12px;
+            text-align: center;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(147,197,253,0.3);
+            transform: translateY(-2px);
+        }
+        .product-image {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            background: rgba(0,0,0,0.2);
+            padding: 8px;
+        }
+        .product-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        .product-year {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        .product-condition {
+            display: inline-block;
+            background: rgba(147,197,253,0.15);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .btn-group {
+            margin-top: auto;
+            display: flex;
+            gap: 8px;
+        }
+        .btn {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(147,197,253,0.25), rgba(167,243,208,0.15));
+            border: 1px solid rgba(147,197,253,0.4);
+            color: var(--text);
+            padding: 8px 8px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background: linear-gradient(135deg, rgba(147,197,253,0.4), rgba(167,243,208,0.25));
+            border-color: var(--accent);
+            text-decoration: none;
+        }
+        .tips-box {
+            background: rgba(147,197,253,0.05);
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title">Fei Yang Times Communication Market</div>
+                    <div class="subtitle">飞扬时代通讯市场</div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home / 首页</a>
+                <a href="market.html">Market / 市场</a>
+                <a href="mobile.html" class="active">Mobile / 手机</a>
+                <a href="laptops.html">Laptops / 笔记本</a>
+                <a href="directory.html">Directory / 目录</a>
+                <a href="news.html">News / 新闻</a>
+                <a href="videos.html">Videos / 视频</a>
+                <a href="photos.html">Photos / 照片</a>
+                <a href="guide.html">Guide / 指南</a>
+            </div>
+            <div class="lang">
+                <a href="#" class="active">EN</a>
+                <a href="#">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="hero slim">
+            <div>
+                <h1>Fei Yang Times Communication Market</h1>
+                <p class="muted">World's largest refurbished electronics wholesale center.</p>
+                <div class="badges">
+                    <span class="pill"><strong>🏢</strong> 1F-4F: Mobile Phones & Accessories · 手机及配件</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <p>World's largest refurbished electronics wholesale center.<br><span class="muted">全球最大的二手电子产品批发中心。</span></p>
+        </div>
+
+        <!-- ==================== IPHONE ==================== -->
+        <h2 style="margin-top: 30px;">📱 iPhone Models / iPhone 型号</h2>
+        <div class="product-grid" id="iphone-grid"></div>
+
+        <!-- ==================== GOOGLE PIXEL ==================== -->
+        <h2 style="margin-top: 40px;">📱 Google Pixel / 谷歌 Pixel</h2>
+        <div class="product-grid" id="pixel-grid"></div>
+
+        <!-- ==================== HUAWEI ==================== -->
+        <h2 style="margin-top: 40px;">📱 Huawei / 华为</h2>
+        <div class="product-grid" id="huawei-grid"></div>
+
+        <!-- ==================== ONEPLUS ==================== -->
+        <h2 style="margin-top: 40px;">📱 OnePlus</h2>
+        <div class="product-grid" id="oneplus-grid"></div>
+
+        <!-- ==================== OPPO ==================== -->
+        <h2 style="margin-top: 40px;">📱 OPPO</h2>
+        <div class="product-grid" id="oppo-grid"></div>
+
+        <!-- ==================== SAMSUNG ==================== -->
+        <h2 style="margin-top: 40px;">📱 Samsung Galaxy / 三星 Galaxy</h2>
+        <div class="product-grid" id="samsung-grid"></div>
+
+        <!-- ==================== VIVO ==================== -->
+        <h2 style="margin-top: 40px;">📱 vivo</h2>
+        <div class="product-grid" id="vivo-grid"></div>
+
+        <!-- ==================== XIAOMI ==================== -->
+        <h2 style="margin-top: 40px;">📱 Xiaomi / 小米</h2>
+        <div class="product-grid" id="xiaomi-grid"></div>
+
+        <div class="tips-box">
+            <h3>💡 Buying Tips / 购买建议</h3>
+            <p><strong>📊 Grades / 成色等级:</strong> A, B, C, D (A = like new) · A, B, C, D (A级=充新)</p>
+            <p><strong>🔍 Test Before Pay / 付款前测试:</strong> Always test screen, battery, cameras, and buttons · 务必测试屏幕、电池、摄像头和按键</p>
+            <p><strong>🔐 iCloud/FRP:</strong> Ensure iCloud/FRP is removed · 确认已退出iCloud/FRP锁</p>
+        </div>
+
+        <div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
+            <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+                <div style="display:flex; align-items:center; gap:12px;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;"><div style="text-align:left;"><strong style="color:var(--text);">WhatsApp</strong><br><span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span></div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;"><div style="text-align:left;"><strong style="color:var(--text);">WeChat / 微信</strong><br><span style="color:var(--muted); font-family:monospace;">luc-2025</span></div></div>
+                <div style="text-align:left;"><strong style="color:var(--text);">📧 Email / 邮箱</strong><br><a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br><strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong><a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a></div>
+            </div>
+            <p style="color:var(--muted); margin-top:20px; font-size:14px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家</p>
+        </div>
+        
+        <footer><div class="wrap"><div class="small"><div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div><div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div></div></div></footer>
+    </div>
+
+    <script>
+        // ------------------------------------------------------------
+        // BASE DE DONNÉES COMPLÈTE DES TÉLÉPHONES
+        // ------------------------------------------------------------
+        const PHONE_DATABASE = {
+            iphone: [
+                { name: "iPhone 16 Pro Max", year: 2024, condition: "New / Like New", condition_cn: "全新 / 充新" },
+                { name: "iPhone 16 Pro", year: 2024, condition: "New / Like New", condition_cn: "全新 / 充新" },
+                { name: "iPhone 16", year: 2024, condition: "New / Like New", condition_cn: "全新 / 充新" },
+                { name: "iPhone 15 Pro Max", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 15 Pro", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 15", year: 2023, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 14 Pro Max", year: 2022, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 14 Pro", year: 2022, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 14", year: 2022, condition: "Used / Refurbished", condition_cn: "二手 / 翻新" },
+                { name: "iPhone 13 Pro Max", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 13 Pro", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 13", year: 2021, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 12 Pro Max", year: 2020, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 12 Pro", year: 2020, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 12", year: 2020, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 11 Pro Max", year: 2019, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 11 Pro", year: 2019, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 11", year: 2019, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone XS Max", year: 2018, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone XS", year: 2018, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone XR", year: 2018, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone X", year: 2017, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 8 Plus", year: 2017, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 8", year: 2017, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 7 Plus", year: 2016, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 7", year: 2016, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone SE (2020/2022)", year: 2020, condition: "Used", condition_cn: "二手" },
+                { name: "iPhone 6s Plus", year: 2015, condition: "Used / Classic", condition_cn: "二手 / 经典" },
+                { name: "iPhone 6s", year: 2015, condition: "Used / Classic", condition_cn: "二手 / 经典" }
+            ],
+            pixel: [
+                { name: "Google Pixel 6", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 6 Pro", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 7a", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 8", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 8a", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 8 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 9 Pro Fold", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 9 Pro XL", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 9", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 9 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 7", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Google Pixel 7 Pro", year: 2022, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            huawei: [
+                { name: "Huawei Mate 40 Pro", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate 50 Pro", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate 60", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate 60 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate 70", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate 70 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate X5", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Mate X6", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei nova 11", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei nova 12", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei nova 13", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei nova 13 Pro", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei P50 Pro", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei P60", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei P60 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Pura 70", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Pura 70 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Huawei Pura 70 Ultra", year: 2024, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            oneplus: [
+                { name: "OnePlus 10 Pro", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus 11", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus 12", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus 13", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus 9 Pro", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus Nord 3", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus Nord 4", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus Nord CE4", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OnePlus Open", year: 2023, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            oppo: [
+                { name: "OPPO A3", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO A5 Pro", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Find X6 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Find X7", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Find X7 Ultra", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Find X8", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Find X8 Pro", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Reno 11", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Reno 12", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Reno 13", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Reno 14", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "OPPO Reno 14 Pro", year: 2025, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            samsung: [
+                { name: "Galaxy A14 5G", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A33", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A34", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A34 5G", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A35", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A54", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A54 5G", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy A55", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M32", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M34", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M35", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M53", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M54", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy M55", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Note 20 Ultra", year: 2020, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S21 Ultra", year: 2021, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S22 Ultra", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S23", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S23 Plus", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S23 Ultra", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S24", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S24 Plus", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S24 Ultra", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S25", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S25 Edge", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S25 Plus", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S25 Ultra", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S26", year: 2026, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S26 Plus", year: 2026, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy S26 Ultra", year: 2026, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy XCover7", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Flip5", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Flip6", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Flip7", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Fold5", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Fold6", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Galaxy Z Fold7", year: 2025, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            vivo: [
+                { name: "vivo V29", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo V30", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo V40", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo V50", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo X100", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo X100 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo X200", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo X200 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo X90 Pro", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo Y100", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo Y200", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "vivo Y300", year: 2025, condition: "Refurbished", condition_cn: "翻新" }
+            ],
+            xiaomi: [
+                { name: "POCO F6", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "POCO F6 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "POCO M6 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "POCO X6 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 12", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 13", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 13 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 13 Pro Plus", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 14", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 14 Pro", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Redmi Note 14 Pro Plus", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 12", year: 2022, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 13", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 13 Pro", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 13 Ultra", year: 2023, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 14", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 14 Pro", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 14 Ultra", year: 2024, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 15", year: 2025, condition: "Refurbished", condition_cn: "翻新" },
+                { name: "Xiaomi 15 Ultra", year: 2025, condition: "Refurbished", condition_cn: "翻新" }
+            ]
+        };
+
+        // Fonction utilitaire pour afficher une grille
+        function renderGrid(gridId, products) {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+            grid.innerHTML = '';
+            products.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                
+                const waMsg = encodeURIComponent(`Hi, I'm interested in ${p.name}. Please send price and availability.`);
+                const waUrl = `https://wa.me/8613501552311?text=${waMsg}`;
+                const photoPage = `photos/${p.name.replace(/\s+/g, '_')}.html`;
+                
+                card.innerHTML = `
+                    <div class="product-name">${p.name}</div>
+                    <div class="product-year">${p.year || ''}</div>
+                    <div class="product-condition">${p.condition} · ${p.condition_cn}</div>
+                    <div class="btn-group">
+                        <a href="${waUrl}" target="_blank" class="btn">📲 Prix</a>
+                        <a href="${photoPage}" target="_blank" class="btn">📷 Photos</a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Lancement du rendu
+        renderGrid('iphone-grid', PHONE_DATABASE.iphone);
+        renderGrid('pixel-grid', PHONE_DATABASE.pixel);
+        renderGrid('huawei-grid', PHONE_DATABASE.huawei);
+        renderGrid('oneplus-grid', PHONE_DATABASE.oneplus);
+        renderGrid('oppo-grid', PHONE_DATABASE.oppo);
+        renderGrid('samsung-grid', PHONE_DATABASE.samsung);
+        renderGrid('vivo-grid', PHONE_DATABASE.vivo);
+        renderGrid('xiaomi-grid', PHONE_DATABASE.xiaomi);
+    </script>
+</body>
+</html>

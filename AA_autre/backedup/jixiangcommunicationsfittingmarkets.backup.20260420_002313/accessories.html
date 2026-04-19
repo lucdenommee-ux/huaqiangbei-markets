@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Jixiang Fittings</title><link rel="stylesheet" href="css/styles.css">
+    <style>
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .product-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 18px; padding: 20px 16px; text-align: center; }
+        .product-name { font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 8px; }
+        .product-price { font-size: 1.2rem; font-weight: 700; color: var(--accent); margin: 10px 0; }
+        .product-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 15px; }
+        .btn { display: inline-block; background: linear-gradient(135deg, rgba(147,197,253,0.25), rgba(167,243,208,0.15)); border: 1px solid rgba(147,197,253,0.4); color: var(--text); padding: 10px 20px; border-radius: 30px; text-decoration: none; }
+        .btn:hover { background: linear-gradient(135deg, rgba(147,197,253,0.4), rgba(167,243,208,0.25)); }
+    </style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><div class="brand"><div class="logo"></div><div><div class="title">Jixiang Fittings</div></div></div>
+<div class="nav"><a href="index.html">Home</a><a href="mobile.html">Mobile</a><a href="accessories.html" class="active">Accessories</a></div></div></div>
+<div class="wrap">
+    <h1>Premium Accessories</h1>
+    <div id="categories-container"></div>
+    <div class="contact-universel"><h3>📞 Contact</h3><p>WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</p><p>Luc Junior Denommee · Foreign Trade Expert</p></div>
+    <footer><div class="wrap"><div class="small"><div><b>Luc Junior Denommee</b> · Foreign Trade Expert</div><div class="muted">© 2026 All rights reserved</div></div></div></footer>
+</div>
+<script>
+    fetch('data/accessories.json')
+        .then(r => r.json())
+        .then(data => {
+            const container = document.getElementById('categories-container');
+            data.categories.forEach(cat => {
+                const section = document.createElement('div');
+                section.innerHTML = `<h2>🔥 ${cat.name} / ${cat.name_cn}</h2><div class="product-grid" id="grid-${cat.name.replace(/\s+/g,'')}"></div>`;
+                container.appendChild(section);
+                const grid = section.querySelector('.product-grid');
+                cat.products.forEach(prod => {
+                    const msg = encodeURIComponent(`Hi, I'm interested in ${prod.name}.`);
+                    const card = document.createElement('div');
+                    card.className = 'product-card';
+                    card.innerHTML = `<div class="product-name">${prod.name}</div><div class="product-price">${prod.price || ''}</div><div class="product-desc">${prod.description || ''}</div><a href="https://wa.me/8613501552311?text=${msg}" target="_blank" class="btn">📲 Inquire</a>`;
+                    grid.appendChild(card);
+                });
+            });
+        })
+        .catch(e => console.error(e));
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+

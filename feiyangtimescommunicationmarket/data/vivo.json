@@ -4,6 +4,18 @@
                           "models":  [
                                          {
                                              "condition_cn":  "翻新",
+                                             "name":  "vivo V29",
+                                             "file":  "vivo_V29.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo V30",
+                                             "file":  "vivo_V30.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
                                              "name":  "vivo V40",
                                              "file":  "vivo_V40.jpg",
                                              "condition":  "Refurbished"
@@ -48,6 +60,12 @@
                                              "condition_cn":  "翻新",
                                              "name":  "vivo Y100",
                                              "file":  "vivo_Y100.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "vivo Y200",
+                                             "file":  "vivo_Y200.jpg",
                                              "condition":  "Refurbished"
                                          },
                                          {

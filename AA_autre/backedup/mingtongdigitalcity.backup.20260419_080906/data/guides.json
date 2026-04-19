@@ -1,0 +1,14 @@
+﻿{
+  "guides": [
+    {
+      "id": "guide_001",
+      "title": "SEG Plaza Floor-by-Floor Guide",
+      "title_cn": "赛格广场逐层指南",
+      "steps": ["1F-3F: Consumer goods", "4F-7F: Components", "8F-10F: Industrial parts", "11F-12F: B2B offices"],
+      "steps_cn": ["1-3楼：消费品", "4-7楼：元器件", "8-10楼：工业零件", "11-12楼：B2B办公室"],
+      "level": "All levels",
+      "level_cn": "所有级别"
+    }
+  ],
+  "updated": "2026-04-16T19:00:00"
+}

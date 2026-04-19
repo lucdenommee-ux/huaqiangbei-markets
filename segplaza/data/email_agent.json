@@ -1,7 +1,0 @@
-{
-  "status": "success",
-  "timestamp": "2026-04-16T08:00:03.125555",
-  "site": "segplaza",
-  "agent": "email_agent",
-  "content": "Erreur: Expecting value: line 1 column 1 (char 0)"
-}

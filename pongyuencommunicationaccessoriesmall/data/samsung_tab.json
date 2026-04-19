@@ -1,0 +1,85 @@
+﻿{
+    "samsung_tab_products":  {
+                                 "market":  "Fei Yang Times",
+                                 "models":  [
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab A9",
+                                                    "file":  "Galaxy_Tab_A9.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab A9 Plus",
+                                                    "file":  "Galaxy_Tab_A9_Plus.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S10",
+                                                    "file":  "Galaxy_Tab_S10.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S10 Plus",
+                                                    "file":  "Galaxy_Tab_S10_Plus.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S10 Ultra",
+                                                    "file":  "Galaxy_Tab_S10_Ultra.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S8",
+                                                    "file":  "Galaxy_Tab_S8.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S8 Plus",
+                                                    "file":  "Galaxy_Tab_S8_Plus.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S8 Ultra",
+                                                    "file":  "Galaxy_Tab_S8_Ultra.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S9",
+                                                    "file":  "Galaxy_Tab_S9.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S9 FE",
+                                                    "file":  "Galaxy_Tab_S9_FE.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S9 FE Plus",
+                                                    "file":  "Galaxy_Tab_S9_FE_Plus.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S9 Plus",
+                                                    "file":  "Galaxy_Tab_S9_Plus.jpg",
+                                                    "condition":  "Refurbished"
+                                                },
+                                                {
+                                                    "condition_cn":  "翻新",
+                                                    "name":  "Galaxy Tab S9 Ultra",
+                                                    "file":  "Galaxy_Tab_S9_Ultra.jpg",
+                                                    "condition":  "Refurbished"
+                                                }
+                                            ]
+                             }
+}

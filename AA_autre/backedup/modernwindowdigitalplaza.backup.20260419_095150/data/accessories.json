@@ -1,0 +1,57 @@
+﻿{
+  "categories": [
+    {
+      "name": "iPhone Refurbished",
+      "name_cn": "翻新iPhone",
+      "products": [
+        { "name": "iPhone 11 64GB", "condition": "Refurbished", "price": "$220 - $260", "description": "Excellent condition, unlocked." },
+        { "name": "iPhone 12 128GB", "condition": "Refurbished", "price": "$320 - $380", "description": "Like new, battery 90%+." },
+        { "name": "iPhone 13 128GB", "condition": "Refurbished", "price": "$450 - $520", "description": "Premium refurbished, original screen." }
+      ]
+    },
+    {
+      "name": "Charging Bundle",
+      "name_cn": "充电套装",
+      "products": [
+        { "name": "Kit recharge iPhone (câble + chargeur 20W)", "price": "$8.50", "description": "Fast charging compatible." },
+        { "name": "Kit recharge Android (câble USB-C + chargeur 25W)", "price": "$9.00", "description": "Super fast charging." }
+      ]
+    },
+    {
+      "name": "Wireless Earbuds",
+      "name_cn": "无线耳机",
+      "products": [
+        { "name": "AirPods Pro 2 (replica high quality)", "price": "$22", "description": "ANC, spatial audio, 1:1 design." },
+        { "name": "Basic wireless earbuds", "price": "$5", "description": "Touch control, clear sound." }
+      ]
+    },
+    {
+      "name": "Fast Chargers",
+      "name_cn": "快充头",
+      "products": [
+        { "name": "Chargeur USB-C 20W PD", "price": "$3.20", "description": "Compact, Apple compatible." },
+        { "name": "Chargeur GaN 65W", "price": "$12", "description": "2x USB-C, 1x USB-A, travel friendly." }
+      ]
+    },
+    {
+      "name": "Power Banks",
+      "name_cn": "充电宝",
+      "products": [
+        { "name": "Power bank 10000mAh slim", "price": "$8", "description": "Dual USB, LED indicator." },
+        { "name": "Power bank 20000mAh with digital display", "price": "$14", "description": "Fast charge input/output." }
+      ]
+    },
+    {
+      "name": "Ring Lights",
+      "name_cn": "环形灯",
+      "products": [
+        { "name": "Ring light 10\" with tripod", "price": "$12", "description": "3 color modes, phone holder." },
+        { "name": "Mini ring light for phone", "price": "$3.50", "description": "Clip-on, rechargeable." }
+      ]
+    }
+  ],
+  "buying_tips": {
+    "bulk_discount": "Contact us for wholesale pricing (MOQ 10+).",
+    "shipping": "Worldwide shipping available. Ask for rates."
+  }
+}

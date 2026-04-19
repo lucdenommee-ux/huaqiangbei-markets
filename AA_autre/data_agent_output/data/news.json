@@ -1,0 +1,35 @@
+{
+  "news": [
+    {
+      "id": "news_001",
+      "title": "New Import Regulations for Electronic Components in 2026",
+      "title_cn": "2026年电子元件进口新规",
+      "date": "2026-04-10",
+      "source": "Shenzhen Customs",
+      "summary": "Updated tariffs and documentation requirements for importing semiconductors and PCBs.",
+      "summary_cn": "半导体和PCB进口的最新关税和文件要求。",
+      "url": "https://shenzhenelectronicmarkets.com/news/import-regulations-2026"
+    },
+    {
+      "id": "news_002",
+      "title": "Huaqiangbei Metro Expansion: New Exit Opens",
+      "title_cn": "华强北地铁扩建：新出口开放",
+      "date": "2026-04-12",
+      "source": "Shenzhen Metro",
+      "summary": "Exit E now connects directly to SEG Plaza, improving access for buyers.",
+      "summary_cn": "E出口现在直接连接赛格广场，方便买家进出。",
+      "url": "https://shenzhenelectronicmarkets.com/news/metro-expansion"
+    },
+    {
+      "id": "news_003",
+      "title": "LED Component Prices Drop 15% in Q2 2026",
+      "title_cn": "2026年第二季度LED元件价格下降15%",
+      "date": "2026-04-14",
+      "source": "Market Report",
+      "summary": "Oversupply from manufacturers leads to price reductions across LED strips and drivers.",
+      "summary_cn": "制造商供过于求导致LED灯带和驱动器价格全面下降。",
+      "url": "https://shenzhenelectronicmarkets.com/news/led-price-drop"
+    }
+  ],
+  "updated": "2026-04-19T08:00:03.013980"
+}

@@ -28,8 +28,32 @@
                                             },
                                             {
                                                 "condition_cn":  "翻新",
+                                                "name":  "OnePlus 9 Pro",
+                                                "file":  "OnePlus_9_Pro.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus Nord 3",
+                                                "file":  "OnePlus_Nord_3.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
                                                 "name":  "OnePlus Nord 4",
                                                 "file":  "OnePlus_Nord_4.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus Nord CE4",
+                                                "file":  "OnePlus_Nord_CE4.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "OnePlus Open",
+                                                "file":  "OnePlus_Open.jpg",
                                                 "condition":  "Refurbished"
                                             }
                                         ]

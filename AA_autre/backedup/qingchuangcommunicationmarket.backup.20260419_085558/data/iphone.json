@@ -1,0 +1,187 @@
+﻿{
+    "iphone_products":  {
+                            "market":  "Fei Yang Times",
+                            "models":  [
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 11",
+                                               "file":  "iPhone_11.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 11 Pro",
+                                               "file":  "iPhone_11_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 11 Pro Max",
+                                               "file":  "iPhone_11_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 12",
+                                               "file":  "iPhone_12.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 12 Pro",
+                                               "file":  "iPhone_12_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 12 Pro Max",
+                                               "file":  "iPhone_12_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 13",
+                                               "file":  "iPhone_13.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 13 Pro",
+                                               "file":  "iPhone_13_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 13 Pro Max",
+                                               "file":  "iPhone_13_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 14",
+                                               "file":  "iPhone_14.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 14 Pro",
+                                               "file":  "iPhone_14_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 14 Pro Max",
+                                               "file":  "iPhone_14_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 15",
+                                               "file":  "iPhone_15.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 15 Pro",
+                                               "file":  "iPhone_15_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 15 Pro Max",
+                                               "file":  "iPhone_15_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 16",
+                                               "file":  "iPhone_16.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 16 Pro",
+                                               "file":  "iPhone_16_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 16 Pro Max",
+                                               "file":  "iPhone_16_Pro_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 6s",
+                                               "file":  "iPhone_6s.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 6s Plus",
+                                               "file":  "iPhone_6s_Plus.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 7",
+                                               "file":  "iPhone_7.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 7 Plus",
+                                               "file":  "iPhone_7_Plus.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 8",
+                                               "file":  "iPhone_8.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone 8 Plus",
+                                               "file":  "iPhone_8_Plus.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone SE 20202022 (2)",
+                                               "file":  "iPhone_SE_20202022 (2).jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone SE 20202022",
+                                               "file":  "iPhone_SE_20202022.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone X",
+                                               "file":  "iPhone_X.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone XR",
+                                               "file":  "iPhone_XR.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone XS",
+                                               "file":  "iPhone_XS.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "iPhone XS Max",
+                                               "file":  "iPhone_XS_Max.jpg",
+                                               "condition":  "Refurbished"
+                                           }
+                                       ]
+                        }
+}

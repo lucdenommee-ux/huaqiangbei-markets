@@ -1,0 +1,229 @@
+﻿{
+    "samsung_products":  {
+                             "market":  "Fei Yang Times",
+                             "models":  [
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A14 5G",
+                                                "file":  "Galaxy_A14_5G.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A33",
+                                                "file":  "Galaxy_A33.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A34",
+                                                "file":  "Galaxy_A34.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A34 5G",
+                                                "file":  "Galaxy_A34_5G.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A35",
+                                                "file":  "Galaxy_A35.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A54",
+                                                "file":  "Galaxy_A54.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A54 5G",
+                                                "file":  "Galaxy_A54_5G.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy A55",
+                                                "file":  "Galaxy_A55.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M32",
+                                                "file":  "Galaxy_M32.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M34",
+                                                "file":  "Galaxy_M34.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M35",
+                                                "file":  "Galaxy_M35.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M53",
+                                                "file":  "Galaxy_M53.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M54",
+                                                "file":  "Galaxy_M54.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy M55",
+                                                "file":  "Galaxy_M55.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Note 20 Ultra",
+                                                "file":  "Galaxy_Note_20_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S21 Ultra",
+                                                "file":  "Galaxy_S21_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S22 Ultra",
+                                                "file":  "Galaxy_S22_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S23",
+                                                "file":  "Galaxy_S23.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S23 Plus",
+                                                "file":  "Galaxy_S23_Plus.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S23 Ultra",
+                                                "file":  "Galaxy_S23_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S24",
+                                                "file":  "Galaxy_S24.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S24 Plus",
+                                                "file":  "Galaxy_S24_Plus.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S24 Ultra",
+                                                "file":  "Galaxy_S24_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S25",
+                                                "file":  "Galaxy_S25.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S25 Edge",
+                                                "file":  "Galaxy_S25_Edge.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S25 Plus",
+                                                "file":  "Galaxy_S25_Plus.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S25 Ultra",
+                                                "file":  "Galaxy_S25_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S26",
+                                                "file":  "Galaxy_S26.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S26 Plus",
+                                                "file":  "Galaxy_S26_Plus.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy S26 Ultra",
+                                                "file":  "Galaxy_S26_Ultra.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy XCover7",
+                                                "file":  "Galaxy_XCover7.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Flip5",
+                                                "file":  "Galaxy_Z_Flip5.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Flip6",
+                                                "file":  "Galaxy_Z_Flip6.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Flip7",
+                                                "file":  "Galaxy_Z_Flip7.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Fold5",
+                                                "file":  "Galaxy_Z_Fold5.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Fold6",
+                                                "file":  "Galaxy_Z_Fold6.jpg",
+                                                "condition":  "Refurbished"
+                                            },
+                                            {
+                                                "condition_cn":  "翻新",
+                                                "name":  "Galaxy Z Fold7",
+                                                "file":  "Galaxy_Z_Fold7.jpg",
+                                                "condition":  "Refurbished"
+                                            }
+                                        ]
+                         }
+}

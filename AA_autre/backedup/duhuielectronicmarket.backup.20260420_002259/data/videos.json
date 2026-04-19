@@ -1,0 +1,19 @@
+[
+    {
+        "thumbnail":  "https://img.youtube.com/vi/J8HrE5mM9WU/maxresdefault.jpg",
+        "market_name":  "Du Hui Electronic Market",
+        "date":  "2026-04-14",
+        "summary":  "Complete guide for sourcing components and products",
+        "title":  "How to Source Electronics in Huaqiangbei",
+        "url":  "https://www.youtube.com/embed/J8HrE5mM9WU"
+    },
+    {
+        "date":  "2026-03-06",
+        "title":  "Template: Du Hui Electronic Market 鈥?first video",
+        "platform":  "YouTube",
+        "url":  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "market_slug":  "duhuielectronicmarket",
+        "market_name":  "Du Hui Electronic Market",
+        "site_domain":  "duhuielectronicmarket.com"
+    }
+]

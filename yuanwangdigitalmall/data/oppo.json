@@ -46,6 +46,30 @@
                                          },
                                          {
                                              "condition_cn":  "翻新",
+                                             "name":  "OPPO Reno 11",
+                                             "file":  "OPPO_Reno_11.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Reno 12",
+                                             "file":  "OPPO_Reno_12.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Reno 13",
+                                             "file":  "OPPO_Reno_13.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "OPPO Reno 14",
+                                             "file":  "OPPO_Reno_14.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
                                              "name":  "OPPO Reno 14 Pro",
                                              "file":  "OPPO_Reno_14_Pro.jpg",
                                              "condition":  "Refurbished"
