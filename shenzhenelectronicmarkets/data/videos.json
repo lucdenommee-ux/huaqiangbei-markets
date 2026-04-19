@@ -1,11 +1,25 @@
-[
-  {
-    "date": "2026-03-06",
-    "title": "Template: Ai Hua Electronic Market — first video",
-    "platform": "YouTube",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "market_slug": "aihuaelectronicmarket",
-    "market_name": "Ai Hua Electronic Market",
-    "site_domain": "aihuaelectronicmarket.com"
-  }
-]
+﻿{
+  "videos": [
+    {
+      "id": "vid_001",
+      "title": "Shenzhen: The Silicon Valley of Hardware (Documentary)",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Z8l0VpzNqG8",
+      "thumbnail": "https://img.youtube.com/vi/Z8l0VpzNqG8/hqdefault.jpg"
+    },
+    {
+      "id": "vid_002",
+      "title": "Huaqiangbei Market Tour by Barrett",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=jO5LxJNxK7I",
+      "thumbnail": "https://img.youtube.com/vi/jO5LxJNxK7I/hqdefault.jpg"
+    },
+    {
+      "id": "vid_003",
+      "title": "Inside the World's Biggest Electronics Market",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=YtZ0YqGkK9o",
+      "thumbnail": "https://img.youtube.com/vi/YtZ0YqGkK9o/hqdefault.jpg"
+    }
+  ]
+}

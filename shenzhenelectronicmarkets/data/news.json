@@ -1,35 +1,58 @@
-{
+﻿{
   "news": [
     {
       "id": "news_001",
-      "title": "New Import Regulations for Electronic Components in 2026",
-      "title_cn": "2026年电子元件进口新规",
-      "date": "2026-04-10",
-      "source": "Shenzhen Customs",
-      "summary": "Updated tariffs and documentation requirements for importing semiconductors and PCBs.",
-      "summary_cn": "半导体和PCB进口的最新关税和文件要求。",
-      "url": "https://shenzhenelectronicmarkets.com/news/import-regulations-2026"
+      "title": "Huaqiangbei Reports 35% Revenue Jump During Chinese New Year",
+      "title_cn": "华强北春节营收同比增长35%",
+      "date": "2026-02-22",
+      "source": "Shenzhen Government",
+      "summary": "Huaqiangbei reported a 35% increase in revenue during the Chinese New Year holiday season, driven by strong tech product sales.",
+      "url": "https://www.sz.gov.cn/en_szgov/news/latest/content/post_12650666.html"
     },
     {
       "id": "news_002",
-      "title": "Huaqiangbei Metro Expansion: New Exit Opens",
-      "title_cn": "华强北地铁扩建：新出口开放",
-      "date": "2026-04-12",
-      "source": "Shenzhen Metro",
-      "summary": "Exit E now connects directly to SEG Plaza, improving access for buyers.",
-      "summary_cn": "E出口现在直接连接赛格广场，方便买家进出。",
-      "url": "https://shenzhenelectronicmarkets.com/news/metro-expansion"
+      "title": "Huaqiangbei Issues First Official AI Recommendation List",
+      "title_cn": "华强北发布首份官方AI推荐榜单",
+      "date": "2026-02-13",
+      "source": "Eyeshenzhen",
+      "summary": "The list, compiled from sales data, highlights eight hardware categories driving pre-holiday sales: drones, robotics, AI smart glasses, AI toys, and more.",
+      "url": "https://www.eyeshenzhen.com/content/2026-02/13/content_31948001.htm"
     },
     {
       "id": "news_003",
-      "title": "LED Component Prices Drop 15% in Q2 2026",
-      "title_cn": "2026年第二季度LED元件价格下降15%",
-      "date": "2026-04-14",
-      "source": "Market Report",
-      "summary": "Oversupply from manufacturers leads to price reductions across LED strips and drivers.",
-      "summary_cn": "制造商供过于求导致LED灯带和驱动器价格全面下降。",
-      "url": "https://shenzhenelectronicmarkets.com/news/led-price-drop"
+      "title": "Heat Map Shows What's Moving Off Shelves in Huaqiangbei",
+      "title_cn": "热力图显示华强北热销产品",
+      "date": "2026-03-05",
+      "source": "China Daily",
+      "summary": "Huaqiangbei sub-district government released an AI sales heat map, showing drones are red-hot and AI toys rocketed 200%.",
+      "url": "https://www.chinadailyhk.com/hk/article/629900"
+    },
+    {
+      "id": "news_004",
+      "title": "Storage Chip Spot Prices Plunge in Huaqiangbei",
+      "title_cn": "华强北存储芯片现货价格跳水",
+      "date": "2026-04-03",
+      "source": "Beijing News",
+      "summary": "DDR4 and DDR5 memory module prices have fallen 20-30% since mid-March in Huaqiangbei's spot market.",
+      "url": "https://cbgc.scol.com.cn/news/7450738"
+    },
+    {
+      "id": "news_005",
+      "title": "Mobile Phone Price Hike Sweeps Huaqiangbei",
+      "title_cn": "手机涨价潮席卷华强北",
+      "date": "2026-03-30",
+      "source": "China Times",
+      "summary": "Mid-to-low-end smartphone prices have risen by up to 30% due to AI-driven storage chip shortages.",
+      "url": "https://m.chinatimes.net.cn/article/151795.html"
+    },
+    {
+      "id": "news_006",
+      "title": "Wired Earphones Make a Comeback in Huaqiangbei",
+      "title_cn": "有线耳机在华强北“翻红”",
+      "date": "2026-04-10",
+      "source": "National Business Daily",
+      "summary": "After years of decline, wired earphones saw a 20% sales increase in early 2026, though Bluetooth remains the mainstay.",
+      "url": "https://www.nbd.com.cn/articles/2026-04-10/4108151.html"
     }
-  ],
-  "updated": "2026-04-19T08:00:07.947199"
+  ]
 }
