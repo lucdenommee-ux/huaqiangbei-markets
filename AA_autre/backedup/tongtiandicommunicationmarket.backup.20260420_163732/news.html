@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Tong Tian Di Communication Market</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .news-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 25px;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: var(--accent, #93c5fd);
+        }
+        .news-category {
+            display: inline-block;
+            background: rgba(147,197,253,0.15);
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: var(--accent, #93c5fd);
+            margin-bottom: 12px;
+        }
+        .news-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .news-title-cn {
+            font-size: 1.2rem;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        .news-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            color: var(--accent, #93c5fd);
+            font-size: 0.9rem;
+        }
+        .news-summary {
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        .news-tip {
+            background: rgba(167,243,208,0.08);
+            border-left: 4px solid #a7f3d0;
+            padding: 12px 18px;
+            border-radius: 8px;
+            color: #a7f3d0;
+            font-weight: 500;
+        }
+        .back-link {
+            margin-top: 40px;
+        }
+    </style>
+<style>
+    /* Bouton flottant Market (visible partout) */
+    .floating-market-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #ff0000;
+        color: white !important;
+        padding: 14px 22px;
+        border-radius: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+        z-index: 9999;
+        border: 2px solid white;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .floating-market-btn:hover {
+        background: white;
+        color: #ff0000 !important;
+        transform: scale(1.05);
+    }
+    /* Mise en évidence de l'onglet Market dans la nav */
+    .nav a[href="market.html"] {
+        color: #ff0000 !important;
+        border-bottom: 3px solid #ff0000;
+        padding-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title">Tong Tian Di</div>
+                    <div class="subtitle">Communication Market</div>
+                </div>
+            </div>
+            <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="tablettes.html">Tablettes</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html" class="active">news</a>
+    <a href="guide.html">Guide</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h1>📰 Tong Tian Di Market News</h1>
+        <p class="muted">Latest pricing, stock updates, and sourcing tips – directly from the world's largest refurbished electronics hub.</p>
+
+        <div class="news-grid">
+            <!-- iPhone 16 -->
+            <div class="news-card">
+                <span class="news-category">📱 iPhones</span>
+                <div class="news-title">Massive Influx of Refurbished iPhone 16 Pros</div>
+                <div class="news-title-cn">iPhone 16 Pro 翻新机大量到货</div>
+                <div class="news-meta"><span>📅 2026-04-15</span></div>
+                <div class="news-summary">Grade A iPhone 16 Pro Max units are now flooding the 2nd and 3rd floors. Wholesale prices have dropped 15% this month. Check battery cycles – some units have under 10 cycles.</div>
+                <div class="news-tip">💡 Luc's Tip: Always verify battery cycle count via settings.</div>
+            </div>
+
+            <!-- OLED Screens -->
+            <div class="news-card">
+                <span class="news-category">🛠️ Parts</span>
+                <div class="news-title">New 'Ultra-Thin Hard OLED' Screens for iPhone 15/16</div>
+                <div class="news-title-cn">iPhone 15/16 超薄硬性OLED屏幕上市</div>
+                <div class="news-meta"><span>📅 2026-04-10</span></div>
+                <div class="news-summary">Shenzhen manufacturers have launched a new generation of compatible OLED screens that match original brightness at one-third the cost. Avoid cheaper 'In-cell' screens – they drain 20% more battery.</div>
+                <div class="news-tip">🔧 Repair shops: Hard OLED is the best value right now.</div>
+            </div>
+
+            <!-- Logistics -->
+            <div class="news-card">
+                <span class="news-category">📦 Shipping</span>
+                <div class="news-title">Logistics Alert: Stricter Battery Shipping Rules</div>
+                <div class="news-title-cn">物流提醒：锂电池运输新规</div>
+                <div class="news-meta"><span>📅 2026-04-12</span></div>
+                <div class="news-summary">Shenzhen Airport (SZX) now requires special battery lines for packages containing more than two phones with built-in batteries. Delivery to Europe/Canada now takes 5-9 days (up from 5). Consolidate orders to optimize DG costs.</div>
+                <div class="news-tip">📌 Plan ahead for bulk phone shipments.</div>
+            </div>
+
+            <!-- Samsung -->
+            <div class="news-card">
+                <span class="news-category">📱 Android</span>
+                <div class="news-title">Samsung S24 Ultra Prices Drop $120</div>
+                <div class="news-title-cn">三星S24 Ultra 价格下跌120美元</div>
+                <div class="news-meta"><span>📅 2026-04-08</span></div>
+                <div class="news-summary">Grade A+ refurbished Galaxy S24 Ultra units have fallen by $120 in 30 days due to surplus stock from Korea and the US. Now is the best time to source high-end Android.</div>
+                <div class="news-tip">📊 1st floor has the best selection.</div>
+            </div>
+
+            <!-- AirPods -->
+            <div class="news-card">
+                <span class="news-category">🎧 AirPods</span>
+                <div class="news-title">AirPods 'PodsPro 3' with Touchscreen Cases Arrive</div>
+                <div class="news-title-cn">带触屏的AirPods 'PodsPro 3' 到货</div>
+                <div class="news-meta"><span>📅 2026-04-05</span></div>
+                <div class="news-summary">New AirPods-style earbuds with LCD touchscreen charging cases are flooding the 1st floor. Control ANC, EQ, and find your buds without the phone. Quality varies – we only source models with Airoha 1562F chip for true -35dB ANC.</div>
+                <div class="news-tip">🎵 Always test ANC in a noisy environment before buying.</div>
+            </div>
+
+            <!-- MacBooks -->
+            <div class="news-card">
+                <span class="news-category">💻 Laptops</span>
+                <div class="news-title">MacBook Air M2/M3 Surplus – Prices Drop 20%</div>
+                <div class="news-title-cn">MacBook Air M2/M3 过剩 价格下跌20%</div>
+                <div class="news-meta"><span>📅 2026-04-01</span></div>
+                <div class="news-summary">Corporate fleet refreshes in Shenzhen have flooded the 3rd floor with MacBook Air M2/M3 units. Grade A M2 models are down 20% – best value for export. Most are 8GB/256GB; 16GB versions are starting to appear.</div>
+                <div class="news-tip">🔋 Insist on battery cycles under 150 for client orders.</div>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <div class="small">
+                <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311</div>
+                <div class="muted">© 2026 All rights reserved — Tong Tian Di Communication Market</div>
+            </div>
+        </div>
+    </footer>
+<a href="market.html" class="floating-market-btn" title="Go to Market">📊 MARKET</a>
+</body>
+</html>
+
+
+
+

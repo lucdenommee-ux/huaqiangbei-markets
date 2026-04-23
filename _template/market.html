@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Ecosystem – {{MARKET_SHORT_NAME}}</title>
+    <meta name="description" content="Complete sourcing guide for {{MARKET_SHORT_NAME}}: iPhone grades, parts, vendors, and logistics.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root {
+            --neon-green: #00ff41;
+            --warning-red: #ff3e3e;
+            --bg-dark: #0a0a0a;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 { color: #fff; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background: #111;
+            color: var(--neon-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        td { color: #ccc; }
+        .market-actions {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .action-card {
+            background: #1a1a1a;
+            border: 1px solid var(--neon-green);
+            padding: 25px;
+            border-radius: 15px;
+            flex: 1;
+        }
+        .action-card h4 {
+            color: var(--neon-green);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .action-card a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .luc-audit-box {
+            background: linear-gradient(145deg, #1e1e1e, #111);
+            border-left: 5px solid var(--warning-red);
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 0 15px 15px 0;
+        }
+        .luc-audit-box h3 {
+            color: var(--warning-red);
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .audit-list {
+            list-style: none;
+            padding: 0;
+        }
+        .audit-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            font-weight: bold;
+        }
+        .audit-list li::before {
+            content: "✔️ ";
+            color: var(--neon-green);
+        }
+        .shipping-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .shipping-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        .shipping-icon { font-size: 32px; display: block; margin-bottom: 15px; }
+        .shipping-card h4 { color: #fff; margin: 0 0 10px; text-transform: uppercase; }
+        .shipping-card p { color: #888; font-size: 14px; line-height: 1.6; }
+        .sample-request-box {
+            background: #111;
+            border: 2px dashed #333;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .sample-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .sample-header .icon { font-size: 30px; }
+        .sample-header h3 { margin: 0; color: #fff; text-transform: uppercase; }
+        .sample-steps {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        .step { font-size: 13px; color: #aaa; flex: 1; }
+        .step span {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: var(--warning-red);
+            color: white;
+            border-radius: 50%;
+            line-height: 30px;
+            margin: 0 auto 10px;
+            font-weight: bold;
+        }
+        .sample-btn {
+            display: inline-block;
+            background: var(--warning-red);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .sample-btn:hover { background: #cc0000; transform: scale(1.05); }
+        .faq-container { max-width: 800px; margin: 40px auto; }
+        .faq-question {
+            width: 100%;
+            background: #1a1a1a;
+            color: white;
+            padding: 18px;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid #333;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .faq-question:hover { background: #222; color: var(--warning-red); }
+        .faq-answer {
+            padding: 0 18px;
+            background: #111;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .faq-answer p { padding: 15px 0; color: #aaa; font-size: 14px; line-height: 1.6; }
+        .vendor-matrix { overflow-x: auto; }
+        .protection-banner {
+            background: rgba(255,62,62,0.1);
+            border: 1px solid var(--warning-red);
+            padding: 15px 25px;
+            border-radius: 40px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .nav a.active {
+        color: var(--neon-green) !important;
+        border-bottom: 3px solid var(--neon-green);
+        padding-bottom: 5px;
+    }
+</style>
+<style>
+    /* Bouton flottant Market (visible partout) */
+    .floating-market-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #ff0000;
+        color: white !important;
+        padding: 14px 22px;
+        border-radius: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+        z-index: 9999;
+        border: 2px solid white;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .floating-market-btn:hover {
+        background: white;
+        color: #ff0000 !important;
+        transform: scale(1.05);
+    }
+    /* Mise en évidence de l'onglet Market dans la nav */
+    .nav a[href="market.html"] {
+        color: #ff0000 !important;
+        border-bottom: 3px solid #ff0000;
+        padding-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title">{{MARKET_SHORT_NAME}}</div>
+                    <div class="subtitle">Communication Market</div>
+                </div>
+            </div>
+            <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html" class="active">market</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="tablettes.html">Tablettes</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News</a>
+    <a href="guide.html">Guide</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h1>🏬 Market Ecosystem: {{MARKET_SHORT_NAME}}</h1>
+        <p class="muted">The world's refurbished iPhone epicenter – prices update daily at 2:00 PM.</p>
+        
+        <div class="protection-banner">
+            🛡️ <strong>Luc Junior Protection:</strong> "I’m not just a seller; I’m your technical inspector in Shenzhen. If it’s not perfect, it doesn’t ship."
+        </div>
+
+        <!-- MAIN PRODUCT CATEGORIES -->
+        <h2>📱 Main Product Categories</h2>
+        <table>
+            <tr><th>Category</th><th>{{MARKET_SHORT_NAME}} Specialty</th><th>Floors</th></tr>
+            <tr><td>iPhones (Retail)</td><td>Grade A+ (Pristine) to Grade C (Export)</td><td>2F, 3F</td></tr>
+            <tr><td>Android Flagships</td><td>Samsung S-Series, Google Pixel, Huawei</td><td>2F</td></tr>
+            <tr><td>Replacement Parts</td><td>OLED Screens, Batteries, Original Chassis</td><td>4F</td></tr>
+            <tr><td>Audio & Wearables</td><td>AirPods (All chips), Apple Watch, Gadgets</td><td>1F</td></tr>
+            <tr><td>Laptops/Tablets</td><td>MacBooks (M1/M2/M3), iPads Pro/Air</td><td>3F</td></tr>
+        </table>
+
+        <!-- ADVANCED TECHNICAL SOURCING -->
+        <h2>🛠️ Advanced Technical Sourcing</h2>
+        <ul>
+            <li><strong>IC Chips & Motherboards:</strong> Bare boards or FaceID-paired modules for complex repairs.</li>
+            <li><strong>Refurbishing Machinery:</strong> Vacuum laminating machines, rear glass lasers, screen programmers.</li>
+            <li><strong>Testing Hardware:</strong> Battery testers, MFi cable testers, thermal cameras for diagnostics.</li>
+        </ul>
+
+        <!-- VENDOR SELECTION MATRIX -->
+        <h2>📊 Vendor Selection Matrix</h2>
+        <div class="vendor-matrix">
+            <table>
+                <tr><th>Vendor Type</th><th>Specialty</th><th>Reliability</th><th>Price</th><th>Luc's Recommendation</th></tr>
+                <tr><td>The Wholesaler (Stock-holder)</td><td>iPhone Grades A/A+</td><td>⭐⭐⭐⭐⭐</td><td>Fixed (Market Rate)</td><td>Ideal for export to Europe/USA. Consistent quality.</td></tr>
+                <tr><td>The Parts Specialist (4F)</td><td>Screens, Batteries, ICs</td><td>⭐⭐⭐⭐</td><td>Negotiable</td><td>Best for repair centers. Original components.</td></tr>
+                <tr><td>The Broker (Intermediary)</td><td>All Models</td><td>⭐⭐</td><td>Very Low</td><td>Avoid. Risk of poor-quality "swap" parts.</td></tr>
+                <tr><td>The "Factory Refurb"</td><td>Older Models (11/12/13)</td><td>⭐⭐⭐</td><td>Competitive</td><td>Perfect for emerging markets. Good value.</td></tr>
+            </table>
+        </div>
+
+        <!-- LUC'S 5 AUDIT POINTS -->
+        <div class="luc-audit-box">
+            <h3>🔍 Luc's 5-Point Audit (Before Choosing a Vendor)</h3>
+            <ul class="audit-list">
+                <li><strong>The "Volume" Test:</strong> A serious vendor must have at least 50 units of the same model on display.</li>
+                <li><strong>"Seal" Inspection:</strong> Vendors who pride themselves on quality use their own warranty seals.</li>
+                <li><strong>Reaction to Testing:</strong> If they hesitate when we pull out 3uTools, we walk away.</li>
+                <li><strong>Return History:</strong> We only work with stalls operating for over 2 years.</li>
+                <li><strong>Accessory Quality:</strong> Free cables are discarded—they risk battery damage.</li>
+            </ul>
+        </div>
+
+        <!-- B4AE AUDIT PROTOCOL -->
+        <div class="luc-audit-box">
+            <h3>🛡️ The "B4AE" Audit Protocol</h3>
+            <p>We work exclusively with the <strong>Top 5%</strong> of vendors at {{MARKET_SHORT_NAME}}. Each supplier is rated on after-sales responsiveness, grading accuracy, and component compliance.</p>
+            <ul class="audit-list">
+                <li>🚫 No "Blacklisted" vendors allowed.</li>
+                <li>🔍 Physical inspection of every single unit prior to payment.</li>
+                <li>⚖️ Aggressive price negotiation based on actual volume.</li>
+            </ul>
+        </div>
+
+        <!-- LOGISTICS & SHIPPING -->
+        <h2>🚢 International Logistics</h2>
+        <table>
+            <tr><th>Method</th><th>Destination</th><th>Transit Time</th><th>Key Features</th></tr>
+            <tr><td>Special Line (DDP)</td><td>Europe / Canada</td><td>8 – 12 days</td><td>Taxes/duties included. Door-to-door.</td></tr>
+            <tr><td>DHL / FedEx (Express)</td><td>Worldwide</td><td>3 – 5 days</td><td>Ultra-fast. Ideal for samples.</td></tr>
+            <tr><td>Air Freight (Cargo)</td><td>Africa / Middle East</td><td>10 – 15 days</td><td>Cost-effective for >100kg.</td></tr>
+        </table>
+
+        <div class="shipping-info-grid">
+            <div class="shipping-card">
+                <span class="shipping-icon">🌍</span>
+                <h4>Global Tracking</h4>
+                <p>Tracking number provided within 24h. Track on 17track or our portal.</p>
+            </div>
+            <div class="shipping-card">
+                <span class="shipping-icon">🛡️</span>
+                <h4>Transit Insurance</h4>
+                <p>100% insured against loss or unjustified customs seizure.</p>
+            </div>
+        </div>
+        <p><strong>💡 Luc's Logistics Tip:</strong> "For Europe/Canada, I recommend DDP Special Line. Slightly higher cost but no tax surprises."</p>
+
+        <!-- SAMPLE REQUEST -->
+        <div class="sample-request-box">
+            <div class="sample-header">
+                <span class="icon">📦</span>
+                <h3>Ready to Test {{MARKET_SHORT_NAME}} Quality?</h3>
+            </div>
+            <p>Don't guess—test. Receive samples in 5-7 business days.</p>
+            <div class="sample-steps">
+                <div class="step"><span>1</span> Choose models</div>
+                <div class="step"><span>2</span> Get complete quote</div>
+                <div class="step"><span>3</span> Video validation by Luc</div>
+            </div>
+            <a href="https://wa.me/8613501552311?text=I'd%20like%20to%20order%20a%20sample%20from%20Fei%20Yang%20Times" class="sample-btn">Start My Sample Order</a>
+        </div>
+
+        <!-- ACTION CARDS -->
+        <div class="market-actions">
+            <div class="action-card">
+                <h4>Request Sample</h4>
+                <p>Test quality before bulk orders.</p>
+                <a href="https://wa.me/8613501552311">WhatsApp Luc</a>
+            </div>
+            <div class="action-card">
+                <h4>Verify Vendor</h4>
+                <p>Have a contact? I'll verify their stall for you.</p>
+                <a href="https://wa.me/8613501552311">Verify Now</a>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">1. What is the difference between your grading system and others?</button>
+                <div class="faq-answer"><p>Our Grade A+ means zero micro-scratches, ≥90% battery health, all original parts. We reject "Unknown Part" messages.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">2. How can I be sure I'll receive what I ordered?</button>
+                <div class="faq-answer"><p>Before shipment, you get a personalized video with IMEI, 3uTools report, functional tests, and sealing footage.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">3. What happens if a product arrives defective?</button>
+                <div class="faq-answer"><p>7-day warranty. Hardware failure (excluding physical damage) = credit or replacement in next order. Warranty seal must be intact.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">4. What payment methods do you accept?</button>
+                <div class="faq-answer"><p>Small orders: Alipay, WeChat Pay, USDT. Wholesale: Bank Transfer (T/T) or Wise.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">5. Are there any customs fees?</button>
+                <div class="faq-answer"><p>DDP Special Line includes taxes/duties. DHL/FedEx: customer's responsibility.</p></div>
+            </div>
+        </div>
+
+        <!-- CONTACT UNIVERSEL -->
+        <div class="contact-universel" style="margin-top:50px;">
+            <h3>📞 Contact & Support</h3>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+                <div><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" style="width:60px;border-radius:8px;"><br>WhatsApp<br>+86 135 0155 2311</div>
+                <div><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" style="width:60px;border-radius:8px;"><br>WeChat<br>luc-2025</div>
+                <div>📧 contact@segplaza.com<br>📱 +86 135 0155 2311</div>
+            </div>
+            <p style="margin-top:20px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets</p>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="small">
+                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311</div>
+                    <div class="muted">© 2026 All rights reserved — {{MARKET_FULL_NAME}}</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        (function() {
+            const questions = document.querySelectorAll('.faq-question');
+            questions.forEach(q => {
+                q.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        })();
+    </script>
+<a href="market.html" class="floating-market-btn" title="Go to Market">📊 MARKET</a>
+</body>
+</html>
+
+
+
+
+
+

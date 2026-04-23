@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>segplaza - Tablettes</title>
+    <title>SEG Plaza - Tablettes</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-top: 20px; }
@@ -17,15 +17,55 @@
         .btn:hover { background: linear-gradient(135deg, rgba(147,197,253,0.4), rgba(167,243,208,0.25)); border-color: var(--accent); text-decoration: none; }
         .tips-box { background: rgba(147,197,253,0.05); border-left: 3px solid var(--accent); padding: 16px 20px; border-radius: 12px; margin-top: 30px; }
     </style>
+<style>
+    /* Bouton flottant Market (visible partout) */
+    .floating-market-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #ff0000;
+        color: white !important;
+        padding: 14px 22px;
+        border-radius: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+        z-index: 9999;
+        border: 2px solid white;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .floating-market-btn:hover {
+        background: white;
+        color: #ff0000 !important;
+        transform: scale(1.05);
+    }
+    /* Mise en évidence de l'onglet Market dans la nav */
+    .nav a[href="market.html"] {
+        color: #ff0000 !important;
+        border-bottom: 3px solid #ff0000;
+        padding-bottom: 5px;
+    }
+</style>
 </head>
 <body>
     <div class="topbar">
         <div class="topbar-inner">
-            <div class="brand"><div class="logo"></div><div><div class="title">segplaza</div><div class="subtitle">飞扬时代通讯市场</div></div></div>
+            <div class="brand"><div class="logo"></div><div><div class="title">SEG Plaza</div><div class="subtitle">赛格广场</div></div></div>
             <div class="nav">
-                <a href="index.html">Home</a><a href="mobile.html">Mobile</a><a href="laptops.html">Laptops</a><a href="tablettes.html" class="active">Tablettes</a><a href="airpods.html">AirPods</a><a href="directory.html">Directory</a><a href="news.html">News</a><a href="videos.html">Videos</a><a href="guide.html">Guide</a>
-            </div>
-            <div class="lang"><a href="#" class="active">EN</a><a href="#">中文</a></div>
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="tablettes.html" class="active">tablettes</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News</a>
+    <a href="guide.html">Guide</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+            <div class="lang"><a href="#" >EN</a><a href="#">中文</a></div>
         </div>
     </div>
     <div class="wrap">
@@ -297,6 +337,12 @@
         </div>
         <footer><div class="wrap"><div class="small"><div><b>Luc Junior Denommee</b> · Foreign Trade Expert · WhatsApp: +86 135 0155 2311</div><div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div></div></div></footer>
     </div>
+<a href="market.html" class="floating-market-btn" title="Go to Market">📊 MARKET</a>
 </body>
 </html>
+
+
+
+
+
 

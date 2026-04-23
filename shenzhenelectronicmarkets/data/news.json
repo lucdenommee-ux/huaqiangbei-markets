@@ -2,12 +2,12 @@
   "news": [
     {
       "id": "news_001",
-      "title": "Huaqiangbei Reports 35% Revenue Jump During Chinese New Year",
-      "title_cn": "华强北春节营收同比增长35%",
-      "date": "2026-02-22",
-      "source": "Shenzhen Government",
-      "summary": "Huaqiangbei reported a 35% increase in revenue during the Chinese New Year holiday season, driven by strong tech product sales.",
-      "url": "https://www.sz.gov.cn/en_szgov/news/latest/content/post_12650666.html"
+      "title": "AI Smart Glasses Become 2026's 'Must-Have' Tech",
+      "title_cn": "AI眼镜成为2026年“必备”科技单品",
+      "date": "2026-02-28",
+      "source": "Eyeshenzhen",
+      "summary": "Sales of AI smart glasses in Huaqiangbei have surged by 70% to 80% in the last two months, boosted by their inclusion in the government's 2026 'trade-in' subsidy catalog. Budget-friendly models start around 150 yuan.",
+      "url": "#"
     },
     {
       "id": "news_002",
@@ -15,44 +15,125 @@
       "title_cn": "华强北发布首份官方AI推荐榜单",
       "date": "2026-02-13",
       "source": "Eyeshenzhen",
-      "summary": "The list, compiled from sales data, highlights eight hardware categories driving pre-holiday sales: drones, robotics, AI smart glasses, AI toys, and more.",
-      "url": "https://www.eyeshenzhen.com/content/2026-02/13/content_31948001.htm"
+      "summary": "The list highlights eight hardware categories driving pre-holiday sales: Drones, Robotics, AI Smart Glasses, AI Toys, AI Watches, AI Translation Devices, AI Learning Devices, and AI Speakers.",
+      "url": "#"
     },
     {
       "id": "news_003",
-      "title": "Heat Map Shows What's Moving Off Shelves in Huaqiangbei",
-      "title_cn": "热力图显示华强北热销产品",
-      "date": "2026-03-05",
-      "source": "China Daily",
-      "summary": "Huaqiangbei sub-district government released an AI sales heat map, showing drones are red-hot and AI toys rocketed 200%.",
-      "url": "https://www.chinadailyhk.com/hk/article/629900"
+      "title": "Vintage CCD Cameras Make a Comeback, Prices Soar",
+      "title_cn": "复古CCD相机价格飙升，成华强北新宠",
+      "date": "2026-02-28",
+      "source": "Eyeshenzhen",
+      "summary": "Once sold by the kilogram as 'e-waste', CCD digital cameras are now fetching upwards of 2,500 yuan, driven by Gen Z and Millennials seeking a retro aesthetic.",
+      "url": "#"
     },
     {
       "id": "news_004",
-      "title": "Storage Chip Spot Prices Plunge in Huaqiangbei",
-      "title_cn": "华强北存储芯片现货价格跳水",
-      "date": "2026-04-03",
-      "source": "Beijing News",
-      "summary": "DDR4 and DDR5 memory module prices have fallen 20-30% since mid-March in Huaqiangbei's spot market.",
-      "url": "https://cbgc.scol.com.cn/news/7450738"
+      "title": "Huaqiangbei Reports 35% Revenue Jump During Chinese New Year",
+      "title_cn": "华强北春节假期营收同比增长35%",
+      "date": "2026-02-22",
+      "source": "Shenzhen Government",
+      "summary": "Overall technology sales rose by more than 30% in the two months prior, with AI smart glasses up 70-80% and drones/robots up 30-50%.",
+      "url": "#"
     },
     {
       "id": "news_005",
-      "title": "Mobile Phone Price Hike Sweeps Huaqiangbei",
-      "title_cn": "手机涨价潮席卷华强北",
-      "date": "2026-03-30",
-      "source": "China Times",
-      "summary": "Mid-to-low-end smartphone prices have risen by up to 30% due to AI-driven storage chip shortages.",
-      "url": "https://m.chinatimes.net.cn/article/151795.html"
+      "title": "AI Products Now Represent 41% of Huaqiangbei's Product Mix",
+      "title_cn": "AI产品在华强北产品结构中的占比已达41%",
+      "date": "2026-03-07",
+      "source": "Shenzhen Futian Government",
+      "summary": "The share of AI products in Huaqiangbei's overall product mix has grown from about 12% in 2023 to 41% in 2026, signaling a major market repositioning.",
+      "url": "#"
     },
     {
       "id": "news_006",
-      "title": "Wired Earphones Make a Comeback in Huaqiangbei",
-      "title_cn": "有线耳机在华强北“翻红”",
+      "title": "Foreign Buyer Traffic Surges Over 30% During Canton Fair",
+      "title_cn": "广交会期间华强北外籍客流量激增超30%",
+      "date": "2026-04-18",
+      "source": "Southcn.com",
+      "summary": "During the Canton Fair, foreign visitor traffic in Huaqiangbei increased by over 30% year-on-year, with AI products being their top interest.",
+      "url": "#"
+    },
+    {
+      "id": "news_007",
+      "title": "Mid-Range Smartphone Prices Rise Up to 30%",
+      "title_cn": "华强北中低端手机涨幅最高达30%",
+      "date": "2026-03-30",
+      "source": "China Times",
+      "summary": "Mid-to-low-end smartphones from brands like OPPO, vivo, and Honor have seen price increases of 15% to 30% (200-500 yuan), driven by rising memory chip costs.",
+      "url": "#"
+    },
+    {
+      "id": "news_008",
+      "title": "Huaqiangbei Releases AI Sales Heat Map",
+      "title_cn": "华强北发布AI硬件全球销售热力图",
+      "date": "2026-03-05",
+      "source": "China Daily HK",
+      "summary": "The color-coded map shows drones are 'red-hot' and learning gadgets are surging due to back-to-school shopping.",
+      "url": "#"
+    },
+    {
+      "id": "news_009",
+      "title": "Over 7,000 International Buyers Visit Daily",
+      "title_cn": "华强北日均国际买家超7000人次",
+      "date": "2026-01-21",
+      "source": "Global Times",
+      "summary": "The district records an average daily footfall of about 750,000 people, with foreign buyers exceeding 7,000, doubling the previous year's figure.",
+      "url": "#"
+    },
+    {
+      "id": "news_010",
+      "title": "Huaqiang South Emerges as a Hub for Used Electronics",
+      "title_cn": "华强南崛起成为中国二手消费电子集散中心",
+      "date": "2026-03-17",
+      "source": "Shenzhen Futian Government",
+      "summary": "Huaqiang South has become China's largest cluster for used consumer electronics, with an annual transaction volume surpassing 20 billion yuan (US$2.91 billion).",
+      "url": "#"
+    },
+    {
+      "id": "news_011",
+      "title": "DDR5 Memory Prices Plunge Nearly 30%",
+      "title_cn": "DDR5内存价格暴跌近30%",
       "date": "2026-04-10",
-      "source": "National Business Daily",
-      "summary": "After years of decline, wired earphones saw a 20% sales increase in early 2026, though Bluetooth remains the mainstay.",
-      "url": "https://www.nbd.com.cn/articles/2026-04-10/4108151.html"
+      "source": "Yicai Global",
+      "summary": "After months of speculation, DDR5 16GB modules have fallen from 1,600-1,800 CNY to around 1,200 CNY. Used phone buyback prices also dropped about 30%.",
+      "url": "#"
+    },
+    {
+      "id": "news_012",
+      "title": "RoboSense Reports 1,458% Growth in Robotics LiDAR",
+      "title_cn": "速腾聚创机器人LiDAR业务增长1458%",
+      "date": "2026-04-15",
+      "source": "PR Newswire",
+      "summary": "Shenzhen-based RoboSense announced a massive 1,458% increase in LiDAR sensor sales for robotics in Q1 2026, driven by autonomous delivery robots and humanoids.",
+      "url": "#"
+    },
+    {
+      "id": "news_013",
+      "title": "Chip Price Hikes Hit Huaqiangbei: TI, NXP Up to 85%",
+      "title_cn": "芯片涨价潮：TI、NXP最高涨85%",
+      "date": "2026-04-01",
+      "source": "Briocean",
+      "summary": "More than 14 major suppliers have announced price increases of up to 85% on analog and power management components, driven by AI demand and rising copper costs.",
+      "url": "#"
+    },
+    {
+      "id": "news_014",
+      "title": "Shenzhen Humanoid Robot 'Flash' Breaks World Record",
+      "title_cn": "深圳人形机器人“闪光”破世界纪录",
+      "date": "2026-04-19",
+      "source": "Xinhua",
+      "summary": "The humanoid robot 'Flash' from Shenzhen Honor Smart Technology completed a half-marathon in 50 minutes 26 seconds in autonomous mode, proving local navigation and servo motor excellence.",
+      "url": "#"
+    },
+    {
+      "id": "news_015",
+      "title": "New E-Scooter Parking Rules Around Huaqiangbei",
+      "title_cn": "华强北周边电动滑板车停放新规",
+      "date": "2026-04-01",
+      "source": "CNA News",
+      "summary": "Shenzhen has installed mandatory parking zones for e-scooters. Illegal parking is now heavily fined. Visitors are advised to use the metro (Huaqiang North or Huaqiang Road stations).",
+      "url": "#"
     }
   ]
 }

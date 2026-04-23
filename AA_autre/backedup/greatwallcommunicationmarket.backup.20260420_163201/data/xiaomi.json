@@ -1,0 +1,127 @@
+﻿{
+    "xiaomi_products":  {
+                            "market":  "Fei Yang Times",
+                            "models":  [
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "POCO F6",
+                                               "file":  "POCO_F6.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "POCO F6 Pro",
+                                               "file":  "POCO_F6_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "POCO M6 Pro",
+                                               "file":  "POCO_M6_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "POCO X6 Pro",
+                                               "file":  "POCO_X6_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 12",
+                                               "file":  "Redmi_Note_12.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 13",
+                                               "file":  "Redmi_Note_13.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 13 Pro",
+                                               "file":  "Redmi_Note_13_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 13 Pro Plus",
+                                               "file":  "Redmi_Note_13_Pro_Plus.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 14",
+                                               "file":  "Redmi_Note_14.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 14 Pro",
+                                               "file":  "Redmi_Note_14_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Redmi Note 14 Pro Plus",
+                                               "file":  "Redmi_Note_14_Pro_Plus.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 12",
+                                               "file":  "Xiaomi_12.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 13",
+                                               "file":  "Xiaomi_13.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 13 Pro",
+                                               "file":  "Xiaomi_13_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 13 Ultra",
+                                               "file":  "Xiaomi_13_Ultra.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 14",
+                                               "file":  "Xiaomi_14.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 14 Pro",
+                                               "file":  "Xiaomi_14_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 14 Ultra",
+                                               "file":  "Xiaomi_14_Ultra.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 15",
+                                               "file":  "Xiaomi_15.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Xiaomi 15 Ultra",
+                                               "file":  "Xiaomi_15_Ultra.jpg",
+                                               "condition":  "Refurbished"
+                                           }
+                                       ]
+                        }
+}

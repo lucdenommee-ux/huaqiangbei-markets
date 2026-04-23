@@ -1,0 +1,115 @@
+﻿{
+    "huawei_products":  {
+                            "market":  "Fei Yang Times",
+                            "models":  [
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 40 Pro",
+                                               "file":  "Huawei_Mate_40_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 50 Pro",
+                                               "file":  "Huawei_Mate_50_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 60",
+                                               "file":  "Huawei_Mate_60.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 60 Pro",
+                                               "file":  "Huawei_Mate_60_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 70",
+                                               "file":  "Huawei_Mate_70.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate 70 Pro",
+                                               "file":  "Huawei_Mate_70_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate X5",
+                                               "file":  "Huawei_Mate_X5.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Mate X6",
+                                               "file":  "Huawei_Mate_X6.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei nova 11",
+                                               "file":  "Huawei_nova_11.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei nova 12",
+                                               "file":  "Huawei_nova_12.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei nova 13",
+                                               "file":  "Huawei_nova_13.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei nova 13 Pro",
+                                               "file":  "Huawei_nova_13_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei P50 Pro",
+                                               "file":  "Huawei_P50_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei P60",
+                                               "file":  "Huawei_P60.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei P60 Pro",
+                                               "file":  "Huawei_P60_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Pura 70",
+                                               "file":  "Huawei_Pura_70.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Pura 70 Pro",
+                                               "file":  "Huawei_Pura_70_Pro.jpg",
+                                               "condition":  "Refurbished"
+                                           },
+                                           {
+                                               "condition_cn":  "翻新",
+                                               "name":  "Huawei Pura 70 Ultra",
+                                               "file":  "Huawei_Pura_70_Ultra.jpg",
+                                               "condition":  "Refurbished"
+                                           }
+                                       ]
+                        }
+}

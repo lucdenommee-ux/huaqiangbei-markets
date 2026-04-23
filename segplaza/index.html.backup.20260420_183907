@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEG Plaza Live – Sourcing by Luc Junior</title>
+    <meta name="description" content="Direct access to 800+ wholesalers in SEG Plaza, Shenzhen. Live pricing, exclusive bundles, and secure sourcing by Luc Junior Denommee.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root { --neon-green: #00ff41; --warning-red: #ff3e3e; --bg-dark: #050505; --card-bg: #111; }
+        body { background-color: var(--bg-dark); color: #e0e0e0; font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
+        .ticker-wrap { background: #111; border-bottom: 1px solid #333; padding: 10px 0; overflow: hidden; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+        .ticker-move { display: inline-block; animation: ticker 40s linear infinite; }
+        .ticker-item { display: inline-block; margin-right: 50px; }
+        .up { color: var(--neon-green); } .down { color: var(--warning-red); }
+        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .topbar { background: #111; padding: 15px 0; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 1000; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav a { color: #aaa; text-decoration: none; margin-left: 20px; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+        .hero { text-align: center; padding: 80px 20px; background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); }
+        .hero h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
+        .hero p { color: #888; font-size: 1.2rem; margin: 20px 0; }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .section-title { border-left: 4px solid var(--warning-red); padding-left: 15px; margin: 60px 0 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .bundle-card { background: var(--card-bg); border: 1px solid #222; border-radius: 15px; padding: 25px; transition: 0.3s; position: relative; overflow: hidden; }
+        .bundle-card:hover { border-color: var(--neon-green); transform: translateY(-5px); }
+        .tag { position: absolute; top: 15px; right: 15px; font-size: 10px; font-weight: bold; padding: 4px 10px; border-radius: 4px; background: #222; color: #aaa; }
+        .price-tag { font-size: 1.5rem; font-weight: bold; color: var(--neon-green); margin: 15px 0; display: block; }
+        .old-price { text-decoration: line-through; color: #555; font-size: 0.9rem; margin-right: 10px; }
+        .btn-wa { display: block; background: #25d366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        .vip-block { background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border: 2px solid var(--neon-green); border-radius: 20px; padding: 40px; margin-top: 60px; text-align: center; }
+    </style>
+</head>
+<body>
+    <!-- Ticker en direct -->
+    <div class="ticker-wrap">
+        <div class="ticker-move">
+            <span class="ticker-item"><span style="color: var(--neon-green);">●</span> LIVE FROM SEG PLAZA</span>
+            <span class="ticker-item">🆕 OnePlus 15: <span class="up">IN STOCK</span></span>
+            <span class="ticker-item">📉 iPhone 15 Pro Max: <span class="down">5,150 CNY</span></span>
+            <span class="ticker-item">🔥 iPad Air 8 (M4): <span class="up">Check Market</span></span>
+            <span class="ticker-item">✅ Shipping Status: <span class="up">Normal (5-9 Days)</span></span>
+            <span class="ticker-item">📅 Updated: 2026-04-20 14:00 (SZX)</span>
+            <span class="ticker-item"><span style="color: var(--neon-green);">●</span> LIVE FROM SEG PLAZA</span>
+            <span class="ticker-item">🆕 OnePlus 15: <span class="up">IN STOCK</span></span>
+            <span class="ticker-item">📉 iPhone 15 Pro Max: <span class="down">5,150 CNY</span></span>
+            <span class="ticker-item">🔥 iPad Air 8 (M4): <span class="up">Check Market</span></span>
+            <span class="ticker-item">✅ Shipping Status: <span class="up">Normal (5-9 Days)</span></span>
+            <span class="ticker-item">📅 Updated: 2026-04-20 14:00 (SZX)</span>
+        </div>
+    </div>
+
+    <!-- Barre de navigation -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand"><strong style="font-size:1.5rem; color:#fff;">SEG Plaza</strong></div>
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="market.html">Market</a>
+                <a href="products.html">Products</a>
+                <a href="guide.html">SEG Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="news.html">News</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/8613501552311" style="background: var(--warning-red); color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 12px; font-weight: bold; margin-left: 10px;">WhatsApp Luc</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <h1>SEG PLAZA <span style="color: var(--warning-red);">LIVE</span></h1>
+        <p>Accédez en direct aux 800+ grossistes de Shenzhen. Sourcing sécurisé par Luc Junior Denommee.</p>
+        <a href="https://wa.me/8613501552311" class="btn-wa" style="display:inline-block; width:250px;">📲 WhatsApp Luc (Direct SZX)</a>
+    </section>
+
+    <div class="wrap">
+        <!-- Bundles exclusifs -->
+        <h2 class="section-title">📦 Luc's Exclusive Bundles (QC Verified)</h2>
+        <div class="grid">
+            <div class="bundle-card">
+                <span class="tag">BEST SELLER</span>
+                <h3>💻 The Digital Nomad</h3>
+                <p style="font-size:0.8rem; color:#777;">iPhone 15 Pro + MacBook M2 + AirPods Pro</p>
+                <span class="price-tag"><span class="old-price">12,500</span> 10,800 CNY</span>
+                <ul style="font-size:0.85rem; padding-left:15px; color:#aaa;">
+                    <li>Full 3uTools Report 100%</li>
+                    <li>Battery Health 90%+</li>
+                    <li>Free Protective Case included</li>
+                </ul>
+                <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Digital%20Nomad%20Bundle" class="btn-wa">Order Now</a>
+            </div>
+            <div class="bundle-card">
+                <span class="tag">CREATOR</span>
+                <h3>🎬 Content Creator</h3>
+                <p style="font-size:0.8rem; color:#777;">iPhone 15 Pro Max + Gimbal + Mic</p>
+                <span class="price-tag"><span class="old-price">8,900</span> 7,650 CNY</span>
+                <ul style="font-size:0.85rem; padding-left:15px; color:#aaa;">
+                    <li>Pro video gear included</li>
+                    <li>Gimbal tested & balanced</li>
+                    <li>Wireless mic with noise canceling</li>
+                </ul>
+                <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Content%20Creator%20Bundle" class="btn-wa">Order Now</a>
+            </div>
+            <div class="bundle-card">
+                <span class="tag">GAMING</span>
+                <h3>🚀 Elite Gamer Pack</h3>
+                <p style="font-size:0.8rem; color:#777;">Laptop RTX 4060 + Mouse + XL Pad</p>
+                <span class="price-tag">From 5,500 CNY</span>
+                <ul style="font-size:0.85rem; padding-left:15px; color:#aaa;">
+                    <li>RTX 4060 / 144Hz display</li>
+                    <li>Pro gaming mouse included</li>
+                    <li>Cooling pad + XL mouse pad</li>
+                </ul>
+                <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Elite%20Gamer%20Pack" class="btn-wa">Check Inventory</a>
+            </div>
+        </div>
+
+        <!-- Dernières actualités du marché -->
+        <h2 class="section-title">📰 Latest Market Insights</h2>
+        <div style="background: #111; padding: 20px; border-radius: 15px; border-left: 4px solid var(--neon-green);">
+            <p><strong>🚨 Alerte Baisse de Prix :</strong> Les iPhone 15 Pro Max Grade A+ viennent de chuter à 5,150 CNY. Stock important disponible au 3ème étage.</p>
+            <a href="news.html" style="color: var(--neon-green); font-size: 0.9rem;">Lire toutes les actualités →</a>
+        </div>
+
+        <!-- Bloc VIP Subscription -->
+        
+<!-- ==================== 20 NEW EXCLUSIVE BUNDLES ==================== -->
+<h2 class="section-title" style="margin-top:60px;">📦 More Exclusive Bundles (Ready to Ship)</h2>
+<div class="grid">
+    <div class="bundle-card"><span class="tag">STARTER</span><h3>iPhone 17e Air Starter</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e + Case + Glass + 20W Charger</p><span class="price-tag">From 6,120 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2017e%20Air%20Starter" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">PRO</span><h3>iPhone 16 Pro Full</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 Pro + Leather Case + Glass + 40W Charger</p><span class="price-tag">From 7,250 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20Pro%20Full" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">IPAD</span><h3>iPad Air 11" WiFi Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 11" + Pencil 2 + Folio + Charger</p><span class="price-tag">From 4,320 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2011%22%20WiFi%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">PRO KIT</span><h3>iPad Air 13" Pro Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 13" + Pencil Pro + Magic Keyboard + Charger</p><span class="price-tag">From 7,080 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2013%22%20Pro%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">CREATOR</span><h3>iPad Pro 11" Creator</h3><p style="font-size:0.8rem; color:#777;">iPad Pro 11" + Pencil Pro + Magic Keyboard + Charger</p><span class="price-tag">From 9,380 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Pro%2011%22%20Creator" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ULTRA</span><h3>Apple Watch Ultra Sport</h3><p style="font-size:0.8rem; color:#777;">Watch Ultra + Alpine Band + Fast Charger</p><span class="price-tag">From 5,950 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra%20Sport" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">DAILY</span><h3>Apple Watch 9 Daily</h3><p style="font-size:0.8rem; color:#777;">Watch 9 + Sport Band + Magnetic Charger</p><span class="price-tag">From 3,100 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%209%20Daily" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">VALUE</span><h3>OnePlus Ace 5 Value</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 5 + Case + Glass + 80W Charger</p><span class="price-tag">From 3,270 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%205%20Value" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">POWER</span><h3>OnePlus Ace 5 Pro Power</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 5 Pro + Case + Glass + 120W Charger</p><span class="price-tag">From 4,840 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%205%20Pro%20Power" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">COMBO</span><h3>iPhone 17e + Watch 9</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e + Watch 9 + Cases + Chargers</p><span class="price-tag">From 8,720 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2017e%20%2B%20Watch%209%20Bundle" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">IPAD</span><h3>iPad Air 11" + Pencil Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 11" + Pencil + Folio + Charger</p><span class="price-tag">From 4,320 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2011%22%20%2B%20Pencil%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">GAMING</span><h3>OnePlus 13T Gaming</h3><p style="font-size:0.8rem; color:#777;">OnePlus 13T + Case + Glass + 80W Charger</p><span class="price-tag">From 4,090 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%2013T%20Gaming" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">BASIC</span><h3>iPhone 16 + AirPods Style</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 + Case + Glass + Charger</p><span class="price-tag">From 5,120 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20%2B%20AirPods%20Style" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">BUDGET</span><h3>iPad 11" Basic</h3><p style="font-size:0.8rem; color:#777;">iPad 11" + Pencil 1 + Cover + Charger</p><span class="price-tag">From 3,530 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%2011%22%20Basic" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ONEPLUS</span><h3>OnePlus Ace 6 + Watch Style</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 6 + Case + Glass + Charger</p><span class="price-tag">From 3,770 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%206%20%2B%20Watch%20Style" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">COMBO</span><h3>iPhone 16 Pro + iPad 11"</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 Pro + iPad 11" + Accessories</p><span class="price-tag">From 10,780 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20Pro%20%2B%20iPad%2011%22%20Combo" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ULTRA COMBO</span><h3>Apple Watch Ultra + iPhone 17e</h3><p style="font-size:0.8rem; color:#777;">Watch Ultra + iPhone 17e + Bands + Cases + Chargers</p><span class="price-tag">From 12,020 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra%20%2B%20iPhone%2017e" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ENTRY</span><h3>OnePlus Ace 3 Entry</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 3 + Case + Glass + 100W Charger</p><span class="price-tag">From 3,500 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%203%20Entry" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">MOBILITY</span><h3>iPad Air 13" 5G Mobility</h3><p style="font-size:0.8rem; color:#777;">iPad Air 13" 5G + Pencil Pro + Folio + Charger</p><span class="price-tag">From 6,180 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2013%22%205G%20Mobility" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ECO</span><h3>Full Eco Bundle</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e Air + Watch 9 + Cases + Chargers</p><span class="price-tag">From 9,220 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Full%20Eco%20Bundle" class="btn-wa">Inquire</a></div>
+</div>
+
+<!-- ==================== 20 NEW EXCLUSIVE BUNDLES ==================== -->
+<h2 class="section-title" style="margin-top:60px;">📦 More Exclusive Bundles (Ready to Ship)</h2>
+<div class="grid">
+    <div class="bundle-card"><span class="tag">STARTER</span><h3>iPhone 17e Air Starter</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e + Case + Glass + 20W Charger</p><span class="price-tag">From 6,120 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2017e%20Air%20Starter" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">PRO</span><h3>iPhone 16 Pro Full</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 Pro + Leather Case + Glass + 40W Charger</p><span class="price-tag">From 7,250 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20Pro%20Full" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">IPAD</span><h3>iPad Air 11" WiFi Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 11" + Pencil 2 + Folio + Charger</p><span class="price-tag">From 4,320 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2011%22%20WiFi%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">PRO KIT</span><h3>iPad Air 13" Pro Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 13" + Pencil Pro + Magic Keyboard + Charger</p><span class="price-tag">From 7,080 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2013%22%20Pro%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">CREATOR</span><h3>iPad Pro 11" Creator</h3><p style="font-size:0.8rem; color:#777;">iPad Pro 11" + Pencil Pro + Magic Keyboard + Charger</p><span class="price-tag">From 9,380 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Pro%2011%22%20Creator" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ULTRA</span><h3>Apple Watch Ultra Sport</h3><p style="font-size:0.8rem; color:#777;">Watch Ultra + Alpine Band + Fast Charger</p><span class="price-tag">From 5,950 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra%20Sport" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">DAILY</span><h3>Apple Watch 9 Daily</h3><p style="font-size:0.8rem; color:#777;">Watch 9 + Sport Band + Magnetic Charger</p><span class="price-tag">From 3,100 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%209%20Daily" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">VALUE</span><h3>OnePlus Ace 5 Value</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 5 + Case + Glass + 80W Charger</p><span class="price-tag">From 3,270 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%205%20Value" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">POWER</span><h3>OnePlus Ace 5 Pro Power</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 5 Pro + Case + Glass + 120W Charger</p><span class="price-tag">From 4,840 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%205%20Pro%20Power" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">COMBO</span><h3>iPhone 17e + Watch 9</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e + Watch 9 + Cases + Chargers</p><span class="price-tag">From 8,720 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2017e%20%2B%20Watch%209%20Bundle" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">IPAD</span><h3>iPad Air 11" + Pencil Kit</h3><p style="font-size:0.8rem; color:#777;">iPad Air 11" + Pencil + Folio + Charger</p><span class="price-tag">From 4,320 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2011%22%20%2B%20Pencil%20Kit" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">GAMING</span><h3>OnePlus 13T Gaming</h3><p style="font-size:0.8rem; color:#777;">OnePlus 13T + Case + Glass + 80W Charger</p><span class="price-tag">From 4,090 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%2013T%20Gaming" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">BASIC</span><h3>iPhone 16 + AirPods Style</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 + Case + Glass + Charger</p><span class="price-tag">From 5,120 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20%2B%20AirPods%20Style" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">BUDGET</span><h3>iPad 11" Basic</h3><p style="font-size:0.8rem; color:#777;">iPad 11" + Pencil 1 + Cover + Charger</p><span class="price-tag">From 3,530 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%2011%22%20Basic" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ONEPLUS</span><h3>OnePlus Ace 6 + Watch Style</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 6 + Case + Glass + Charger</p><span class="price-tag">From 3,770 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%206%20%2B%20Watch%20Style" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">COMBO</span><h3>iPhone 16 Pro + iPad 11"</h3><p style="font-size:0.8rem; color:#777;">iPhone 16 Pro + iPad 11" + Accessories</p><span class="price-tag">From 10,780 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPhone%2016%20Pro%20%2B%20iPad%2011%22%20Combo" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ULTRA COMBO</span><h3>Apple Watch Ultra + iPhone 17e</h3><p style="font-size:0.8rem; color:#777;">Watch Ultra + iPhone 17e + Bands + Cases + Chargers</p><span class="price-tag">From 12,020 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra%20%2B%20iPhone%2017e" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ENTRY</span><h3>OnePlus Ace 3 Entry</h3><p style="font-size:0.8rem; color:#777;">OnePlus Ace 3 + Case + Glass + 100W Charger</p><span class="price-tag">From 3,500 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20Ace%203%20Entry" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">MOBILITY</span><h3>iPad Air 13" 5G Mobility</h3><p style="font-size:0.8rem; color:#777;">iPad Air 13" 5G + Pencil Pro + Folio + Charger</p><span class="price-tag">From 6,180 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%2013%22%205G%20Mobility" class="btn-wa">Inquire</a></div>
+    <div class="bundle-card"><span class="tag">ECO</span><h3>Full Eco Bundle</h3><p style="font-size:0.8rem; color:#777;">iPhone 17e Air + Watch 9 + Cases + Chargers</p><span class="price-tag">From 9,220 CNY</span><a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Full%20Eco%20Bundle" class="btn-wa">Inquire</a></div>
+</div>
+<section class="vip-block">
+            <div style="font-size: 40px; margin-bottom: 15px;">📲</div>
+            <h2 style="color: #fff; margin-bottom: 10px;">Join the Luc Junior VIP Channel</h2>
+            <p style="color: #888; max-width: 600px; margin: 0 auto 30px auto;">
+                Receive price lists at 2:00 PM (Shenzhen Time) directly on your phone. Never miss a price drop on iPhones and OnePlus devices again.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                <a href="https://wa.me/8613501552311?text=Luc,%20add%20me%20to%20your%20VIP%20price%20list" style="background: #25d366; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <span>Get Daily Price Alerts (WhatsApp)</span>
+                </a>
+                <p style="font-size: 12px; color: #555;">Or send "VIP" to <strong>contact@segplaza.com</strong> for the weekly Excel list.</p>
+            </div>
+        </section>
+
+        <p style="text-align: center; margin-top: 40px;"><a href="index.html" style="color: var(--warning-red); text-decoration: none;">← Back to Home</a></p>
+    </div>
+
+    <footer style="text-align: center; padding: 60px 20px; color: #444; font-size: 0.8rem;">
+        <p>Luc Junior Denommee · SEG Plaza 3rd Floor, Shenzhen, China</p>
+        <p>© 2026 SEG Plaza - All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

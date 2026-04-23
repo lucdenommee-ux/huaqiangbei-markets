@@ -1,0 +1,20 @@
+﻿market_folder: "huaqiangelectronicsworld"
+market_full_name: "Huaqiang Electronics World"
+market_short_name: "Huaqiang Electronics"
+market_name_cn: "华强电子世界"
+market_tagline: "Shenzhen's Largest IC and Semiconductor Hub"
+category: "IC Chips, Semiconductors, LED, Repair Parts"
+description: "Huaqiang Electronics World is the go-to market for electronic components, IC chips, Arduino/Raspberry Pi accessories, and professional repair tools."
+products:
+  - name: "Arduino Uno R4"
+    image: "arduino_uno.jpg"
+    specs: ["ATmega328P", "14 Digital I/O", "5V Operating Voltage"]
+  - name: "Raspberry Pi 5"
+    image: "raspberry_pi5.jpg"
+    specs: ["Quad-core ARM", "4GB/8GB RAM", "Dual HDMI"]
+  - name: "LED Strip 5m RGB"
+    image: "led_strip.jpg"
+    specs: ["5050 SMD", "Waterproof IP65", "Remote control"]
+  - name: "Soldering Iron Kit"
+    image: "soldering_kit.jpg"
+    specs: ["60W adjustable", "Complete accessories"]

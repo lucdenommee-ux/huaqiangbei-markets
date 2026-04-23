@@ -1,132 +1,306 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>huaqiangelectronicsworld - Huaqiangbei Encyclopedia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Huaqiang Electronics | Sourcing by Luc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-art { display: flex; align-items: center; justify-content: center; text-align: center; }
-        .hero-art svg { display: block; margin: 0 auto; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .ticker-wrap { background: #1e293b; overflow: hidden; white-space: nowrap; padding: 10px 0; border-bottom: 2px solid #3b82f6; }
+        .ticker-move { display: inline-block; animation: ticker 30s linear infinite; }
+        @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { border-color: #3b82f6; transform: translateY(-5px); }
+        .badge-live { background: #ef4444; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        /* Navigation du Lab */
+        .lab-nav { background: #0f172a; border-bottom: 1px solid #334155; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .lab-nav-inner { max-width: 1300px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .lab-nav a { color: #94a3b8; text-decoration: none; margin-left: 20px; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .lab-nav a:hover, .lab-nav a.active { color: #3b82f6; }
+        .lab-nav a.whatsapp-btn { background: #25d366; color: white; padding: 8px 15px; border-radius: 5px; margin-left: 15px; }
     </style>
 </head>
 <body>
-    <div class="topbar">
-        <div class="topbar-inner">
+
+    <!-- Barre de navigation du Lab -->
+    <div class="lab-nav">
+        <div class="lab-nav-inner">
             <div class="brand">
-                <div class="logo"></div>
+                <strong style="font-size: 1.5rem; color: #f8fafc;">Huaqiang Electronics</strong>
+            </div>
+            <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <a href="index.html" class="active">Home</a>
+                <a href="market.html">Market</a>
+                <a href="products.html">Products</a>
+                <a href="guide.html">Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="news.html">News</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+                <a href="about.html">About</a>
+                <a href="https://wa.me/8613501552311" class="whatsapp-btn">📲 WhatsApp Luc</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ticker-wrap text-sm font-mono">
+        <div class="ticker-move">
+            <span class="mx-4 text-blue-400 font-bold">[ LIVE MARKET UPDATES ]</span>
+            <span class="mx-4">📈 iPhone 15 Pro Max: <span class="text-green-400">5,150 CNY</span></span>
+            <span class="mx-4">🆕 OnePlus 15: <span class="text-green-400">4,100 CNY</span></span>
+            <span class="mx-4">🔥 iPad Air 8: <span class="text-green-400">3,850 CNY</span></span>
+            <span class="mx-4">📉 OnePlus ACE 6T: Check Market</span>
+            <span class="mx-4 text-yellow-400">📅 Updated: 4/21/2026</span>
+            <span class="mx-4 text-blue-400 font-bold">📦 Shipping: Normal</span>
+        </div>
+    </div>
+
+    <header class="py-16 px-6 text-center bg-gradient-to-b from-blue-900/20 to-transparent">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Huaqiang Electronics</h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
+            Shenzhen's Largest IC & Semiconductor Hub. Direct sourcing and 100% QC verification powered by <span class="text-blue-400 font-semibold">Luc Junior Denommee</span>.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="https://wa.me/8613501552311" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition">📲 WhatsApp Luc</a>
+            <a href="#trends" class="bg-slate-700 hover:bg-slate-600 text-white px-8 py-3 rounded-full font-bold transition">📊 Market Trends</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <section id="trends" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="badge-live px-3 py-1 rounded text-xs font-bold uppercase">Live</span>
+                <h2 class="text-3xl font-bold">The "AI Eight" Trend Radar</h2>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-slate-700">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-800">
+                        <tr>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Category</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Top Selection</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300 text-right">Price (Incl. Fee)</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Market Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🕶️ AI Smart Glasses</td>
+                            <td class="p-4">ChatGPT-4o Audio/Video Integrated</td>
+                            <td class="p-4 text-right font-mono text-green-400">950 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🌟 Star Performer (+80%)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🛸 4K Drones</td>
+                            <td class="p-4">Pro-Portable 4K Brushless</td>
+                            <td class="p-4 text-right font-mono text-green-400">1,200 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🔥 High Export Demand</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🐾 AI Robot Pets</td>
+                            <td class="p-4">Bionic Companion (Mini-Series)</td>
+                            <td class="p-4 text-right font-mono text-green-400">1,850 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">📈 Viral Sensation</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🗣️ AI Translators</td>
+                            <td class="p-4">120+ Language Pro (Offline)</td>
+                            <td class="p-4 text-right font-mono text-green-400">650 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🌍 Foreign Trader Fav</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8">Luc's Verified Bundles</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Best Seller</span>
+                    <h3 class="text-xl font-bold mt-2">Digital Nomad</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 15 Pro + MacBook M2 + AirPods</p>
+                    <div class="mt-6">
+                        <span class="text-slate-500 line-through text-sm">12,500 CNY</span>
+                        <div class="text-2xl font-bold text-white">11,500 CNY</div>
+                    </div>
+                    <ul class="mt-4 text-xs text-slate-300 space-y-2">
+                        <li>✅ Full 3uTools Verified</li>
+                        <li>✅ Battery 90%+</li>
+                    </ul>
+                    <button class="w-full mt-6 bg-blue-600 hover:bg-blue-500 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl border-l-4 border-l-purple-500">
+                    <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Creator</span>
+                    <h3 class="text-xl font-bold mt-2">Content Creator</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 15 Pro Max + Mic + Gimbal</p>
+                    <div class="mt-6">
+                        <span class="text-slate-500 line-through text-sm">8,900 CNY</span>
+                        <div class="text-2xl font-bold text-white">8,350 CNY</div>
+                    </div>
+                    <ul class="mt-4 text-xs text-slate-300 space-y-2">
+                        <li>✅ Pro Video Gear Rig</li>
+                        <li>✅ Gimbal Calibration</li>
+                    </ul>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-green-400 uppercase tracking-widest">Value</span>
+                    <h3 class="text-xl font-bold mt-2">Essential Student</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 13 + iPad Air + AirPods</p>
+                    <div class="mt-6">
+                        <div class="text-2xl font-bold text-white">3,480 CNY</div>
+                    </div>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest">Bulk</span>
+                    <h3 class="text-xl font-bold mt-2">Repair Shop Kit</h3>
+                    <p class="text-slate-400 text-sm mt-2">10x Mixed iPhones + Toolsets</p>
+                    <div class="mt-6">
+                        <div class="text-xl font-bold text-white tracking-tight">Contact for Bulk Price</div>
+                    </div>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Get Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-900/10 border border-blue-500/30 rounded-3xl p-8">
+            <h2 class="text-2xl font-bold mb-4">Why Luc's Sourcing Fee is Essential:</h2>
+            <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <div class="title">huaqiangelectronicsworld</div>
-                    <div class="subtitle">飞扬时代通讯市场</div>
+                    <h4 class="font-bold text-blue-400 mb-2">Anti-Clone Protection</h4>
+                    <p class="text-sm text-slate-400">In early 2026, AI Smart Glasses are heavily duplicated. I verify the ChatGPT firmware personally.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-400 mb-2">Technical QC</h4>
+                    <p class="text-sm text-slate-400">All iPhones/iPads include a 3uTools report. Laptops undergo a 1-hour stress test.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-400 mb-2">Direct Logistics</h4>
+                    <p class="text-sm text-slate-400">Professional export-grade packaging. No "lost in transit" excuses from wholesalers.</p>
                 </div>
             </div>
-            <div class="nav">
-                <a href="index.html" class="active">Home / 首页</a>
-                <a href="market.html">Market / 市场</a>
-                <a href="mobile.html">Mobile / 手机</a>
-                <a href="laptops.html">Laptops / 笔记本</a>
-                <a href="tablettes.html">Tablettes / 平板</a>
-                <a href="airpods.html">AirPods / 耳机</a>
-                <a href="directory.html">Directory / 目录</a>
-                <a href="news.html">News / 新闻</a>
-                <a href="videos.html">Videos / 视频</a>
-                <a href="photos.html">Photos / 照片</a>
-                <a href="guide.html">Guide / 指南</a>
-            </div>
-            <div class="lang">
-                <a href="#" class="active">EN</a>
-                <a href="#">中文</a>
-            </div>
-        </div>
+        </section>
+
+    </main>
+
+    
+<!-- ==================== TOP 20 BESTSELLERS ==================== -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+    <h2 class="text-3xl font-bold mb-4 text-white">🔥 Top 20 Bestsellers – Huaqiangbei Wholesale</h2>
+    <p class="text-slate-400 mb-8">High‑volume mobile accessories and gadgets. Prices include sourcing fee – contact Luc for bulk rates.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/phone_cases.jpg" alt="Phone Cases" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Phone+Cases'">
+        <h4 class="font-bold text-white">Phone Cases</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">4-6 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Phone%20Cases%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/screen_protectors.jpg" alt="Screen Protectors" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Screen+Protectors'">
+        <h4 class="font-bold text-white">Screen Protectors</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">2-4 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Screen%20Protectors%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/chargers_cables_usb_data.jpg" alt="Chargers & Cables" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Chargers+&+Cables'">
+        <h4 class="font-bold text-white">Chargers & Cables</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">5-8 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Chargers%20&%20Cables%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/power_banks.jpg" alt="Power Banks" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Power+Banks'">
+        <h4 class="font-bold text-white">Power Banks</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">12-18 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Power%20Banks%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/tws_earbuds_bluetooth_headphones.jpg" alt="TWS Earbuds" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=TWS+Earbuds'">
+        <h4 class="font-bold text-white">TWS Earbuds</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">15-25 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20TWS%20Earbuds%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/smartwatches_bands.jpg" alt="Smartwatches & Bands" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Smartwatches+&+Bands'">
+        <h4 class="font-bold text-white">Smartwatches & Bands</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">20-35 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Smartwatches%20&%20Bands%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/phone_repair_parts_screens_batteries_flex_cables.jpg" alt="Phone Repair Parts" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Phone+Repair+Parts'">
+        <h4 class="font-bold text-white">Phone Repair Parts</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">8-15 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Phone%20Repair%20Parts%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/earphones_airpods_clones.jpg" alt="Earphones / AirPods Clones" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Earphones+/+AirPods+Clones'">
+        <h4 class="font-bold text-white">Earphones / AirPods Clones</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">10-20 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Earphones%20/%20AirPods%20Clones%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/walkie_talkies_antennas.jpg" alt="Walkie-talkies & Antennas" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Walkie-talkies+&+Antennas'">
+        <h4 class="font-bold text-white">Walkie-talkies & Antennas</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">18-30 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Walkie-talkies%20&%20Antennas%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/satellite_receivers.jpg" alt="Satellite Receivers" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Satellite+Receivers'">
+        <h4 class="font-bold text-white">Satellite Receivers</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">25-40 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Satellite%20Receivers%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/vehicle_mounted_comms_systems.jpg" alt="Vehicle Comms Systems" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Vehicle+Comms+Systems'">
+        <h4 class="font-bold text-white">Vehicle Comms Systems</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">35-50 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Vehicle%20Comms%20Systems%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/smart_speakers.jpg" alt="Smart Speakers" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Smart+Speakers'">
+        <h4 class="font-bold text-white">Smart Speakers</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">15-25 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Smart%20Speakers%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/power_adapters_gan_chargers.jpg" alt="GaN Chargers" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=GaN+Chargers'">
+        <h4 class="font-bold text-white">GaN Chargers</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">8-15 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20GaN%20Chargers%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/tempered_glass_films.jpg" alt="Tempered Glass Films" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Tempered+Glass+Films'">
+        <h4 class="font-bold text-white">Tempered Glass Films</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">2-5 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Tempered%20Glass%20Films%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/phone_holders_mounts.jpg" alt="Phone Holders & Mounts" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Phone+Holders+&+Mounts'">
+        <h4 class="font-bold text-white">Phone Holders & Mounts</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">3-7 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Phone%20Holders%20&%20Mounts%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/bluetooth_speakers.jpg" alt="Bluetooth Speakers" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Bluetooth+Speakers'">
+        <h4 class="font-bold text-white">Bluetooth Speakers</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">12-20 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Bluetooth%20Speakers%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/translation_earbuds.jpg" alt="Translation Earbuds" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Translation+Earbuds'">
+        <h4 class="font-bold text-white">Translation Earbuds</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">18-30 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Translation%20Earbuds%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/vr_headsets_ai_gadgets.jpg" alt="VR Headsets & AI Gadgets" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=VR+Headsets+&+AI+Gadgets'">
+        <h4 class="font-bold text-white">VR Headsets & AI Gadgets</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">35-60 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20VR%20Headsets%20&%20AI%20Gadgets%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/drones_accessories.jpg" alt="Drones & Accessories" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Drones+&+Accessories'">
+        <h4 class="font-bold text-white">Drones & Accessories</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">45-80 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Drones%20&%20Accessories%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
+    </div>    <div class="bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-blue-500 transition">
+        <img src="images/ring_lights_mics_live_streaming.jpg" alt="Ring Lights & Mics" class="w-full h-32 object-cover rounded-lg mb-3 bg-slate-700" onerror="this.src='https://placehold.co/300x200/1e293b/94a3b8?text=Ring+Lights+&+Mics'">
+        <h4 class="font-bold text-white">Ring Lights & Mics</h4>
+        <p class="text-green-400 font-mono text-sm mt-1">8-15 USD</p>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20Ring%20Lights%20&%20Mics%20from%20Huaqiang%20Electronics" class="block text-center bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 rounded-lg mt-3 transition">Inquire on WhatsApp</a>
     </div>
-
-    <div class="wrap">
-        <div class="hero">
-            <div>
-                <h1>huaqiangelectronicsworld</h1>
-                <p class="muted">飞扬时代通讯市场</p>
-                <p>World's largest refurbished iPhone wholesale center in Huaqiangbei, Shenzhen.</p>
-                <div class="badges">
-                    <span class="pill"><strong>📍</strong> Feiyang Times Building, No. 66 Huafa South Road, Futian District, Shenzhen · 深圳市福田区华发南路66号飞扬时代大厦</span>
-                    <span class="pill"><strong>🚇</strong> Huaqiang North Station (Line 2, 7) · 华强北站</span>
-                    <span class="pill"><strong>🕐</strong> 10:00 AM - 7:00 PM daily · 每天10:00-19:00</span>
-                </div>
-            </div>
-            <div class="hero-art">
-                <svg width="100%" height="200" viewBox="0 0 400 200" style="background:linear-gradient(135deg,#93c5fd,#a7f3d0);border-radius:16px;">
-                    <text x="200" y="90" font-family="'Noto Sans SC',Arial,sans-serif" font-size="20" fill="#0b1020" font-weight="700" text-anchor="middle">huaqiangelectronicsworld</text>
-                    <text x="200" y="120" font-family="'Noto Sans SC',Arial,sans-serif" font-size="14" fill="#0b1020" font-weight="400" text-anchor="middle" opacity="0.8">飞扬时代通讯市场</text>
-                    <text x="200" y="160" font-family="Arial,sans-serif" font-size="11" fill="#0b1020" opacity="0.6" text-anchor="middle">Huaqiangbei · Shenzhen · 华强北 · 深圳</text>
-                </svg>
-            </div>
-        </div>
-
-        <div class="grid3">
-            <div class="card">
-                <h2>📍 Location / 位置</h2>
-                <p>Feiyang Times Building, No. 66 Huafa South Road, Futian District, Shenzhen</p>
-                <p class="muted">深圳市福田区华发南路66号飞扬时代大厦</p>
-                <p><span class="pill"><strong>🚇</strong> Huaqiang North Station (Exit A) · 华强北站A出口</span></p>
-            </div>
-            <div class="card">
-                <h2>🔍 Specialty / 特色</h2>
-                <p>Refurbished iPhones, smartphone parts, accessories, repair services</p>
-                <p class="muted">翻新iPhone、手机零件、配件、维修服务</p>
-                <p><span class="pill"><strong>🏢</strong> 4 floors / 层</span> <span class="pill"><strong>🛒</strong> 800+ shops / 店铺</span></p>
-            </div>
-            <div class="card">
-                <h2>🕐 Hours / 营业时间</h2>
-                <p>10:00 AM - 7:00 PM daily</p>
-                <p class="muted">每天10:00-19:00 · 最佳时间: 11:00-17:00</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>📰 Latest Updates / 最新动态</h2>
-            <div class="row">
-                <span>Market news and announcements · 市场新闻和公告</span>
-                <a href="news.html" class="pill">View all →</a>
-            </div>
-        </div>
-
-        <div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
-            <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
-                    <div style="text-align:left;">
-                        <strong style="color:var(--text);">WhatsApp</strong><br>
-                        <span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span>
-                    </div>
-                </div>
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
-                    <div style="text-align:left;">
-                        <strong style="color:var(--text);">WeChat / 微信</strong><br>
-                        <span style="color:var(--muted); font-family:monospace;">luc-2025</span>
-                    </div>
-                </div>
-                <div style="text-align:left;">
-                    <strong style="color:var(--text);">📧 Email / 邮箱</strong><br>
-                    <a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
-                    <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong>
-                    <a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
-                </div>
-            </div>
-            <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-                <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家
-            </p>
-        </div>
-
-        <footer>
-            <div class="wrap">
-                <div class="small">
-                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
-                    <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
-                </div>
-            </div>
-        </footer>
     </div>
+</section>
+<footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        &copy; 2026 Huaqiang Electronics Hub. Verified by Luc Junior Denommee. All prices include sourcing margin.
+    </footer>
+
 </body>
 </html>
 

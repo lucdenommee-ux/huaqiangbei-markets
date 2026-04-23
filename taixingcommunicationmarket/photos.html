@@ -1,33 +1,32 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Photos</title>
+    <title>Photo Gallery - Shenzhen Electronic Markets</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .photos-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 30px auto;
-            max-width: 800px;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
         }
-        .photo-item {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .photo-item img {
-            max-width: 100%;
+        .gallery-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
             border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
         }
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: var(--link);
-            text-decoration: none;
-            font-size: 1rem;
+        .gallery-item:hover { transform: scale(1.02); }
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            display: none;  /* Légendes masquées */
         }
     </style>
 </head>
@@ -37,87 +36,514 @@
             <div class="brand">
                 <div class="logo"></div>
                 <div>
-                    <div class="title" id="market-title">taixingcommunicationmarket</div>
-                    <div class="subtitle">Product Photos</div>
+                    <div class="title">Shenzhen Electronic Markets</div>
+                    <div class="subtitle">Huaqiangbei • Sourcing Guide</div>
                 </div>
             </div>
             <div class="nav">
                 <a href="index.html">Home</a>
-                <a href="mobile.html">Mobile</a>
-                <a href="laptops.html">Laptops</a>
-            </div>
-            <div class="lang">
-                <a href="#" class="active">EN</a>
-                <a href="#">中文</a>
+                <a href="market.html">Markets</a>
+                <a href="news.html">News</a>
+                <a href="videos.html">Videos</a>
+                <a href="photos.html" class="active">Photos</a>
+                <a href="guide.html">Guide</a>
             </div>
         </div>
     </div>
-
     <div class="wrap">
-        <div id="photos-container" class="photos-container">
-            <p>Loading photos...</p>
-        </div>
-        <div style="text-align:center; margin:20px;">
-            <a href="javascript:history.back()" class="back-link">← Back to products</a>
-        </div>
+        <h1>📸 Huaqiangbei Photo Gallery</h1>
+        <p class="muted">120 photos – inside and outside views</p>
+        <div class="gallery-grid">
+                <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_aihuaelectronicmarket.html"><img src="photos/inside_aihuaelectronicmarket.jpg" alt="inside aihuaelectronicmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside aihuaelectronicmarket</div>
     </div>
-
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_asiaelectronicsmarket.html"><img src="photos/inside_asiaelectronicsmarket.jpg" alt="inside asiaelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside asiaelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_bairuifuturecity.html"><img src="photos/inside_bairuifuturecity.jpg" alt="inside bairuifuturecity" loading="lazy"></a>
+        <div class="gallery-caption">inside bairuifuturecity</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_changchengmobilephonemarket.html"><img src="photos/inside_changchengmobilephonemarket.jpg" alt="inside changchengmobilephonemarket" loading="lazy"></a>
+        <div class="gallery-caption">inside changchengmobilephonemarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_1.html"><img src="photos/inside_chinamanufacturinghub_1.jpg" alt="inside chinamanufacturinghub 1" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 1</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_10.html"><img src="photos/inside_chinamanufacturinghub_10.jpg" alt="inside chinamanufacturinghub 10" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 10</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_2jpg.html"><img src="photos/inside_chinamanufacturinghub_2jpg.jpg" alt="inside chinamanufacturinghub 2jpg" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 2jpg</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_3.html"><img src="photos/inside_chinamanufacturinghub_3.jpg" alt="inside chinamanufacturinghub 3" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 3</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_4.html"><img src="photos/inside_chinamanufacturinghub_4.jpg" alt="inside chinamanufacturinghub 4" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 4</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_5.html"><img src="photos/inside_chinamanufacturinghub_5.jpg" alt="inside chinamanufacturinghub 5" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 5</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_6.html"><img src="photos/inside_chinamanufacturinghub_6.jpg" alt="inside chinamanufacturinghub 6" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 6</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_7.html"><img src="photos/inside_chinamanufacturinghub_7.jpg" alt="inside chinamanufacturinghub 7" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 7</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_8.html"><img src="photos/inside_chinamanufacturinghub_8.jpg" alt="inside chinamanufacturinghub 8" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 8</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_chinamanufacturinghub_9.html"><img src="photos/inside_chinamanufacturinghub_9.jpg" alt="inside chinamanufacturinghub 9" loading="lazy"></a>
+        <div class="gallery-caption">inside chinamanufacturinghub 9</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_cyberdigitalmall.html"><img src="photos/inside_cyberdigitalmall.jpg" alt="inside cyberdigitalmall" loading="lazy"></a>
+        <div class="gallery-caption">inside cyberdigitalmall</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_duhuielectronicmarket.html"><img src="photos/inside_duhuielectronicmarket.jpg" alt="inside duhuielectronicmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside duhuielectronicmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_feiyangtimescommunicationmarket.html"><img src="photos/inside_feiyangtimescommunicationmarket.jpg" alt="inside feiyangtimescommunicationmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside feiyangtimescommunicationmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_gaokedelectronicsmarket.html"><img src="photos/inside_gaokedelectronicsmarket.jpg" alt="inside gaokedelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside gaokedelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_golcondaelectronicsmarket.html"><img src="photos/inside_golcondaelectronicsmarket.jpg" alt="inside golcondaelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside golcondaelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_gordongmarket.html"><img src="photos/inside_gordongmarket.jpg" alt="inside gordongmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside gordongmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_greatwallcommunicationmarket.html"><img src="photos/inside_greatwallcommunicationmarket.jpg" alt="inside greatwallcommunicationmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside greatwallcommunicationmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_hqbforeigntradeplaza.html"><img src="photos/inside_hqbforeigntradeplaza.jpg" alt="inside hqbforeigntradeplaza" loading="lazy"></a>
+        <div class="gallery-caption">inside hqbforeigntradeplaza</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_hqmartshenzhen.html"><img src="photos/inside_hqmartshenzhen.jpg" alt="inside hqmartshenzhen" loading="lazy"></a>
+        <div class="gallery-caption">inside hqmartshenzhen</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_1.html"><img src="photos/inside_market_1.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_10.html"><img src="photos/inside_market_10.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_11.html"><img src="photos/inside_market_11.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_12.html"><img src="photos/inside_market_12.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_13.html"><img src="photos/inside_market_13.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_14.html"><img src="photos/inside_market_14.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_15.html"><img src="photos/inside_market_15.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_16.html"><img src="photos/inside_market_16.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_17.html"><img src="photos/inside_market_17.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_18.html"><img src="photos/inside_market_18.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_19.html"><img src="photos/inside_market_19.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_2.html"><img src="photos/inside_market_2.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_20.html"><img src="photos/inside_market_20.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_21.html"><img src="photos/inside_market_21.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_22.html"><img src="photos/inside_market_22.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_23_j.html"><img src="photos/inside_market_23_j.jpg" alt="inside market 23 j" loading="lazy"></a>
+        <div class="gallery-caption">inside market 23 j</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_24.html"><img src="photos/inside_market_24.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_25.html"><img src="photos/inside_market_25.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_26.html"><img src="photos/inside_market_26.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_27.html"><img src="photos/inside_market_27.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_28.html"><img src="photos/inside_market_28.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_29.html"><img src="photos/inside_market_29.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_3.html"><img src="photos/inside_market_3.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_30.html"><img src="photos/inside_market_30.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_4.html"><img src="photos/inside_market_4.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_5.html"><img src="photos/inside_market_5.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_6.html"><img src="photos/inside_market_6.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_7.html"><img src="photos/inside_market_7.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_8.html"><img src="photos/inside_market_8.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_market_9.html"><img src="photos/inside_market_9.jpg" alt="inside" loading="lazy"></a>
+        <div class="gallery-caption">inside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_inside_shenzhenhightechindustrialpark.html"><img src="photos/inside_shenzhenhightechindustrialpark.jpg" alt="inside shenzhenhightechindustrialpark" loading="lazy"></a>
+        <div class="gallery-caption">inside shenzhenhightechindustrialpark</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_nside_shenzhenclocksandwatchesmarket.html"><img src="photos/nside_shenzhenclocksandwatchesmarket.jpg" alt="inside shenzhenclocksandwatchesmarket" loading="lazy"></a>
+        <div class="gallery-caption">inside shenzhenclocksandwatchesmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outsideshenzhenhightechindustrialpark.html"><img src="photos/outsideshenzhenhightechindustrialpark.jpg" alt="outside shenzhenhightechindustrialpark" loading="lazy"></a>
+        <div class="gallery-caption">outside shenzhenhightechindustrialpark</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_aihuaelectronicmarket.html"><img src="photos/outside_aihuaelectronicmarket.jpg" alt="outside aihuaelectronicmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside aihuaelectronicmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_asiaelectronicsmarket.html"><img src="photos/outside_asiaelectronicsmarket.jpg" alt="outside asiaelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside asiaelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_bairuifuturecity.html"><img src="photos/outside_bairuifuturecity.jpg" alt="outside bairuifuturecity" loading="lazy"></a>
+        <div class="gallery-caption">outside bairuifuturecity</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_changchengmobilephonemarket.html"><img src="photos/outside_changchengmobilephonemarket.jpg" alt="outside changchengmobilephonemarket" loading="lazy"></a>
+        <div class="gallery-caption">outside changchengmobilephonemarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_1.html"><img src="photos/outside_chinamanufacturinghub_1.jpg" alt="outside chinamanufacturinghub 1" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 1</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_10.html"><img src="photos/outside_chinamanufacturinghub_10.jpg" alt="outside chinamanufacturinghub 10" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 10</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_2.html"><img src="photos/outside_chinamanufacturinghub_2.jpg" alt="outside chinamanufacturinghub 2" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 2</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_3.html"><img src="photos/outside_chinamanufacturinghub_3.jpg" alt="outside chinamanufacturinghub 3" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 3</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_4.html"><img src="photos/outside_chinamanufacturinghub_4.jpg" alt="outside chinamanufacturinghub 4" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 4</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_5.html"><img src="photos/outside_chinamanufacturinghub_5.jpg" alt="outside chinamanufacturinghub 5" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 5</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_6.html"><img src="photos/outside_chinamanufacturinghub_6.jpg" alt="outside chinamanufacturinghub 6" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 6</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_7.html"><img src="photos/outside_chinamanufacturinghub_7.jpg" alt="outside chinamanufacturinghub 7" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 7</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_8.html"><img src="photos/outside_chinamanufacturinghub_8.jpg" alt="outside chinamanufacturinghub 8" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 8</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_chinamanufacturinghub_9.html"><img src="photos/outside_chinamanufacturinghub_9.jpg" alt="outside chinamanufacturinghub 9" loading="lazy"></a>
+        <div class="gallery-caption">outside chinamanufacturinghub 9</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_cyberdigitalmall.html"><img src="photos/outside_cyberdigitalmall.jpg" alt="outside cyberdigitalmall" loading="lazy"></a>
+        <div class="gallery-caption">outside cyberdigitalmall</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_duhuielectronicmarket.html"><img src="photos/outside_duhuielectronicmarket.jpg" alt="outside duhuielectronicmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside duhuielectronicmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_feiyangtimescommunicationmarket.html"><img src="photos/outside_feiyangtimescommunicationmarket.jpg" alt="outside feiyangtimescommunicationmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside feiyangtimescommunicationmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_gaokedelectronicsmarket.html"><img src="photos/outside_gaokedelectronicsmarket.jpg" alt="outside gaokedelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside gaokedelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_golcondaelectronicsmarket.html"><img src="photos/outside_golcondaelectronicsmarket.jpg" alt="outside golcondaelectronicsmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside golcondaelectronicsmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_gordongmarket.html"><img src="photos/outside_gordongmarket.jpg" alt="outside gordongmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside gordongmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_greatwallcommunicationmarket.html"><img src="photos/outside_greatwallcommunicationmarket.jpg" alt="outside greatwallcommunicationmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside greatwallcommunicationmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_hqbforeigntradeplaza.html"><img src="photos/outside_hqbforeigntradeplaza.jpg" alt="outside hqbforeigntradeplaza" loading="lazy"></a>
+        <div class="gallery-caption">outside hqbforeigntradeplaza</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_hqmartshenzhen.html"><img src="photos/outside_hqmartshenzhen.jpg" alt="outside hqmartshenzhen" loading="lazy"></a>
+        <div class="gallery-caption">outside hqmartshenzhen</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_huanantongmobilephoneaccessoriesmarket.html"><img src="photos/outside_huanantongmobilephoneaccessoriesmarket.jpg" alt="outside huanantongmobilephoneaccessoriesmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside huanantongmobilephoneaccessoriesmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_1.html"><img src="photos/outside_markets_1.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_10.html"><img src="photos/outside_markets_10.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_11.html"><img src="photos/outside_markets_11.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_13.html"><img src="photos/outside_markets_13.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_14.html"><img src="photos/outside_markets_14.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_15.html"><img src="photos/outside_markets_15.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_16.html"><img src="photos/outside_markets_16.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_17.html"><img src="photos/outside_markets_17.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_18.html"><img src="photos/outside_markets_18.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_19.html"><img src="photos/outside_markets_19.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_2.html"><img src="photos/outside_markets_2.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_20.html"><img src="photos/outside_markets_20.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_21.html"><img src="photos/outside_markets_21.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_22.html"><img src="photos/outside_markets_22.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_23.html"><img src="photos/outside_markets_23.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_24.html"><img src="photos/outside_markets_24.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_25.html"><img src="photos/outside_markets_25.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_26.html"><img src="photos/outside_markets_26.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_27.html"><img src="photos/outside_markets_27.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_28.html"><img src="photos/outside_markets_28.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_29.html"><img src="photos/outside_markets_29.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_3.html"><img src="photos/outside_markets_3.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_31.html"><img src="photos/outside_markets_31.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_32.html"><img src="photos/outside_markets_32.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_33.html"><img src="photos/outside_markets_33.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_34.html"><img src="photos/outside_markets_34.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_35.html"><img src="photos/outside_markets_35.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_36.html"><img src="photos/outside_markets_36.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_37.html"><img src="photos/outside_markets_37.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_38.html"><img src="photos/outside_markets_38.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_39.html"><img src="photos/outside_markets_39.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_4.html"><img src="photos/outside_markets_4.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_40.html"><img src="photos/outside_markets_40.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_5.html"><img src="photos/outside_markets_5.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_6.html"><img src="photos/outside_markets_6.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_7.html"><img src="photos/outside_markets_7.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_8.html"><img src="photos/outside_markets_8.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_markets_9.html"><img src="photos/outside_markets_9.jpg" alt="outside" loading="lazy"></a>
+        <div class="gallery-caption">outside</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_shenzhenclocksandwatchesmarket.html"><img src="photos/outside_shenzhenclocksandwatchesmarket.jpg" alt="outside shenzhenclocksandwatchesmarket" loading="lazy"></a>
+        <div class="gallery-caption">outside shenzhenclocksandwatchesmarket</div>
+    </div>
+    <div class="gallery-item">
+        <a href="photos/photo_html/photo_outside_shenzhenhightechindustrialpark.html"><img src="photos/outside_shenzhenhightechindustrialpark.jpg" alt="outside shenzhenhightechindustrialpark" loading="lazy"></a>
+        <div class="gallery-caption">outside shenzhenhightechindustrialpark</div>
+    </div>
+        </div>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
     <footer>
         <div class="wrap">
             <div class="small">
-                <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311</div>
+                <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets</div>
                 <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
             </div>
         </div>
     </footer>
-
-    <script>
-        (async function() {
-            const container = document.getElementById('photos-container');
-            const params = new URLSearchParams(window.location.search);
-            const modelName = params.get('model');
-            
-            if (!modelName) {
-                container.innerHTML = '<p class="muted">No product specified.</p>';
-                return;
-            }
-
-            document.title = modelName + ' - Photos';
-            document.getElementById('market-title').textContent = modelName;
-
-            try {
-                const response = await fetch('data/mobile.json');
-                if (!response.ok) throw new Error('JSON not found');
-                const data = await response.json();
-                const product = data.mobile_products.models.find(p => p.name.trim().toLowerCase() === modelName.trim().toLowerCase());
-
-                if (!product) {
-                    container.innerHTML = `<p class="muted">Product "${modelName}" not found.</p>`;
-                    return;
-                }
-
-                let images = product.images || [];
-                if (images.length === 0) {
-                    container.innerHTML = '<p class="muted">No photos available for this product.</p>';
-                    return;
-                }
-
-                let html = `<h2>${product.name}</h2>`;
-                images.forEach(img => {
-                    let imgUrl = img.original || img.thumb || img;
-                    if (typeof imgUrl === 'object') imgUrl = imgUrl.original || '';
-                    if (!imgUrl) imgUrl = 'https://placehold.co/600x400/1a1a2e/93c5fd?text=' + encodeURIComponent(product.name);
-                    html += `<div class="photo-item"><img src="${imgUrl}" alt="${product.name}"></div>`;
-                });
-                container.innerHTML = html;
-
-            } catch (error) {
-                console.error('Error loading photos:', error);
-                container.innerHTML = '<p class="muted" style="color:#fca5a5;">Failed to load photos.</p>';
-            }
-        })();
-    </script>
 </body>
 </html>
-
-

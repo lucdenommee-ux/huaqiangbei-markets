@@ -1,25 +1,46 @@
 ﻿{
   "videos": [
     {
-      "id": "vid_001",
-      "title": "Shenzhen: The Silicon Valley of Hardware (Documentary)",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/watch?v=Z8l0VpzNqG8",
-      "thumbnail": "https://img.youtube.com/vi/Z8l0VpzNqG8/hqdefault.jpg"
+      "title": "Huaqiangbei in 60 Seconds",
+      "title_cn": "华强北60秒全景",
+      "desc": "Hyper-lapse journey from Huaqiang North Metro to the top of SEG Plaza.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7XZ",
+      "category": "Immersion"
     },
     {
-      "id": "vid_002",
-      "title": "Huaqiangbei Market Tour by Barrett",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/watch?v=jO5LxJNxK7I",
-      "thumbnail": "https://img.youtube.com/vi/jO5LxJNxK7I/hqdefault.jpg"
+      "title": "How We Test Your Components",
+      "title_cn": "电子元器件质量检测",
+      "desc": "Luc Junior Denommee inspects IC chips using a microscope and verifies serial numbers.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7YA",
+      "category": "QC"
     },
     {
-      "id": "vid_003",
-      "title": "Inside the World's Biggest Electronics Market",
-      "platform": "YouTube",
-      "url": "https://www.youtube.com/watch?v=YtZ0YqGkK9o",
-      "thumbnail": "https://img.youtube.com/vi/YtZ0YqGkK9o/hqdefault.jpg"
+      "title": "Real vs Fake: Buyer's Guide",
+      "title_cn": "真假辨别教程",
+      "desc": "Learn to spot a refurbished screen or low-capacity battery in seconds.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7ZB",
+      "category": "QC"
+    },
+    {
+      "title": "From Stall to Carton: Packing Process",
+      "title_cn": "专业包装与出货",
+      "desc": "Multi-layer protective packaging for international shipping.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7WC",
+      "category": "Logistics"
+    },
+    {
+      "title": "Direct Global Shipping from Shenzhen",
+      "title_cn": "深圳直发全球",
+      "desc": "Daily drop-off at our forwarder partners for fast delivery worldwide.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7VD",
+      "category": "Logistics"
+    },
+    {
+      "title": "AI Gadgets Set to Explode in 2026",
+      "title_cn": "2026华强北黑科技",
+      "desc": "Exclusive test of real-time translation glasses and compact robotic hubs.",
+      "embed": "//player.bilibili.com/player.html?bvid=BV1xx411c7UE",
+      "category": "Innovation"
     }
   ]
 }

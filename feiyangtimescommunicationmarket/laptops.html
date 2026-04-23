@@ -15,6 +15,36 @@
         .btn { flex: 1; background: linear-gradient(135deg, rgba(147,197,253,0.25), rgba(167,243,208,0.15)); border: 1px solid rgba(147,197,253,0.4); color: var(--text); padding: 8px 8px; border-radius: 30px; font-size: 0.8rem; font-weight: 600; text-decoration: none; }
         .btn:hover { background: linear-gradient(135deg, rgba(147,197,253,0.4), rgba(167,243,208,0.25)); border-color: var(--accent); }
     </style>
+<style>
+    /* Bouton flottant Market (visible partout) */
+    .floating-market-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #ff0000;
+        color: white !important;
+        padding: 14px 22px;
+        border-radius: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+        z-index: 9999;
+        border: 2px solid white;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .floating-market-btn:hover {
+        background: white;
+        color: #ff0000 !important;
+        transform: scale(1.05);
+    }
+    /* Mise en évidence de l'onglet Market dans la nav */
+    .nav a[href="market.html"] {
+        color: #ff0000 !important;
+        border-bottom: 3px solid #ff0000;
+        padding-bottom: 5px;
+    }
+</style>
 </head>
 <body>
 <div class='topbar'><div class='topbar-inner'><div class='brand'><div class='logo'></div><div><div class='title'>Fei Yang Times</div><div class='subtitle'>Laptops & Ultrabooks</div></div></div>
@@ -171,4 +201,7 @@
     <div class='contact-universel'><h3>📞 Contact</h3><p>WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</p><p>Luc Junior Denommee · Foreign Trade Expert for Huaqiangbei Markets</p></div>
     <footer><div class='wrap'><div class='small'><div><b>Luc Junior Denommee</b> · Foreign Trade Expert</div><div class='muted'>© 2026 All rights reserved — Huaqiangbei Encyclopedia</div></div></div></footer>
 </div>
+<a href="market.html" class="floating-market-btn" title="Go to Market">📊 MARKET</a>
 </body></html>
+
+

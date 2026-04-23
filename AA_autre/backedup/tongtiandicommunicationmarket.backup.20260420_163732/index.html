@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tong Tian Di – Global Hub for Refurbished iPhones</title>
+    <meta name="description" content="Real-time access to 800+ wholesalers in Shenzhen. Secure sourcing, certified testing, global shipping.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-green: #00ff41;
+            --warning-red: #ff3e3e;
+            --bg-dark: #0a0a0a;
+            --muted: #888;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Ticker */
+        .ticker-wrapper {
+            background: #1a1a1a;
+            color: var(--neon-green);
+            padding: 10px 0;
+            display: flex;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            border-bottom: 2px solid #333;
+            position: relative;
+            z-index: 1000;
+        }
+        .ticker-title {
+            background: #ff0000;
+            color: white;
+            padding: 0 20px;
+            font-weight: bold;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .ticker-content {
+            display: flex;
+            white-space: nowrap;
+            animation: ticker 35s linear infinite;
+        }
+        .ticker-content span { padding-left: 40px; }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Nav & Topbar */
+        .topbar { background: #111; padding: 20px 0; border-bottom: 1px solid #333; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+
+        /* Bundles */
+        .bundles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .bundle-card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 30px 25px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .bundle-card:hover { transform: translateY(-10px); border-color: #ff0000; }
+        .bundle-badge {
+            position: absolute; top: -12px; right: 20px;
+            background: #ff0000; padding: 6px 16px; font-size: 12px;
+            font-weight: bold; border-radius: 30px; color: white;
+        }
+        .new-price { display: block; font-size: 28px; color: var(--neon-green); font-weight: bold; margin-top: 10px;}
+        .bundle-features { list-style: none; padding: 0; margin: 20px 0; font-size: 14px; color: #ccc; }
+        .bundle-btn {
+            display: block; text-align: center; background: #25d366;
+            color: white; text-decoration: none; padding: 14px;
+            border-radius: 40px; font-weight: bold; transition: 0.3s;
+        }
+
+        /* News Feed */
+        .news-item { display: flex; background: #1a1a1a; border-radius: 12px; margin-bottom: 20px; border: 1px solid #333; overflow: hidden; }
+        .news-date { background: #333; color: #fff; writing-mode: vertical-lr; transform: rotate(180deg); padding: 15px 10px; font-size: 10px; font-weight: bold; }
+        .news-content { padding: 20px; flex: 1; }
+        .news-tag { background: #ff0000; color: white; font-size: 10px; padding: 3px 10px; border-radius: 4px; }
+
+        /* Floating Buttons */
+        .floating-market-btn {
+            position: fixed; bottom: 25px; right: 25px;
+            background: #ff0000; color: white !important;
+            padding: 14px 22px; border-radius: 60px; font-weight: bold;
+            text-decoration: none; box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+            z-index: 9999; border: 2px solid white; font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <strong style="font-size: 1.5rem; color: #fff;">Tong Tian Di</strong>
+            </div>
+            <div class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="market.html">Market</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="tablettes.html">Tablettes</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News</a>
+    <a href="guide.html">Guide</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+        </div>
+    </div>
+
+    <div class="ticker-wrapper">
+        <div class="ticker-title">LIVE MARKET UPDATES</div>
+        <div class="ticker-content" id="ticker-content"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="hero" style="padding: 60px 0; display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h1>Tong Tian Di: Global Hub for Refurbished iPhones</h1>
+                <p style="color: #888; font-size: 1.2rem;">Access 800+ wholesalers in Shenzhen. Secure sourcing powered by Luc Junior Denommee.</p>
+                <a href="https://wa.me/8613501552311" class="bundle-btn" style="display: inline-block; padding: 15px 30px;">📲 WhatsApp Luc</a>
+            </div>
+        </div>
+
+        <h2>📦 Laptop & Mobile Bundles</h2>
+        <div class="bundles-grid">
+            <div class="bundle-card">
+                <div class="bundle-badge">BEST SELLER</div>
+                <h3>💻 The Digital Nomad</h3>
+                <ul class="bundle-features">
+                    <li>✅ iPhone 15 Pro + MacBook M2</li>
+                    <li>✅ Battery Health 90%+</li>
+                </ul>
+                <div class="new-price">10,800 CNY</div>
+                <a href="#" class="bundle-btn">Order Now</a>
+            </div>
+            
+            <div class="bundle-card" style="border-color: #6200ff;">
+                <div class="bundle-badge" style="background:#6200ff;">GAMING</div>
+                <h3>🚀 Elite Gamer Pack</h3>
+                <ul class="bundle-features">
+                    <li>✅ Legion/ROG RTX 4060</li>
+                    <li>✅ Pro Gaming Mouse</li>
+                </ul>
+                <div class="new-price">5,500 CNY</div>
+                <a href="#" class="bundle-btn" style="background:#6200ff;">Check Inventory</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const marketData = {
+            prices: [
+                { item: "iPhone 15 PM", price: "5,150 CNY" },
+                { item: "MacBook M2", price: "4,800 CNY" },
+                { item: "AirPods Pro 2", price: "185 CNY" }
+            ],
+            lastUpdate: new Date().toLocaleDateString()
+        };
+
+        function updateTicker() {
+            const container = document.getElementById('ticker-content');
+            let html = '';
+            marketData.prices.forEach(p => {
+                html += `<span>🔥 ${p.item}: <strong>${p.price}</strong></span>`;
+            });
+            html += `<span>📅 Updated: ${marketData.lastUpdate}</span>`;
+            container.innerHTML = html + html;
+        }
+        document.addEventListener('DOMContentLoaded', updateTicker);
+    </script>
+
+    <a href="market.html" class="floating-market-btn">📊 MARKET</a>
+
+</body>
+</html>
+
+

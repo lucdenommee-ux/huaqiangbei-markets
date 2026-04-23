@@ -1,0 +1,91 @@
+﻿{
+    "ipad_products":  {
+                          "market":  "Fei Yang Times",
+                          "models":  [
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad 10",
+                                             "file":  "iPad_10.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad 11",
+                                             "file":  "iPad_11.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Air 5",
+                                             "file":  "iPad_Air_5.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Air 6 11",
+                                             "file":  "iPad_Air_6_11.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Air 6 13",
+                                             "file":  "iPad_Air_6_13.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Air 7 11",
+                                             "file":  "iPad_Air_7_11.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Air 7 13",
+                                             "file":  "iPad_Air_7_13.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad mini 8",
+                                             "file":  "iPad_mini_8.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 11 M2",
+                                             "file":  "iPad_Pro_11_M2.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 11 M4",
+                                             "file":  "iPad_Pro_11_M4.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 11 M5",
+                                             "file":  "iPad_Pro_11_M5.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 12 9 M2",
+                                             "file":  "iPad_Pro_12_9_M2.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 13 M4",
+                                             "file":  "iPad_Pro_13_M4.jpg",
+                                             "condition":  "Refurbished"
+                                         },
+                                         {
+                                             "condition_cn":  "翻新",
+                                             "name":  "iPad Pro 13 M5",
+                                             "file":  "iPad_Pro_13_M5.jpg",
+                                             "condition":  "Refurbished"
+                                         }
+                                     ]
+                      }
+}

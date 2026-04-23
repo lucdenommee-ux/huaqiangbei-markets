@@ -1,0 +1,20 @@
+﻿market_folder: "shenzhenledmarket"
+market_full_name: "Shenzhen LED Market"
+market_short_name: "Shenzhen LED"
+market_name_cn: "深圳LED市场"
+market_tagline: "Dedicated Hub for LED Lighting and Displays"
+category: "LED Strips, Drivers, Bulbs, Professional Lighting"
+description: "Shenzhen LED Market is the specialized center for all types of LED products: strips, drivers, smart bulbs, and commercial lighting solutions."
+products:
+  - name: "RGB LED Strip 5m"
+    image: "led_strip_5m.jpg"
+    specs: ["5050 SMD", "Waterproof", "IR Remote"]
+  - name: "LED Driver 12V 100W"
+    image: "led_driver.jpg"
+    specs: ["Constant voltage", "Overload protection"]
+  - name: "Smart Wi-Fi Bulb"
+    image: "smart_bulb.jpg"
+    specs: ["RGB + Tunable White", "Tuya compatible"]
+  - name: "LED Panel Light 60x60"
+    image: "led_panel.jpg"
+    specs: ["40W", "Flicker-free", "Office grade"]

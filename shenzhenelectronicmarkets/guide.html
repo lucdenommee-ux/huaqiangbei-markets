@@ -1,100 +1,212 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Shenzhen Electronic Markets - Guides</title>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="alternate" hreflang="en" href="guide.html">
-<link rel="alternate" hreflang="zh" href="guide-zh.html"></head>
-<body>
-<div class="container">
-  <div class="nav">
-    <div class="brand"><a href="index.html">Shenzhen Electronic Markets</a></div>
-    <div class="links">
-      <a class="pill" href="market.html">Markets</a>
-      <a class="pill" href="news.html">News</a>
-      <a class="pill" href="videos.html">Videos</a>
-      <a class="pill" href="photos.html">Photos</a>
-      <a class="pill" href="directory.html">Directory</a>
-      <a class="pill" href="guide.html">Guides</a>
-    </div>
-  </div>
-  <div class="hero">
-    <h1>Shenzhen Electronic Markets</h1>
-    <p>The flagship electronics market in Huaqiangbei, offering everything from IC chips to consumer electronics.</p>
-  </div>
-  <div class="content">
-    <h2> Huaqiangbei Electronic Markets Directory</h2>
-    <p>Guides</p>
-  </div>
-  <div class="footer">© 2026 shenzhenelectronicmarkets.com • All rights reserved.</div>
-</div>
-
-
-</div>
-
-
-<!-- CONTACT UNIVERSEL -->
-<div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
-    <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-        <div style="display:flex; align-items:center; gap:12px;">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
-            <div style="text-align:left;">
-                <strong style="color:var(--text);">WhatsApp</strong><br>
-                <span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span>
-            </div>
-        </div>
-        <div style="display:flex; align-items:center; gap:12px;">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
-            <div style="text-align:left;">
-                <strong style="color:var(--text);">WeChat / 微信</strong><br>
-                <span style="color:var(--muted); font-family:monospace;">luc-2025</span>
-            </div>
-        </div>
-        <div style="text-align:left;">
-            <strong style="color:var(--text);">📧 Email / 邮箱</strong><br>
-            <a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
-            <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong>
-            <a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
-        </div>
-    </div>
-    <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Marketsss · 华强北市场外贸专家
-    </p>
-</div>
-
-
-<!-- INJECTION DYNAMIQUE DES DONNÉES AGENTS -->
-<script>
-(function() {
-    const sections = [
-        { id: 'news-container', file: 'news.json' },
-        { id: 'blog-container', file: 'blog.json' },
-        { id: 'faq-container', file: 'faq.json' },
-        { id: 'products-container', file: 'products.json' },
-        { id: 'guide-container', file: 'guides.json' },
-        { id: 'video-container', file: 'video.json' },
-        { id: 'visual-container', file: 'visual.json' }
-    ];
-    sections.forEach(s => {
-        const container = document.getElementById(s.id);
-        if (container) {
-            fetch('data/' + s.file)
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => {
-                    if (data.news) { /* adapter selon la structure */ }
-                    if (data.content) container.innerHTML = data.content;
-                })
-                .catch(() => {});
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourcing Guide - Shenzhen Electronic Markets</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .guide-section {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
         }
-    });
-})();
-</script>
+        .guide-section h2 {
+            margin-top: 0;
+            color: var(--accent, #93c5fd);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        .guide-section h3 {
+            color: var(--text);
+            margin-top: 20px;
+        }
+        .guide-section ul, .guide-section ol {
+            padding-left: 20px;
+            color: var(--muted);
+        }
+        .guide-section li {
+            margin-bottom: 8px;
+        }
+        .guide-section p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        .tip-box {
+            background: rgba(147,197,253,0.05);
+            border-left: 4px solid var(--accent, #93c5fd);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .vocab-table th, .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .vocab-table th {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .vocab-table td {
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title">Shenzhen Electronic Markets</div>
+                    <div class="subtitle">Huaqiangbei • Sourcing Guide</div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="market.html">Markets</a>
+                <a href="news.html">News</a>
+                <a href="videos.html">Videos</a>
+                <a href="photos.html">Photos</a>
+                <a href="guide.html" class="active">Guide</a>
+            </div>
+        </div>
+    </div>
 
+    <div class="wrap">
+        <h1>📘 The Ultimate Huaqiangbei Sourcing Guide</h1>
+        <p class="muted">Expert advice for international buyers – negotiation, logistics, quality control, and local tips.</p>
+
+        <!-- SECTION 1 : NÉGOCIATION -->
+        <div class="guide-section">
+            <h2>🗣️ 1. Mastering Negotiation in Huaqiangbei</h2>
+            <p>Success in Shenzhen doesn't depend on how much you buy, but on <em>how</em> you ask. Here are the essential levels of quality and the key phrases that will earn you respect.</p>
+            
+            <h3>The 4 Quality Levels (Memorize Them)</h3>
+            <ul>
+                <li><strong>Yuan Zhuang (原装)</strong> – Original. Direct from the official factory. Most expensive, but most reliable.</li>
+                <li><strong>Chai Ji (拆机)</strong> – "Pull". Authentic component salvaged from a used device. Very common for rare chips.</li>
+                <li><strong>San Zhuang (散装)</strong> – "Bulk". New product without original packaging, often from overproduction.</li>
+                <li><strong>Fan Xin (翻新)</strong> – "Refurbished". A used product restored cosmetically. <strong>Note:</strong> Very common at Fei Yang market.</li>
+            </ul>
+
+            <h3>Key Phrases to Earn Respect</h3>
+            <ul>
+                <li><strong>"Zui di jia shi duo shao ?"</strong> (最底价是多少?) – "What is your lowest price?" (Use only after building rapport.)</li>
+                <li><strong>"Wo yao na yang pin."</strong> (我要拿样品.) – "I want a sample." (Essential before any bulk order.)</li>
+                <li><strong>"You bao xiu ma ?"</strong> (有保修吗?) – "Is there a warranty?" (Often 7 days or "until you leave the store". Get it in writing.)</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 2 : LOGISTIQUE -->
+        <div class="guide-section">
+            <h2>📦 2. Logistics & Shipping from Shenzhen</h2>
+            <p>Don't let your profits evaporate in shipping fees. Choose the right channel for your goods.</p>
+
+            <h3>Choosing the Right Channel</h3>
+            <ul>
+                <li><strong>Express Courier (DHL/FedEx/UPS):</strong> Ideal for small, urgent packages (<20kg). <em>Tip:</em> Use an agent in SEG Plaza basement – rates up to 50% cheaper than official agencies.</li>
+                <li><strong>Dedicated Line (DDP):</strong> For countries like France, Canada, USA. The agent handles customs and taxes. Simplest for beginners.</li>
+                <li><strong>Sea Freight (LCL):</strong> For large volumes. Yantian Port in Shenzhen is one of the world's largest.</li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>⚠️ The Danger of Batteries</strong><br>
+                If your product contains a battery (powerbank, scooter, earphones):<br>
+                • You MUST declare it.<br>
+                • The carrier will use a "DG" (Dangerous Goods) channel.<br>
+                • Hiding a battery in a normal package = seizure by Shenzhen Airport Customs (SZX).
+            </div>
+        </div>
+
+        <!-- SECTION 3 : CONTRÔLE QUALITÉ -->
+        <div class="guide-section">
+            <h2>🔍 3. On-Site Quality Control (QC)</h2>
+            <p>Trust is good, verification is better. Bring these tools and techniques.</p>
+
+            <h3>Essential Tools to Bring</h3>
+            <ul>
+                <li><strong>Multimeter & USB Tester:</strong> Verify actual voltage and amperage of chargers and cables.</li>
+                <li><strong>Test Power Bank:</strong> Ensure gadgets charge correctly.</li>
+                <li><strong>Jeweler's Loupe:</strong> Inspect PCB soldering or scratches on "new" screens.</li>
+            </ul>
+
+            <h3>The Random Sample Technique</h3>
+            <p>If buying 1,000 pieces:<br>
+            1. Don't let the seller choose the boxes.<br>
+            2. Dive into the middle of the pile and pull out 5 random units.<br>
+            3. Test them in front of the seller. If 1 out of 5 fails, reject the lot or renegotiate a 20% discount.</p>
+        </div>
+
+        <!-- SECTION 4 : VIE PRATIQUE -->
+        <div class="guide-section">
+            <h2>🏙️ 4. Living & Networking in Huaqiangbei</h2>
+            <p>Business also happens outside the stalls.</p>
+
+            <h3>Connectivity & Payment</h3>
+            <ul>
+                <li><strong>VPN:</strong> Indispensable. No Google, no WhatsApp without it. Install BEFORE arriving in China.</li>
+                <li><strong>Alipay / WeChat Pay:</strong> In 2026, cash is rarely used. Link your Visa/Mastercard to Alipay – it works very well for foreigners now.</li>
+            </ul>
+
+            <h3>Where to Eat Between Markets</h3>
+            <ul>
+                <li><strong>Huaqiang North Road:</strong> Full of small Cantonese canteens (Dim Sum) and Hot Pot restaurants.</li>
+                <li><strong>Networking:</strong> In the evening, head to the bars in Futian District (10 min by taxi). That's where you'll meet other international buyers and engineers.</li>
+            </ul>
+        </div>
+
+        <!-- LEXIQUE -->
+        <div class="guide-section">
+            <h2>📖 Technical Lexicon (French-Chinese-English)</h2>
+            <table class="vocab-table">
+                <thead><tr><th>Français</th><th>中文</th><th>Pinyin</th></tr></thead>
+                <tbody>
+                    <tr><td>Résistance</td><td>电阻</td><td>diàn zǔ</td></tr>
+                    <tr><td>Condensateur</td><td>电容</td><td>diàn róng</td></tr>
+                    <tr><td>Écran</td><td>屏幕</td><td>píng mù</td></tr>
+                    <tr><td>Batterie</td><td>电池</td><td>diàn chí</td></tr>
+                    <tr><td>Carte mère</td><td>主板</td><td>zhǔ bǎn</td></tr>
+                    <tr><td>Chargeur</td><td>充电器</td><td>chōng diàn qì</td></tr>
+                    <tr><td>Câble</td><td>数据线</td><td>shù jù xiàn</td></tr>
+                    <tr><td>Puce / Circuit intégré</td><td>芯片 / IC</td><td>xīn piàn</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CONTACT EXPERT -->
+        <div class="contact-universel" style="margin-top:40px;">
+            <h3>📞 Need a Physical Guide or On-Site QC?</h3>
+            <p>Contact me directly for secure sourcing assistance.</p>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
+                    <div style="text-align:left;"><strong>WhatsApp</strong><br><span style="font-family:monospace;">+86 135 0155 2311</span></div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
+                    <div style="text-align:left;"><strong>WeChat</strong><br><span style="font-family:monospace;">luc-2025</span></div>
+                </div>
+            </div>
+            <p style="margin-top:20px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets</p>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="small">
+                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311</div>
+                    <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
-
-
-

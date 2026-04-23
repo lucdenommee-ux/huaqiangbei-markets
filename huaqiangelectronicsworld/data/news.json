@@ -1,35 +1,58 @@
-{
+﻿{
   "news": [
     {
-      "id": "news_001",
-      "title": "New Import Regulations for Electronic Components in 2026",
-      "title_cn": "2026年电子元件进口新规",
+      "id": "fyt_001",
+      "title": "Massive Influx of Refurbished iPhone 16 Pros",
+      "title_cn": "iPhone 16 Pro 翻新机大量到货",
+      "date": "2026-04-15",
+      "category": "📱 iPhones",
+      "summary": "Grade A iPhone 16 Pro Max units are now flooding the 2nd and 3rd floors. Wholesale prices have dropped 15% this month. Check battery cycles – some units have under 10 cycles.",
+      "tip": "💡 Luc's Tip: Always verify battery cycle count via settings."
+    },
+    {
+      "id": "fyt_002",
+      "title": "New 'Ultra-Thin Hard OLED' Screens for iPhone 15/16",
+      "title_cn": "iPhone 15/16 超薄硬性OLED屏幕上市",
       "date": "2026-04-10",
-      "source": "Shenzhen Customs",
-      "summary": "Updated tariffs and documentation requirements for importing semiconductors and PCBs.",
-      "summary_cn": "半导体和PCB进口的最新关税和文件要求。",
-      "url": "https://shenzhenelectronicmarkets.com/news/import-regulations-2026"
+      "category": "🛠️ Parts",
+      "summary": "Shenzhen manufacturers have launched a new generation of compatible OLED screens that match original brightness at one-third the cost. Avoid cheaper 'In-cell' screens – they drain 20% more battery.",
+      "tip": "🔧 Repair shops: Hard OLED is the best value right now."
     },
     {
-      "id": "news_002",
-      "title": "Huaqiangbei Metro Expansion: New Exit Opens",
-      "title_cn": "华强北地铁扩建：新出口开放",
+      "id": "fyt_003",
+      "title": "Logistics Alert: Stricter Battery Shipping Rules",
+      "title_cn": "物流提醒：锂电池运输新规",
       "date": "2026-04-12",
-      "source": "Shenzhen Metro",
-      "summary": "Exit E now connects directly to SEG Plaza, improving access for buyers.",
-      "summary_cn": "E出口现在直接连接赛格广场，方便买家进出。",
-      "url": "https://shenzhenelectronicmarkets.com/news/metro-expansion"
+      "category": "📦 Shipping",
+      "summary": "Shenzhen Airport (SZX) now requires special battery lines for packages containing more than two phones with built-in batteries. Delivery to Europe/Canada now takes 5-9 days (up from 5). Consolidate orders to optimize DG costs.",
+      "tip": "📌 Plan ahead for bulk phone shipments."
     },
     {
-      "id": "news_003",
-      "title": "LED Component Prices Drop 15% in Q2 2026",
-      "title_cn": "2026年第二季度LED元件价格下降15%",
-      "date": "2026-04-14",
-      "source": "Market Report",
-      "summary": "Oversupply from manufacturers leads to price reductions across LED strips and drivers.",
-      "summary_cn": "制造商供过于求导致LED灯带和驱动器价格全面下降。",
-      "url": "https://shenzhenelectronicmarkets.com/news/led-price-drop"
+      "id": "fyt_004",
+      "title": "Samsung S24 Ultra Prices Drop $120",
+      "title_cn": "三星S24 Ultra 价格下跌120美元",
+      "date": "2026-04-08",
+      "category": "📱 Android",
+      "summary": "Grade A+ refurbished Galaxy S24 Ultra units have fallen by $120 in 30 days due to surplus stock from Korea and the US. Now is the best time to source high-end Android.",
+      "tip": "📊 1st floor has the best selection."
+    },
+    {
+      "id": "fyt_005",
+      "title": "AirPods 'PodsPro 3' with Touchscreen Cases Arrive",
+      "title_cn": "带触屏的AirPods 'PodsPro 3' 到货",
+      "date": "2026-04-05",
+      "category": "🎧 AirPods",
+      "summary": "New AirPods-style earbuds with LCD touchscreen charging cases are flooding the 1st floor. Control ANC, EQ, and find your buds without the phone. Quality varies – we only source models with Airoha 1562F chip for true -35dB ANC.",
+      "tip": "🎵 Always test ANC in a noisy environment before buying."
+    },
+    {
+      "id": "fyt_006",
+      "title": "MacBook Air M2/M3 Surplus – Prices Drop 20%",
+      "title_cn": "MacBook Air M2/M3 过剩 价格下跌20%",
+      "date": "2026-04-01",
+      "category": "💻 Laptops",
+      "summary": "Corporate fleet refreshes in Shenzhen have flooded the 3rd floor with MacBook Air M2/M3 units. Grade A M2 models are down 20% – best value for export. Most are 8GB/256GB; 16GB versions are starting to appear.",
+      "tip": "🔋 Insist on battery cycles under 150 for client orders."
     }
-  ],
-  "updated": "2026-04-19T08:00:03.018377"
+  ]
 }

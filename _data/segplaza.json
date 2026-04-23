@@ -1,0 +1,15 @@
+﻿{
+  "market_folder": "segplaza",
+  "market_full_name": "SEG Plaza",
+  "market_short_name": "SEG Plaza",
+  "market_name_cn": "赛格广场",
+  "market_tagline": "Shenzhen's Iconic Electronics Skyscraper",
+  "category": "Electronic Components, PC Hardware, Gadgets",
+  "description": "SEG Plaza is the flagship building of Huaqiangbei, housing thousands of stalls specializing in computer components, PC parts, crypto mining gear, and consumer electronics.",
+  "products": [
+    { "name": "IC Chips (Assorted)", "image": "ic_chips.jpg", "specs": ["Various models", "Original & refurbished"] },
+    { "name": "PCB Prototyping Boards", "image": "pcb_boards.jpg", "specs": ["Single/Double layer", "Custom sizes"] },
+    { "name": "Digital Multimeter", "image": "multimeter.jpg", "specs": ["Professional grade", "Auto-ranging"] },
+    { "name": "Soldering Station", "image": "soldering_station.jpg", "specs": ["Temperature controlled", "Complete kit"] }
+  ]
+}

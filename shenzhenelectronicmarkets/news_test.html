@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>News Test</title></head>
+<body>
+<h1>News Test</h1>
+<div id="news-container">Chargement...</div>
+<script>
+console.log('Script démarré');
+fetch('data/news.json')
+  .then(r => {
+    console.log('Réponse fetch:', r.status);
+    return r.json();
+  })
+  .then(d => {
+    console.log('Données reçues:', d);
+    document.getElementById('news-container').innerHTML = d.news.map(n => `<p>${n.title}</p>`).join('');
+  })
+  .catch(e => console.error('Erreur:', e));
+</script>
+</body></html>

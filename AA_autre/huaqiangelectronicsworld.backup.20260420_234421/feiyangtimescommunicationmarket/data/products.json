@@ -1,0 +1,27 @@
+﻿{
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "IC Chips - Various Models",
+      "name_cn": "IC芯片 - 多种型号",
+      "category": "Semiconductors",
+      "category_cn": "半导体",
+      "price_range": "$0.10 - $50",
+      "price_range_cn": "0.10 - 50美元",
+      "description": "Wide selection of ICs including microcontrollers, memory chips, and logic ICs.",
+      "description_cn": "广泛的IC选择，包括微控制器、存储芯片和逻辑IC。"
+    },
+    {
+      "id": "prod_002",
+      "name": "PCB Prototyping Service",
+      "name_cn": "PCB打样服务",
+      "category": "PCB",
+      "category_cn": "电路板",
+      "price_range": "$5 - $100",
+      "price_range_cn": "5 - 100美元",
+      "description": "Quick-turn PCB prototyping available from multiple vendors on floor 6.",
+      "description_cn": "6楼多家商户提供快速PCB打样服务。"
+    }
+  ],
+  "updated": "2026-04-16T19:00:00"
+}

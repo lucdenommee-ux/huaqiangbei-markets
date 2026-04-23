@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huaqiang Electronics – Shenzhen's Largest IC and Semiconductor Hub</title>
+    <meta name="description" content="Real-time access to 800+ wholesalers in Shenzhen. Secure sourcing, certified testing, global shipping.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-green: #00ff41;
+            --warning-red: #ff3e3e;
+            --bg-dark: #0a0a0a;
+            --muted: #888;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Ticker */
+        .ticker-wrapper {
+            background: #1a1a1a;
+            color: var(--neon-green);
+            padding: 10px 0;
+            display: flex;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            border-bottom: 2px solid #333;
+            position: relative;
+            z-index: 1000;
+        }
+        .ticker-title {
+            background: #ff0000;
+            color: white;
+            padding: 0 20px;
+            font-weight: bold;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .ticker-content {
+            display: flex;
+            white-space: nowrap;
+            animation: ticker 35s linear infinite;
+        }
+        .ticker-content span { padding-left: 40px; }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Nav & Topbar */
+        .topbar { background: #111; padding: 20px 0; border-bottom: 1px solid #333; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+
+        /* Bundles */
+        .bundles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .bundle-card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 30px 25px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .bundle-card:hover { transform: translateY(-10px); border-color: #ff0000; }
+        .bundle-badge {
+            position: absolute; top: -12px; right: 20px;
+            background: #ff0000; padding: 6px 16px; font-size: 12px;
+            font-weight: bold; border-radius: 30px; color: white;
+        }
+        .new-price { display: block; font-size: 28px; color: var(--neon-green); font-weight: bold; margin-top: 10px;}
+        .bundle-features { list-style: none; padding: 0; margin: 20px 0; font-size: 14px; color: #ccc; }
+        .bundle-btn {
+            display: block; text-align: center; background: #25d366;
+            color: white; text-decoration: none; padding: 14px;
+            border-radius: 40px; font-weight: bold; transition: 0.3s;
+        }
+
+        /* News Feed */
+        .news-item { display: flex; background: #1a1a1a; border-radius: 12px; margin-bottom: 20px; border: 1px solid #333; overflow: hidden; }
+        .news-date { background: #333; color: #fff; writing-mode: vertical-lr; transform: rotate(180deg); padding: 15px 10px; font-size: 10px; font-weight: bold; }
+        .news-content { padding: 20px; flex: 1; }
+        .news-tag { background: #ff0000; color: white; font-size: 10px; padding: 3px 10px; border-radius: 4px; }
+
+        /* Floating Buttons */
+        .floating-market-btn {
+            position: fixed; bottom: 25px; right: 25px;
+            background: #ff0000; color: white !important;
+            padding: 14px 22px; border-radius: 60px; font-weight: bold;
+            text-decoration: none; box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+            z-index: 9999; border: 2px solid white; font-size: 16px;
+        }
+        .bundles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin: 40px 0;
+    }
+    .bundle-card {
+        background: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 20px;
+        padding: 30px 25px;
+        position: relative;
+        transition: 0.3s;
+    }
+    .bundle-card:hover { transform: translateY(-10px); border-color: #ff0000; }
+    .bundle-badge {
+        position: absolute; top: -12px; right: 20px;
+        background: #ff0000; padding: 6px 16px; font-size: 12px;
+        font-weight: bold; border-radius: 30px; color: white;
+    }
+    .bundle-price { margin: 20px 0; }
+    .old-price { text-decoration: line-through; color: #888; font-size: 14px; }
+    .new-price { display: block; font-size: 28px; color: var(--neon-green); font-weight: bold; }
+    .bundle-features { list-style: none; padding: 0; margin: 20px 0; font-size: 14px; color: #ccc; }
+    .bundle-btn {
+        display: block; text-align: center; background: #25d366;
+        color: white; text-decoration: none; padding: 14px;
+        border-radius: 40px; font-weight: bold; transition: 0.3s;
+    }
+    .news-feed { display: flex; flex-direction: column; gap: 20px; margin: 30px 0; }
+    .news-item { display: flex; background: #1a1a1a; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+    .news-date { background: #333; color: #fff; writing-mode: vertical-lr; transform: rotate(180deg); padding: 15px 10px; font-size: 10px; font-weight: bold; }
+    .news-content { padding: 20px; flex: 1; }
+    .news-tag { background: #ff0000; color: white; font-size: 10px; padding: 3px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <strong style="font-size: 1.5rem; color: #fff;">Huaqiang Electronics</strong>
+            </div>
+            <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="mobile.html">iPhone</a>
+    <a href="oneplus.html">OnePlus</a>
+    <a href="ipad.html">iPad & Tablets</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="watch.html">Watch</a>
+    <a href="news.html">News</a>
+    <a href="guide.html">Guide</a>
+    <a href="directory.html">Directory</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+        </div>
+    </div>
+
+    <div class="ticker-wrapper">
+        <div class="ticker-title">LIVE MARKET UPDATES</div>
+        <div class="ticker-content" id="ticker-content"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="hero" style="padding: 60px 0; display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h1>Huaqiang Electronics: Shenzhen's Largest IC and Semiconductor Hub</h1>
+                <p style="color: #888; font-size: 1.2rem;">Access 800+ wholesalers in Shenzhen. Secure sourcing powered by Luc Junior Denommee.</p>
+                <a href="https://wa.me/8613501552311" class="bundle-btn" style="display: inline-block; padding: 15px 30px;">📲 WhatsApp Luc</a>
+            </div>
+        </div>
+
+        
+<!-- ==================== LUC'S EXCLUSIVE BUNDLES ==================== -->
+<h2 style="margin-top:50px;">📦 Luc's Exclusive Bundles</h2>
+<p class="muted">Hand-picked, fully tested – save up to 20% vs individual wholesale.</p>
+<div class="bundles-grid">
+    <!-- Bundle 1: Digital Nomad -->
+    <div class="bundle-card">
+        <div class="bundle-badge">BEST SELLER</div>
+        <h3>💻 The Digital Nomad</h3>
+        <p class="bundle-includes" style="color:var(--muted);">iPhone 15 Pro + MacBook M2 + AirPods Pro</p>
+        <div class="bundle-price">
+            <span class="old-price">12,500 CNY</span>
+            <span class="new-price">10,800 CNY</span>
+        </div>
+        <ul class="bundle-features">
+            <li>✅ Full 3uTools Report</li>
+            <li>✅ Battery Health 90%+</li>
+            <li>✅ Free Protective Case</li>
+        </ul>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20The%20Digital%20Nomad%20Bundle" class="bundle-btn">Order on WhatsApp</a>
+    </div>
+    <!-- Bundle 2: Repair Shop Kit -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#007bff;">RESELLER PACK</div>
+        <h3>🛠️ The Repair Shop Kit</h3>
+        <p class="bundle-includes" style="color:var(--muted);">10x Mixed iPhones + Screen Kits + Toolset</p>
+        <div class="bundle-price">
+            <span class="new-price">Contact for Bulk Price</span>
+        </div>
+        <ul class="bundle-features">
+            <li>✅ Mix of Grade A/B</li>
+            <li>✅ Original Parts Only</li>
+            <li>✅ Direct Factory Logistics</li>
+        </ul>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20The%20Repair%20Shop%20Kit" class="bundle-btn">Get Bulk Quote</a>
+    </div>
+    <!-- Bundle 3: Content Creator -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#9b59b6;">CREATOR</div>
+        <h3>🎬 Content Creator</h3>
+        <p class="bundle-includes" style="color:var(--muted);">iPhone 15 Pro Max + Wireless Mic + Stabilizer</p>
+        <div class="bundle-price">
+            <span class="old-price">8,900 CNY</span>
+            <span class="new-price">7,650 CNY</span>
+        </div>
+        <ul class="bundle-features">
+            <li>✅ Pro video gear</li>
+            <li>✅ Gimbal included</li>
+            <li>✅ Portable Ring Light</li>
+        </ul>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Content%20Creator%20Bundle" class="bundle-btn">Order on WhatsApp</a>
+    </div>
+    <!-- Bundle 4: Essential Student -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#e67e22;">STUDENT</div>
+        <h3>🎓 Essential Student</h3>
+        <p class="bundle-includes" style="color:var(--muted);">iPhone 13 + iPad Air + AirPods</p>
+        <div class="bundle-price">
+            <span class="old-price">4,200 CNY</span>
+            <span class="new-price">3,480 CNY</span>
+        </div>
+        <ul class="bundle-features">
+            <li>✅ Reliable & modern</li>
+            <li>✅ Free screen protector</li>
+            <li>✅ 20W fast charger</li>
+        </ul>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Essential%20Student%20Bundle" class="bundle-btn">Order on WhatsApp</a>
+    </div>
+</div>
+
+<!-- ==================== LAPTOP BUSINESS BUNDLES ==================== -->
+<h2 style="margin-top:60px;">💼 Business Laptop Bundles (3rd Floor)</h2>
+<div class="bundles-grid">
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#007bff;">PRO CHOICE</div>
+        <h3>💻 Ultimate Pro Pack</h3>
+        <p class="bundle-includes" style="color:var(--muted);">MacBook Pro 14/16" M2/M3 Pro</p>
+        <ul class="bundle-features">
+            <li>✅ Pre-owned Magic Mouse</li>
+            <li>✅ 7-in-1 USB-C Hub</li>
+            <li>✅ Hard-shell protective case</li>
+            <li>🎁 Battery < 50 cycles guaranteed</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 7,200 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Ultimate%20Pro%20Pack" class="bundle-btn">Reserve this pack</a>
+    </div>
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#28a745;">VOLUME</div>
+        <h3>🏢 Office Fleet Pack</h3>
+        <p class="bundle-includes" style="color:var(--muted);">5x MacBook Air M1/M2 (8/256)</p>
+        <ul class="bundle-features">
+            <li>✅ 5x Original Apple chargers</li>
+            <li>✅ 5x Carrying cases</li>
+            <li>✅ Individual GSX reports (iCloud/MDM free)</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">Contact for bulk</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Office%20Fleet%20Pack" class="bundle-btn">Get Quote</a>
+    </div>
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#6c757d;">WINDOWS</div>
+        <h3>🖥️ Windows Power Bundle</h3>
+        <p class="bundle-includes" style="color:var(--muted);">Surface Pro 8/9 or Dell XPS 13</p>
+        <ul class="bundle-features">
+            <li>✅ Type Cover / Wireless Mouse</li>
+            <li>✅ Factory-installed screen protector</li>
+            <li>🎁 1-hour CPU stress test</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 3,800 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Windows%20Power%20Bundle" class="bundle-btn">Reserve this pack</a>
+    </div>
+</div>
+
+<!-- ==================== GAMING BUNDLES ==================== -->
+<h2 style="margin-top:40px;">🎮 Hardcore Gamer Bundles (3rd Floor)</h2>
+<div class="bundles-grid">
+    <div class="bundle-card" style="border-color:#6200ff;">
+        <div class="bundle-badge" style="background:#6200ff;">MAX PERFORMANCE</div>
+        <h3>🚀 Elite Gamer Pack</h3>
+        <p class="bundle-includes" style="color:var(--muted);">Legion/ROG/Razer RTX 3070/4060</p>
+        <ul class="bundle-features">
+            <li>✅ 144Hz/165Hz Display (Ghosting-Free)</li>
+            <li>✅ Pro Gaming Mouse (Logitech/Razer)</li>
+            <li>✅ Cooling Pad + XL Mouse Pad</li>
+            <li>🎁 TimeSpy Benchmark + Thermal Paste Replacement</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">5,500 CNY est.</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Elite%20Gamer%20Pack" class="bundle-btn" style="background:#6200ff;">Check Inventory</a>
+    </div>
+    <div class="bundle-card" style="border-color:#ff00ff;">
+        <div class="bundle-badge" style="background:#ff00ff;">PERIPHERALS</div>
+        <h3>⌨️ Pro Gaming Gear</h3>
+        <p class="bundle-includes" style="color:var(--muted);">Mechanical Keyboard + Mouse + Headset</p>
+        <ul class="bundle-features">
+            <li>✅ Hot-swappable mechanical keyboard (RGB)</li>
+            <li>✅ 25K DPI gaming mouse</li>
+            <li>✅ 7.1 surround headset</li>
+            <li>🎁 Input lag tested</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 510 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20Pro%20Gaming%20Gear" class="bundle-btn" style="background:#ff00ff;">Customize</a>
+    </div>
+</div>
+
+<!-- ==================== MARKET NEWS FEED ==================== -->
+<h2 style="margin-top:50px;">📰 Live Market Insights</h2>
+<div class="news-feed">
+    <div class="news-item">
+        <div class="news-date">TODAY</div>
+        <div class="news-content">
+            <h4>📉 Price Drop Alert: iPhone 15 Series</h4>
+            <p>Grade A stock flooding the market. Prices at 3-month low. Contact Luc for new price list.</p>
+            <span class="news-tag">MARKET TREND</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">YESTERDAY</div>
+        <div class="news-content">
+            <h4>📦 MacBook Pro M3 Arrival</h4>
+            <p>40 "Like New" units with <10 battery cycles. First come, first served.</p>
+            <span class="news-tag" style="background:#007bff;">NEW ARRIVAL</span>
+        </div>
+    </div>
+</div><h2>📦 Laptop & Mobile Bundles</h2>
+        <div class="bundles-grid">
+            <div class="bundle-card">
+                <div class="bundle-badge">BEST SELLER</div>
+                <h3>💻 The Digital Nomad</h3>
+                <ul class="bundle-features">
+                    <li>✅ iPhone 15 Pro + MacBook M2</li>
+                    <li>✅ Battery Health 90%+</li>
+                </ul>
+                <div class="new-price">10,800 CNY</div>
+                <a href="#" class="bundle-btn">Order Now</a>
+            </div>
+            
+            <div class="bundle-card" style="border-color: #6200ff;">
+                <div class="bundle-badge" style="background:#6200ff;">GAMING</div>
+                <h3>🚀 Elite Gamer Pack</h3>
+                <ul class="bundle-features">
+                    <li>✅ Legion/ROG RTX 4060</li>
+                    <li>✅ Pro Gaming Mouse</li>
+                </ul>
+                <div class="new-price">5,500 CNY</div>
+                <a href="#" class="bundle-btn" style="background:#6200ff;">Check Inventory</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const marketData = {
+        prices: [
+            { item: "OnePlus 15 (12+256)", price: "Check Market", trend: "new" },
+            { item: "iPad Air 8 11\"", price: "Check Market", trend: "hot" },
+            { item: "Apple Watch Ultra", price: "Check Market", trend: "stable" },
+            { item: "OnePlus ACE 6T", price: "Check Market", trend: "down" },
+            { item: "iPhone 15 Pro Max", price: "5,150 CNY", trend: "down" }
+        ],
+        lastUpdate: new Date().toLocaleDateString()
+    };
+    function updateTicker() {
+        const container = document.getElementById('ticker-content');
+        let html = '';
+        marketData.prices.forEach(p => {
+            let icon = p.trend === 'down' ? '📉' : (p.trend === 'hot' ? '🔥' : (p.trend === 'new' ? '🆕' : '✅'));
+            html += `<span>${icon} ${p.item}: <strong>${p.price}</strong></span>`;
+        });
+        html += `<span>📦 Shipping: Normal</span>`;
+        html += `<span>📅 Updated: ${marketData.lastUpdate}</span>`;
+        container.innerHTML = html + html;
+    }
+    document.addEventListener('DOMContentLoaded', updateTicker);
+</script>
+
+    <a href="market.html" class="floating-market-btn">📊 MARKET</a>
+
+
+<!-- ==================== PREMIUM ANDROID & APPLE BUNDLES ==================== -->
+<h2 style="margin-top:60px;">📱 Premium Android & Apple Bundles</h2>
+<p class="muted">OnePlus flagships + Apple Watch + iPad – curated combos at wholesale value.</p>
+<div class="bundles-grid">
+    <!-- Bundle 1: OnePlus 15T + Watch Ultra -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#ff4500;">FLAGSHIP</div>
+        <h3>🚀 OnePlus 15T Pro Pack</h3>
+        <p class="bundle-includes" style="color:var(--muted);">OnePlus 15T (16+512) + Apple Watch Ultra</p>
+        <ul class="bundle-features">
+            <li>✅ Snapdragon 8 Gen 4 / 16GB RAM</li>
+            <li>✅ 49mm Titanium Watch Ultra</li>
+            <li>✅ Free tempered glass + case</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 9,800 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%2015T%20Pro%20Pack" class="bundle-btn">Inquire on WhatsApp</a>
+    </div>
+    <!-- Bundle 2: OnePlus ACE 6T + Watch S11 46mm -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#2e8b57;">VALUE</div>
+        <h3>💚 OnePlus ACE 6T + Watch S11</h3>
+        <p class="bundle-includes" style="color:var(--muted);">OnePlus ACE 6T (16+512) + Apple Watch S11 46mm</p>
+        <ul class="bundle-features">
+            <li>✅ MediaTek Dimensity 9300+ / 16GB RAM</li>
+            <li>✅ 46mm GPS Watch with fitness tracking</li>
+            <li>✅ USB-C fast charger included</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 5,500 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%20ACE%206T%20%2B%20Watch%20S11" class="bundle-btn">Inquire on WhatsApp</a>
+    </div>
+    <!-- Bundle 3: iPad Air 8 11" + Watch S11 42mm -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#1e90ff;">APPLE DUO</div>
+        <h3>📱 iPad Air 8 + Watch S11</h3>
+        <p class="bundle-includes" style="color:var(--muted);">iPad Air 8 11" (128GB) + Apple Watch S11 42mm</p>
+        <ul class="bundle-features">
+            <li>✅ M4 chip / Liquid Retina display</li>
+            <li>✅ 42mm aluminum watch w/ GPS</li>
+            <li>✅ Apple Pencil compatible</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 6,800 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20iPad%20Air%208%20%2B%20Watch%20S11" class="bundle-btn">Inquire on WhatsApp</a>
+    </div>
+    <!-- Bundle 4: OnePlus 15 (16+512) + iPad 11" -->
+    <div class="bundle-card">
+        <div class="bundle-badge" style="background:#8a2be2;">POWER COMBO</div>
+        <h3>💜 OnePlus 15 + iPad 11</h3>
+        <p class="bundle-includes" style="color:var(--muted);">OnePlus 15 (16+512) + iPad 11 11" (256GB)</p>
+        <ul class="bundle-features">
+            <li>✅ Hasselblad camera / 100W charging</li>
+            <li>✅ A16 Bionic iPad with 256GB</li>
+            <li>✅ Perfect for productivity & gaming</li>
+        </ul>
+        <div class="bundle-price"><span class="new-price">From 7,800 CNY</span></div>
+        <a href="https://wa.me/8613501552311?text=I'm%20interested%20in%20the%20OnePlus%2015%20%2B%20iPad%2011" class="bundle-btn">Inquire on WhatsApp</a>
+    </div>
+</div>
+
+<!-- Note de discrétion sur les prix -->
+<div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 15px 20px; margin: 20px 0; text-align: center; border: 1px dashed #555;">
+    <span style="color: var(--neon-green);">🔒 Wholesale pricing available upon request. All bundles include full QC and secure packaging.</span>
+</div>
+
+<!-- ==================== ONEPLUS & ANDROID SECTION ==================== -->
+<h2 style="border-left: 4px solid #f31212; padding-left: 15px; margin-top: 60px;">📱 OnePlus Flagship Series</h2>
+<p class="muted">Latest models – daily rates include Luc's sourcing & verification fee.</p>
+<div class="bundles-grid">
+    <div class="bundle-card" style="border-color: #f31212;">
+        <div class="bundle-badge" style="background:#f31212;">FLAGSHIP</div>
+        <h3>OnePlus 15 / 15T</h3>
+        <p class="bundle-includes" style="color:var(--muted);">12+256GB to 16+1TB</p>
+        <ul class="bundle-features">
+            <li>✅ Snapdragon 8 Gen 4 / Hasselblad Camera</li>
+            <li>✅ 100W fast charging, original box</li>
+            <li>📦 Includes: tempered glass + protective case</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Daily Rate: <span style="color:var(--neon-green);">WhatsApp for Quote</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20OnePlus%2015%20or%2015T" class="bundle-btn" style="background:#f31212;">Get OnePlus 15 Price</a>
+    </div>
+    <div class="bundle-card" style="border-color: #6200ff;">
+        <div class="bundle-badge" style="background:#6200ff;">PERFORMANCE</div>
+        <h3>OnePlus ACE 6 / 6T</h3>
+        <p class="bundle-includes" style="color:var(--muted);">12+256GB to 16+1TB</p>
+        <ul class="bundle-features">
+            <li>✅ MediaTek Dimensity 9300+ / gaming optimized</li>
+            <li>✅ 120W charging, Grade A+ condition</li>
+            <li>📦 Includes: case + screen protector + 120W charger</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Daily Rate: <span style="color:var(--neon-green);">WhatsApp for Quote</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20OnePlus%20ACE%206%20or%206T" class="bundle-btn" style="background:#6200ff;">Get ACE Series Price</a>
+    </div>
+    <div class="bundle-card" style="border-color: #ff8c00;">
+        <div class="bundle-badge" style="background:#ff8c00;">VALUE</div>
+        <h3>OnePlus Turbo 6V / ACE 5</h3>
+        <p class="bundle-includes" style="color:var(--muted);">8+256GB to 16+512GB</p>
+        <ul class="bundle-features">
+            <li>✅ Great value mid-range flagships</li>
+            <li>✅ 100% tested, unlocked</li>
+            <li>📦 Includes: fast charger + basic case</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Daily Rate: <span style="color:var(--neon-green);">WhatsApp for Quote</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20OnePlus%20Turbo%20or%20ACE%205" class="bundle-btn" style="background:#ff8c00;">Get Turbo/ACE 5 Price</a>
+    </div>
+</div>
+
+<!-- ==================== IPAD SECTION ==================== -->
+<h2 style="border-left: 4px solid #00d2ff; padding-left: 15px; margin-top: 60px;">📱 iPad & Creative Tools</h2>
+<p class="muted">iPad Air 8, iPad 11, and accessories – with full diagnostic report.</p>
+<div class="bundles-grid">
+    <div class="bundle-card" style="border-color: #00d2ff;">
+        <div class="bundle-badge" style="background:#00d2ff;">LATEST</div>
+        <h3>iPad Air 8 (11" & 13")</h3>
+        <p class="bundle-includes" style="color:var(--muted);">Wi-Fi or 5G, 128GB to 1TB</p>
+        <ul class="bundle-features">
+            <li>✅ M2/M4 chip, Liquid Retina display</li>
+            <li>✅ Apple Pencil Pro compatible</li>
+            <li>📦 Optional: Pencil Pro & Magic Keyboard</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Sourcing Fee: <span style="color:var(--neon-green);">Inquire on WhatsApp</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20iPad%20Air%208" class="bundle-btn" style="background:#00d2ff;">Request iPad Air Quote</a>
+    </div>
+    <div class="bundle-card" style="border-color: #333;">
+        <div class="bundle-badge" style="background:#555;">VALUE</div>
+        <h3>iPad 11 (11")</h3>
+        <p class="bundle-includes" style="color:var(--muted);">Wi-Fi or Cellular, 128GB to 512GB</p>
+        <ul class="bundle-features">
+            <li>✅ A16 Bionic chip, great for students</li>
+            <li>✅ Full 3uTools report provided</li>
+            <li>📦 Includes: USB-C cable & 20W adapter</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Sourcing Fee: <span style="color:var(--neon-green);">Inquire on WhatsApp</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20iPad%2011" class="bundle-btn" style="background:#444;">Request iPad 11 Quote</a>
+    </div>
+</div>
+
+<!-- ==================== APPLE WATCH SECTION ==================== -->
+<h2 style="border-left: 4px solid #ff8c00; padding-left: 15px; margin-top: 60px;">⌚ Apple Watch Series</h2>
+<p class="muted">S11, Ultra – all grades tested & verified.</p>
+<div class="bundles-grid">
+    <div class="bundle-card" style="border-color: #ff8c00;">
+        <div class="bundle-badge" style="background:#ff8c00;">ULTRA</div>
+        <h3>Apple Watch Ultra 49mm</h3>
+        <p class="bundle-includes" style="color:var(--muted);">v1, v2, v3 available</p>
+        <ul class="bundle-features">
+            <li>✅ Titanium case, 100% functional</li>
+            <li>✅ Battery health > 90%</li>
+            <li>📦 Includes: original band + charger</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Sourcing Fee: <span style="color:var(--neon-green);">Inquire on WhatsApp</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20Apple%20Watch%20Ultra" class="bundle-btn" style="background:#ff8c00;">Get Ultra Quote</a>
+    </div>
+    <div class="bundle-card" style="border-color: #00d2ff;">
+        <div class="bundle-badge" style="background:#00d2ff;">SERIES 11</div>
+        <h3>Apple Watch S11</h3>
+        <p class="bundle-includes" style="color:var(--muted);">42mm & 46mm, GPS or Cellular</p>
+        <ul class="bundle-features">
+            <li>✅ Latest sensors, tested connectivity</li>
+            <li>✅ Grade A+ condition</li>
+            <li>📦 Includes: sport band + magnetic charger</li>
+        </ul>
+        <div class="new-price" style="font-size: 1.2rem;">Sourcing Fee: <span style="color:var(--neon-green);">Inquire on WhatsApp</span></div>
+        <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20Apple%20Watch%20S11" class="bundle-btn" style="background:#00d2ff;">Get S11 Quote</a>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

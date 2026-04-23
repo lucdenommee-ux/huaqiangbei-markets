@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Videos</title>
+  <link rel="stylesheet" href="css/styles.css">
+<link rel="alternate" hreflang="en" href="videos.html">
+<link rel="alternate" hreflang="zh" href="videos-zh.html"></head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1 id="site-title">tongtiandicommunicationmarket</h1>
+    <p class="muted" id="site-sub">China's largest wholesale market for refurbished Apple products • news • videos • photos</p>
+  </div>
+</header>
+
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" data-nav="home">Home / 首页</a>
+    <a href="market.html" data-nav="market">Market / 市场</a>
+    <a href="news.html" data-nav="news">News / 新闻</a>
+    <a href="videos.html" data-nav="videos">Videos / 视频</a>
+    <a href="photos.html" data-nav="photos">Photos / 照片</a>
+    <a href="https://shenzhenelectronicmarkets.com/live.html" target="_blank" rel="noopener">Live / 直播 (hub)</a>
+  </div>
+</nav>
+
+<main>
+  <section class="card">
+    <h2>Videos</h2>
+    <p class="muted">Edit <span class='kbd'>data/videos.json</span> to add video links for this market.</p>
+    <div id="videos-list" class="list"></div>
+  </section>
+</main>
+
+
+
+<!-- CONTACT UNIVERSEL -->
+<div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
+    <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
+            <div style="text-align:left;">
+                <strong style="color:var(--text);">WhatsApp</strong><br>
+                <span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span>
+            </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px;">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
+            <div style="text-align:left;">
+                <strong style="color:var(--text);">WeChat / 微信</strong><br>
+                <span style="color:var(--muted); font-family:monospace;">luc-2025</span>
+            </div>
+        </div>
+        <div style="text-align:left;">
+            <strong style="color:var(--text);">📧 Email / 邮箱</strong><br>
+            <a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
+            <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong>
+            <a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
+        </div>
+    </div>
+    <p style="color:var(--muted); margin-top:20px; font-size:14px;">
+        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Marketsss · 华强北市场外贸专家
+    </p>
+</div>
+
+<footer>
+    <div class="wrap">
+        <div class="small">
+            <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Marketsss · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
+            <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script>window.SEM && window.SEM.setActiveNav('videos'); window.SEM && window.SEM.renderVideos();</script>
+
+
+</div>
+
+
+<!-- INJECTION DYNAMIQUE DES DONNÉES AGENTS -->
+<script>
+(function() {
+    const sections = [
+        { id: 'news-container', file: 'news.json' },
+        { id: 'blog-container', file: 'blog.json' },
+        { id: 'faq-container', file: 'faq.json' },
+        { id: 'products-container', file: 'products.json' },
+        { id: 'guide-container', file: 'guides.json' },
+        { id: 'video-container', file: 'video.json' },
+        { id: 'visual-container', file: 'visual.json' }
+    ];
+    sections.forEach(s => {
+        const container = document.getElementById(s.id);
+        if (container) {
+            fetch('data/' + s.file)
+                .then(r => r.ok ? r.json() : Promise.reject())
+                .then(data => {
+                    if (data.news) { /* adapter selon la structure */ }
+                    if (data.content) container.innerHTML = data.content;
+                })
+                .catch(() => {});
+        }
+    });
+})();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

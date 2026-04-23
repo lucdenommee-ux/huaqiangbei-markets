@@ -1,141 +1,121 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Market / 市场</title>
-  <link rel="stylesheet" href="css/styles.css">
-<link rel="alternate" hreflang="en" href="market.html">
-<link rel="alternate" hreflang="zh" href="market-zh.html"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Ecosystem – SEG Plaza by Luc Junior</title>
+    <meta name="description" content="SEG Plaza market ecosystem: product categories, vendor matrix, B4AE audit protocol, and global logistics.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root { --neon-green: #00ff41; --warning-red: #ff3e3e; --bg-dark: #0a0a0a; --muted: #888; }
+        body { background-color: var(--bg-dark); color: #e0e0e0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .topbar { background: #111; padding: 15px 0; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 1000; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav a { color: #aaa; text-decoration: none; margin-left: 20px; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+        .market-table { width: 100%; border-collapse: collapse; margin: 25px 0; background: #111; border-radius: 10px; overflow: hidden; font-size: 0.9rem; }
+        .market-table th { background: #222; color: var(--neon-green); text-align: left; padding: 15px; }
+        .market-table td { padding: 15px; border-bottom: 1px solid #222; color: #ccc; }
+        .audit-box { border: 2px solid var(--warning-red); padding: 30px; border-radius: 20px; background: rgba(255, 62, 62, 0.02); margin: 40px 0; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .step-card { background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #333; }
+        .cta-button { display: inline-block; background: var(--neon-green); color: #000; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+        .vip-block { background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border: 2px solid var(--neon-green); border-radius: 20px; padding: 40px; margin-top: 60px; text-align: center; }
+        .bundle-btn { display: inline-block; background: #25d366; color: white; text-decoration: none; padding: 14px 30px; border-radius: 40px; font-weight: bold; transition: 0.3s; }
+        .bundle-btn:hover { background: #20b859; }
+    </style>
+</head>
 <body>
-
-<header>
-  <div class="wrap">
-    <h1 id="site-title">segplaza</h1>
-    <p class="muted" id="site-sub">China's largest wholesale market for refurbished Apple products • news • videos • photos</p>
-  </div>
-</header>
-
-
-<nav>
-  <div class="wrap">
-    <a href="index.html" data-nav="home">Home / 首页</a>
-    <a href="market.html" data-nav="market">Market / 市场</a>
-    <a href="news.html" data-nav="news">News / 新闻</a>
-    <a href="videos.html" data-nav="videos">Videos / 视频</a>
-    <a href="photos.html" data-nav="photos">Photos / 照片</a>
-    <a href="https://shenzhenelectronicmarkets.com/live.html" target="_blank" rel="noopener">Live / 直播 (hub)</a>
-  </div>
-</nav>
-
-<main>
-  <section class="card">
-    <h2 id="market-title">Market / 市场</h2>
-    <p class="muted">Add your encyclopedia sections here. Keep the same format across all sites.</p>
-    <div class="grid">
-      <div class="card" style="grid-column:span 6;">
-        <h3>Location</h3>
-        <p>Huaqiangbei • Futian District • Shenzhen • China</p>
-      </div>
-      <div class="card" style="grid-column:span 6;">
-        <h3>Product categories</h3>
-        <ul><li>Computer components</li><li>Mobile accessories</li><li>Testing equipment</li><li>Repair tools</li></ul>
-      </div>
-      <div class="card" style="grid-column:span 12;">
-        <h3>Sourcing guide</h3>
-        <ul><li>Compare vendors</li><li>Request samples</li><li>Verify components</li><li>Inspect quality</li><li>Negotiate price</li><li>Arrange logistics</li></ul>
-      </div>
-    </div>
-  </section>
-</main>
-
-
-
-<!-- CONTACT UNIVERSEL -->
-<div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
-    <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-        <div style="display:flex; align-items:center; gap:12px;">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
-            <div style="text-align:left;">
-                <strong style="color:var(--text);">WhatsApp</strong><br>
-                <span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span>
-            </div>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand"><strong style="font-size:1.5rem; color:#fff;">SEG Plaza</strong></div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="market.html" class="active">Market</a>
+                <a href="products.html">Products</a>
+                <a href="guide.html">SEG Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="news.html">News</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/8613501552311" style="background: var(--warning-red); color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 12px; font-weight: bold; margin-left: 10px;">Contact Luc</a>
+            </nav>
         </div>
-        <div style="display:flex; align-items:center; gap:12px;">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
-            <div style="text-align:left;">
-                <strong style="color:var(--text);">WeChat / 微信</strong><br>
-                <span style="color:var(--muted); font-family:monospace;">luc-2025</span>
-            </div>
-        </div>
-        <div style="text-align:left;">
-            <strong style="color:var(--text);">📧 Email / 邮箱</strong><br>
-            <a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
-            <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong>
-            <a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
-        </div>
-    </div>
-    <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-        <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Marketsss · 华强北市场外贸专家
-    </p>
-</div>
+    </header>
 
-<footer>
     <div class="wrap">
-        <div class="small">
-            <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Marketsss · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
-            <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
+        <header style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 2.8rem; margin-bottom: 10px;">🏬 Market Ecosystem: SEG Plaza</h1>
+            <p style="color: var(--neon-green);">The world's refurbished iPhone epicenter – Prices update daily at 2:00 PM.</p>
+            <blockquote style="border-left: 4px solid var(--warning-red); padding: 10px 20px; background: #111; display: inline-block; margin-top: 20px;">
+                "I’m not just a seller; I’m your technical inspector in Shenzhen. If it’s not perfect, it doesn’t ship." — <strong>Luc Junior</strong>
+            </blockquote>
+        </header>
+
+        <h3>📱 Main Sourcing Categories</h3>
+        <table class="market-table">
+            <thead><tr><th>Category</th><th>SEG Plaza Specialty</th><th>Floors</th></tr></thead>
+            <tbody>
+                <tr><td><strong>iPhones</strong></td><td>Grade A+ (Pristine) to Grade C (Export)</td><td>2F, 3F</td></tr>
+                <tr><td><strong>Android Flagships</strong></td><td>Samsung S-Series, Google Pixel, Huawei</td><td>2F</td></tr>
+                <tr><td><strong>Replacement Parts</strong></td><td>OLED Screens, Batteries, Original Chassis</td><td>4F</td></tr>
+                <tr><td><strong>Audio & Wearables</strong></td><td>AirPods (All chips), Apple Watch</td><td>1F</td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="margin-top: 60px;">📊 Vendor Selection Matrix</h3>
+        <p>How we select your suppliers among 800+ stalls:</p>
+        <table class="market-table">
+            <thead><tr><th>Vendor Type</th><th>Reliability</th><th>Price</th><th>Luc's Recommendation</th></tr></thead>
+            <tbody>
+                <tr><td><strong>The Wholesaler</strong></td><td>⭐⭐⭐⭐⭐</td><td>Fixed</td><td>Ideal for Europe/USA. Consistent quality.</td></tr>
+                <tr><td><strong>The Parts Specialist</strong></td><td>⭐⭐⭐⭐</td><td>Negotiable</td><td>Best for repair centers. Original parts.</td></tr>
+                <tr><td><strong>The Broker</strong></td><td>⭐⭐</td><td>Very Low</td><td><strong>AVOID.</strong> Risk of "swap" parts.</td></tr>
+            </tbody>
+        </table>
+
+        <div class="audit-box">
+            <h2 style="color: var(--warning-red); margin-top: 0;">🛡️ The "B4AE" Audit Protocol</h2>
+            <p>We work exclusively with the <strong>Top 5%</strong> of vendors. Every unit undergoes:</p>
+            <div class="grid-3">
+                <div class="step-card"><strong>1. The Volume Test</strong><p style="font-size: 0.85rem; color: #888;">Vendor must have at least 50 units of the same model in stock to prove reliability.</p></div>
+                <div class="step-card"><strong>2. Reaction to 3uTools</strong><p style="font-size: 0.85rem; color: #888;">If the vendor hesitates when we pull out testing software, we cancel the purchase.</p></div>
+                <div class="step-card"><strong>3. Seal Inspection</strong><p style="font-size: 0.85rem; color: #888;">Internal warranty seal verification to detect uncertified repairs.</p></div>
+            </div>
         </div>
+
+        <h3>🚢 International Logistics</h3>
+        <div class="grid-3">
+            <div class="step-card"><h4>Special Line (DDP)</h4><p><strong>Dest:</strong> Europe / Canada<br><strong>Time:</strong> 8-12 days<br>Taxes & duties included. No surprises.</p></div>
+            <div class="step-card"><h4>DHL / FedEx Express</h4><p><strong>Dest:</strong> Worldwide<br><strong>Time:</strong> 3-5 days<br>Ultra-fast. Ideal for samples.</p></div>
+            <div class="step-card"><h4>Air Freight (Cargo)</h4><p><strong>Dest:</strong> Africa / Mid-East<br><strong>Time:</strong> 10-15 days<br>Best for orders >100kg.</p></div>
+        </div>
+
+        <!-- VIP Subscription Block -->
+        <section class="vip-block">
+            <div style="font-size: 40px; margin-bottom: 15px;">📲</div>
+            <h2 style="color: #fff; margin-bottom: 10px;">Join the Luc Junior VIP Channel</h2>
+            <p style="color: #888; max-width: 600px; margin: 0 auto 30px auto;">
+                Receive price lists at 2:00 PM (Shenzhen Time) directly on your phone. Never miss a price drop on iPhones and OnePlus devices again.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                <a href="https://wa.me/8613501552311?text=Luc,%20add%20me%20to%20your%20VIP%20price%20list" style="background: #25d366; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <span>Get Daily Price Alerts (WhatsApp)</span>
+                </a>
+                <p style="font-size: 12px; color: #555;">Or send "VIP" to <strong>contact@segplaza.com</strong> for the weekly Excel list.</p>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 60px; padding: 40px; background: #111; border-radius: 20px;">
+            <h3>Ready to Test SEG Plaza Quality?</h3>
+            <p>Don't guess—test. Receive your samples in 5-7 business days.</p>
+            <a href="https://wa.me/8613501552311?text=Luc,I want to start a sample order" class="cta-button">Start My Sample Order</a>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px;"><a href="index.html" style="color: var(--warning-red); text-decoration: none;">← Back to Home</a></p>
     </div>
-</footer>
-
-<script src="js/site.js"></script>
-<script>window.SEM && window.SEM.setActiveNav('market');</script>
-
-
-</div>
-
-
-<!-- INJECTION DYNAMIQUE DES DONNÉES AGENTS -->
-<script>
-(function() {
-    const sections = [
-        { id: 'news-container', file: 'news.json' },
-        { id: 'blog-container', file: 'blog.json' },
-        { id: 'faq-container', file: 'faq.json' },
-        { id: 'products-container', file: 'products.json' },
-        { id: 'guide-container', file: 'guides.json' },
-        { id: 'video-container', file: 'video.json' },
-        { id: 'visual-container', file: 'visual.json' }
-    ];
-    sections.forEach(s => {
-        const container = document.getElementById(s.id);
-        if (container) {
-            fetch('data/' + s.file)
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => {
-                    if (data.news) { /* adapter selon la structure */ }
-                    if (data.content) container.innerHTML = data.content;
-                })
-                .catch(() => {});
-        }
-    });
-})();
-</script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

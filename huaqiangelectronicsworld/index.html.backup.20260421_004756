@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huaqiang Electronics | Sourcing by Luc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .ticker-wrap { background: #1e293b; overflow: hidden; white-space: nowrap; padding: 10px 0; border-bottom: 2px solid #3b82f6; }
+        .ticker-move { display: inline-block; animation: ticker 30s linear infinite; }
+        @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { border-color: #3b82f6; transform: translateY(-5px); }
+        .badge-live { background: #ef4444; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        /* Navigation du Lab */
+        .lab-nav { background: #0f172a; border-bottom: 1px solid #334155; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .lab-nav-inner { max-width: 1300px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .lab-nav a { color: #94a3b8; text-decoration: none; margin-left: 20px; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .lab-nav a:hover, .lab-nav a.active { color: #3b82f6; }
+        .lab-nav a.whatsapp-btn { background: #25d366; color: white; padding: 8px 15px; border-radius: 5px; margin-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation du Lab -->
+    <div class="lab-nav">
+        <div class="lab-nav-inner">
+            <div class="brand">
+                <strong style="font-size: 1.5rem; color: #f8fafc;">Huaqiang Electronics</strong>
+            </div>
+            <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                <a href="index.html" class="active">Home</a>
+                <a href="market.html">Market</a>
+                <a href="products.html">Products</a>
+                <a href="guide.html">Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="news.html">News</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+                <a href="about.html">About</a>
+                <a href="https://wa.me/8613501552311" class="whatsapp-btn">📲 WhatsApp Luc</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ticker-wrap text-sm font-mono">
+        <div class="ticker-move">
+            <span class="mx-4 text-blue-400 font-bold">[ LIVE MARKET UPDATES ]</span>
+            <span class="mx-4">📈 iPhone 15 Pro Max: <span class="text-green-400">5,150 CNY</span></span>
+            <span class="mx-4">🆕 OnePlus 15: <span class="text-green-400">4,100 CNY</span></span>
+            <span class="mx-4">🔥 iPad Air 8: <span class="text-green-400">3,850 CNY</span></span>
+            <span class="mx-4">📉 OnePlus ACE 6T: Check Market</span>
+            <span class="mx-4 text-yellow-400">📅 Updated: 4/21/2026</span>
+            <span class="mx-4 text-blue-400 font-bold">📦 Shipping: Normal</span>
+        </div>
+    </div>
+
+    <header class="py-16 px-6 text-center bg-gradient-to-b from-blue-900/20 to-transparent">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Huaqiang Electronics</h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
+            Shenzhen's Largest IC & Semiconductor Hub. Direct sourcing and 100% QC verification powered by <span class="text-blue-400 font-semibold">Luc Junior Denommee</span>.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="https://wa.me/8613501552311" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition">📲 WhatsApp Luc</a>
+            <a href="#trends" class="bg-slate-700 hover:bg-slate-600 text-white px-8 py-3 rounded-full font-bold transition">📊 Market Trends</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <section id="trends" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="badge-live px-3 py-1 rounded text-xs font-bold uppercase">Live</span>
+                <h2 class="text-3xl font-bold">The "AI Eight" Trend Radar</h2>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-slate-700">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-800">
+                        <tr>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Category</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Top Selection</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300 text-right">Price (Incl. Fee)</th>
+                            <th class="p-4 border-b border-slate-700 text-slate-300">Market Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🕶️ AI Smart Glasses</td>
+                            <td class="p-4">ChatGPT-4o Audio/Video Integrated</td>
+                            <td class="p-4 text-right font-mono text-green-400">950 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🌟 Star Performer (+80%)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🛸 4K Drones</td>
+                            <td class="p-4">Pro-Portable 4K Brushless</td>
+                            <td class="p-4 text-right font-mono text-green-400">1,200 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🔥 High Export Demand</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🐾 AI Robot Pets</td>
+                            <td class="p-4">Bionic Companion (Mini-Series)</td>
+                            <td class="p-4 text-right font-mono text-green-400">1,850 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">📈 Viral Sensation</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold text-blue-400">🗣️ AI Translators</td>
+                            <td class="p-4">120+ Language Pro (Offline)</td>
+                            <td class="p-4 text-right font-mono text-green-400">650 CNY</td>
+                            <td class="p-4 text-sm text-slate-400">🌍 Foreign Trader Fav</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8">Luc's Verified Bundles</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Best Seller</span>
+                    <h3 class="text-xl font-bold mt-2">Digital Nomad</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 15 Pro + MacBook M2 + AirPods</p>
+                    <div class="mt-6">
+                        <span class="text-slate-500 line-through text-sm">12,500 CNY</span>
+                        <div class="text-2xl font-bold text-white">11,500 CNY</div>
+                    </div>
+                    <ul class="mt-4 text-xs text-slate-300 space-y-2">
+                        <li>✅ Full 3uTools Verified</li>
+                        <li>✅ Battery 90%+</li>
+                    </ul>
+                    <button class="w-full mt-6 bg-blue-600 hover:bg-blue-500 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl border-l-4 border-l-purple-500">
+                    <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Creator</span>
+                    <h3 class="text-xl font-bold mt-2">Content Creator</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 15 Pro Max + Mic + Gimbal</p>
+                    <div class="mt-6">
+                        <span class="text-slate-500 line-through text-sm">8,900 CNY</span>
+                        <div class="text-2xl font-bold text-white">8,350 CNY</div>
+                    </div>
+                    <ul class="mt-4 text-xs text-slate-300 space-y-2">
+                        <li>✅ Pro Video Gear Rig</li>
+                        <li>✅ Gimbal Calibration</li>
+                    </ul>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-green-400 uppercase tracking-widest">Value</span>
+                    <h3 class="text-xl font-bold mt-2">Essential Student</h3>
+                    <p class="text-slate-400 text-sm mt-2">iPhone 13 + iPad Air + AirPods</p>
+                    <div class="mt-6">
+                        <div class="text-2xl font-bold text-white">3,480 CNY</div>
+                    </div>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Reserve Now</button>
+                </div>
+                <div class="card p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest">Bulk</span>
+                    <h3 class="text-xl font-bold mt-2">Repair Shop Kit</h3>
+                    <p class="text-slate-400 text-sm mt-2">10x Mixed iPhones + Toolsets</p>
+                    <div class="mt-6">
+                        <div class="text-xl font-bold text-white tracking-tight">Contact for Bulk Price</div>
+                    </div>
+                    <button class="w-full mt-6 bg-slate-700 hover:bg-slate-600 py-2 rounded-lg font-bold text-sm">Get Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-900/10 border border-blue-500/30 rounded-3xl p-8">
+            <h2 class="text-2xl font-bold mb-4">Why Luc's Sourcing Fee is Essential:</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-bold text-blue-400 mb-2">Anti-Clone Protection</h4>
+                    <p class="text-sm text-slate-400">In early 2026, AI Smart Glasses are heavily duplicated. I verify the ChatGPT firmware personally.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-400 mb-2">Technical QC</h4>
+                    <p class="text-sm text-slate-400">All iPhones/iPads include a 3uTools report. Laptops undergo a 1-hour stress test.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-400 mb-2">Direct Logistics</h4>
+                    <p class="text-sm text-slate-400">Professional export-grade packaging. No "lost in transit" excuses from wholesalers.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        &copy; 2026 Huaqiang Electronics Hub. Verified by Luc Junior Denommee. All prices include sourcing margin.
+    </footer>
+
+</body>
+</html>

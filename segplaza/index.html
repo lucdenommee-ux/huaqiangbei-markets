@@ -1,147 +1,227 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>segplaza - Huaqiangbei Encyclopedia</title>
+    <title>SEG Plaza – Live Sourcing by Luc Junior</title>
+    <meta name="description" content="Direct access to 800+ wholesalers in SEG Plaza, Shenzhen. Live pricing, exclusive bundles, secure sourcing.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .hero-art { display: flex; align-items: center; justify-content: center; text-align: center; }
-        .hero-art svg { display: block; margin: 0 auto; }
+        :root { --neon-green: #00ff41; --warning-red: #ff3e3e; --bg-dark: #050505; --card-bg: #111; --muted: #888; }
+        body { background-color: var(--bg-dark); color: #e0e0e0; font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
+        .ticker-wrap { background: #111; border-bottom: 1px solid #333; padding: 10px 0; overflow: hidden; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+        .ticker-move { display: inline-block; animation: ticker 40s linear infinite; }
+        .ticker-item { display: inline-block; margin-right: 50px; }
+        .up { color: var(--neon-green); } .down { color: var(--warning-red); }
+        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .topbar { background: #111; padding: 15px 0; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 1000; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto; padding: 0 20px; flex-wrap: wrap; }
+        .nav { display: flex; gap: 15px; flex-wrap: wrap; align-items: center; }
+        .nav a { color: #aaa; text-decoration: none; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+        .nav a.market-btn { background: var(--warning-red); color: white !important; padding: 8px 15px; border-radius: 5px; margin-left: 5px; }
+        .hero { text-align: center; padding: 80px 20px; background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); }
+        .hero h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
+        .wrap { max-width: 1300px; margin: 0 auto; padding: 20px; }
+        .section-title { border-left: 4px solid var(--warning-red); padding-left: 15px; margin: 60px 0 30px; color: #fff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .bundle-card { background: var(--card-bg); border: 1px solid #222; border-radius: 15px; padding: 25px; transition: 0.3s; position: relative; }
+        .bundle-card:hover { border-color: var(--neon-green); transform: translateY(-5px); }
+        .tag { position: absolute; top: 15px; right: 15px; font-size: 10px; font-weight: bold; padding: 4px 10px; border-radius: 4px; background: #222; color: #aaa; }
+        .price-tag { font-size: 1.5rem; font-weight: bold; color: var(--neon-green); margin: 15px 0; display: block; }
+        .old-price { text-decoration: line-through; color: #555; font-size: 0.9rem; margin-right: 10px; }
+        .btn-wa { display: block; background: #25d366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        .news-feed { display: flex; flex-direction: column; gap: 20px; margin: 30px 0; }
+        .news-item { display: flex; background: #1a1a1a; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+        .news-date { background: #333; color: #fff; writing-mode: vertical-lr; transform: rotate(180deg); padding: 15px 10px; font-size: 10px; font-weight: bold; }
+        .news-content { padding: 20px; flex: 1; }
+        .news-tag { background: var(--warning-red); color: white; font-size: 10px; padding: 3px 10px; border-radius: 4px; }
+        .vip-block { background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border: 2px solid var(--neon-green); border-radius: 20px; padding: 40px; margin-top: 60px; text-align: center; }
+        footer { text-align: center; padding: 60px 20px; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-    <div class="topbar">
-        <div class="topbar-inner">
-            <div class="brand">
-                <div class="logo"></div>
-                <div>
-                    <div class="title">segplaza</div>
-                    <div class="subtitle">飞扬时代通讯市场</div>
-                </div>
-            </div>
-            <div class="nav">
-                <a href="index.html" class="active">Home / 首页</a>
-                <a href="market.html">Market / 市场</a>
-                <a href="mobile.html">Mobile / 手机</a>
-                <a href="laptops.html">Laptops / 笔记本</a>
-                <a href="tablettes.html">Tablettes / 平板</a>
-                <a href="airpods.html">AirPods / 耳机</a>
-                <a href="directory.html">Directory / 目录</a>
-                <a href="news.html">News / 新闻</a>
-                <a href="videos.html">Videos / 视频</a>
-                <a href="photos.html">Photos / 照片</a>
-                <a href="guide.html">Guide / 指南</a>
-            </div>
-            <div class="lang">
-                <a href="#" class="active">EN</a>
-                <a href="#">中文</a>
-            </div>
+    <!-- TICKER LIVE -->
+    <div class="ticker-wrap">
+        <div class="ticker-move">
+            <span class="ticker-item"><span style="color: var(--neon-green);">●</span> LIVE FROM SEG PLAZA</span>
+            <span class="ticker-item">🆕 OnePlus 15 (12+256): <span class="up">Check Market</span></span>
+            <span class="ticker-item">🔥 iPad Air 8 11": <span class="up">Check Market</span></span>
+            <span class="ticker-item">✅ Apple Watch Ultra: <span class="up">Check Market</span></span>
+            <span class="ticker-item">📉 OnePlus ACE 6T: <span class="down">Check Market</span></span>
+            <span class="ticker-item">📉 iPhone 15 Pro Max: <span class="down">5,150 CNY</span></span>
+            <span class="ticker-item">📦 Shipping: Normal</span>
+            <span class="ticker-item">📅 Updated: 4/20/2026</span>
+            <span class="ticker-item"><span style="color: var(--neon-green);">●</span> LIVE FROM SEG PLAZA</span>
+            <span class="ticker-item">🆕 OnePlus 15 (12+256): <span class="up">Check Market</span></span>
+            <span class="ticker-item">🔥 iPad Air 8 11": <span class="up">Check Market</span></span>
+            <span class="ticker-item">✅ Apple Watch Ultra: <span class="up">Check Market</span></span>
+            <span class="ticker-item">📉 OnePlus ACE 6T: <span class="down">Check Market</span></span>
+            <span class="ticker-item">📉 iPhone 15 Pro Max: <span class="down">5,150 CNY</span></span>
+            <span class="ticker-item">📦 Shipping: Normal</span>
+            <span class="ticker-item">📅 Updated: 4/20/2026</span>
         </div>
     </div>
+
+    <!-- NAVIGATION -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand"><strong style="font-size:1.5rem; color:#fff;">SEG Plaza</strong></div>
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="market.html" class="market-btn">Market</a>
+                <a href="mobile.html">iPhone</a>
+                <a href="oneplus.html">OnePlus</a>
+                <a href="ipad.html">iPad & Tablets</a>
+                <a href="laptops.html">Laptops</a>
+                <a href="airpods.html">AirPods</a>
+                <a href="watch.html">Watch</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a> <a href="guide.html">Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+                <a href="https://wa.me/8613501552311" style="background: var(--warning-red); color: white; padding: 8px 15px; border-radius: 5px; margin-left: 5px;">WhatsApp Luc</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>SEG PLAZA <span style="color: var(--warning-red);">LIVE</span></h1>
+        <p>Accédez en direct aux 800+ grossistes de Shenzhen. Sourcing sécurisé par Luc Junior Denommee.</p>
+<!-- Trust Badge - Luc Junior Denommee -->
+<div class="luc-trust-badge" style="display: flex; align-items: center; gap: 10px; background: #111; border: 1px solid #333; padding: 10px 15px; border-radius: 8px; margin: 20px 0; justify-content: center;">
+    <div style="font-size: 20px;">🛡️</div>
+    <div>
+        <strong style="display: block; color: var(--neon-green); font-size: 14px;">Verified by Luc Junior Denommee</strong>
+        <span style="font-size: 11px; color: #888;">Huaqiangbei Sourcing Service | 3uTools Tested</span>
+    </div>
+</div>
+
+        <a href="https://wa.me/8613501552311" class="btn-wa" style="display:inline-block; width:250px;">📲 WhatsApp Luc (Direct SZX)</a>
+    </section>
 
     <div class="wrap">
-        <div class="hero">
-            <div>
-                <h1>segplaza</h1>
-                <p class="muted">飞扬时代通讯市场</p>
-                <p>World's largest refurbished iPhone wholesale center in Huaqiangbei, Shenzhen.</p>
-                <div class="badges">
-                    <span class="pill"><strong>📍</strong> Feiyang Times Building, No. 66 Huafa South Road, Futian District, Shenzhen · 深圳市福田区华发南路66号飞扬时代大厦</span>
-                    <span class="pill"><strong>🚇</strong> Huaqiang North Station (Line 2, 7) · 华强北站</span>
-                    <span class="pill"><strong>🕐</strong> 10:00 AM - 7:00 PM daily · 每天10:00-19:00</span>
-                </div>
-            </div>
-            <div class="hero-art">
-                <svg width="100%" height="200" viewBox="0 0 400 200" style="background:linear-gradient(135deg,#93c5fd,#a7f3d0);border-radius:16px;">
-                    <text x="200" y="90" font-family="'Noto Sans SC',Arial,sans-serif" font-size="20" fill="#0b1020" font-weight="700" text-anchor="middle">segplaza</text>
-                    <text x="200" y="120" font-family="'Noto Sans SC',Arial,sans-serif" font-size="14" fill="#0b1020" font-weight="400" text-anchor="middle" opacity="0.8">飞扬时代通讯市场</text>
-                    <text x="200" y="160" font-family="Arial,sans-serif" font-size="11" fill="#0b1020" opacity="0.6" text-anchor="middle">Huaqiangbei · Shenzhen · 华强北 · 深圳</text>
-                </svg>
-            </div>
+        <!-- LUC'S EXCLUSIVE BUNDLES -->
+        <h2 class="section-title">📦 Luc's Exclusive Bundles</h2>
+        <p class="muted">Hand-picked, fully tested – save up to 20% vs individual wholesale.</p>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">BEST SELLER</span><h3>💻 The Digital Nomad</h3><p style="font-size:0.8rem; color:#777;">iPhone 15 Pro + MacBook M2 + AirPods Pro</p><span class="price-tag"><span class="old-price">12,500</span> 10,800 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Full 3uTools Report</li><li>Battery Health 90%+</li><li>Free Protective Case</li></ul><a href="https://wa.me/8613501552311?text=Digital%20Nomad%20Bundle" class="btn-wa">Order on WhatsApp</a></div>
+            <div class="bundle-card"><span class="tag">RESELLER PACK</span><h3>🛠️ The Repair Shop Kit</h3><p style="font-size:0.8rem; color:#777;">10x Mixed iPhones + Screen Kits + Toolset</p><span class="price-tag">Contact for Bulk Price</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Mix of Grade A/B</li><li>Original Parts Only</li><li>Direct Factory Logistics</li></ul><a href="https://wa.me/8613501552311?text=Repair%20Shop%20Kit" class="btn-wa">Get Bulk Quote</a></div>
+            <div class="bundle-card"><span class="tag">CREATOR</span><h3>🎬 Content Creator</h3><p style="font-size:0.8rem; color:#777;">iPhone 15 Pro Max + Wireless Mic + Stabilizer</p><span class="price-tag"><span class="old-price">8,900</span> 7,650 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Pro video gear</li><li>Gimbal included</li><li>Portable Ring Light</li></ul><a href="https://wa.me/8613501552311?text=Content%20Creator%20Bundle" class="btn-wa">Order on WhatsApp</a></div>
+            <div class="bundle-card"><span class="tag">STUDENT</span><h3>🎓 Essential Student</h3><p style="font-size:0.8rem; color:#777;">iPhone 13 + iPad Air + AirPods</p><span class="price-tag"><span class="old-price">4,200</span> 3,480 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Reliable & modern</li><li>Free screen protector</li><li>20W fast charger</li></ul><a href="https://wa.me/8613501552311?text=Essential%20Student%20Bundle" class="btn-wa">Order on WhatsApp</a></div>
         </div>
 
-        <div class="grid3">
-            <div class="card">
-                <h2>📍 Location / 位置</h2>
-                <p>Feiyang Times Building, No. 66 Huafa South Road, Futian District, Shenzhen</p>
-                <p class="muted">深圳市福田区华发南路66号飞扬时代大厦</p>
-                <p><span class="pill"><strong>🚇</strong> Huaqiang North Station (Exit A) · 华强北站A出口</span></p>
-            </div>
-            <div class="card">
-                <h2>🔍 Specialty / 特色</h2>
-                <p>Refurbished iPhones, smartphone parts, accessories, repair services</p>
-                <p class="muted">翻新iPhone、手机零件、配件、维修服务</p>
-                <p><span class="pill"><strong>🏢</strong> 4 floors / 层</span> <span class="pill"><strong>🛒</strong> 800+ shops / 店铺</span></p>
-            </div>
-            <div class="card">
-                <h2>🕐 Hours / 营业时间</h2>
-                <p>10:00 AM - 7:00 PM daily</p>
-                <p class="muted">每天10:00-19:00 · 最佳时间: 11:00-17:00</p>
-            </div>
+        <!-- BUSINESS LAPTOP BUNDLES -->
+        <h2 class="section-title">💼 Business Laptop Bundles (3rd Floor)</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">PRO CHOICE</span><h3>💻 Ultimate Pro Pack</h3><p style="font-size:0.8rem; color:#777;">MacBook Pro 14/16" M2/M3 Pro</p><span class="price-tag">From 7,200 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Pre-owned Magic Mouse</li><li>7-in-1 USB-C Hub</li><li>Hard-shell case</li><li>Battery < 50 cycles</li></ul><a href="https://wa.me/8613501552311?text=Ultimate%20Pro%20Pack" class="btn-wa">Reserve this pack</a></div>
+            <div class="bundle-card"><span class="tag">VOLUME</span><h3>🏢 Office Fleet Pack</h3><p style="font-size:0.8rem; color:#777;">5x MacBook Air M1/M2 (8/256)</p><span class="price-tag">Contact for bulk</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>5x Original Apple chargers</li><li>5x Carrying cases</li><li>Individual GSX reports</li></ul><a href="https://wa.me/8613501552311?text=Office%20Fleet%20Pack" class="btn-wa">Get Quote</a></div>
+            <div class="bundle-card"><span class="tag">WINDOWS</span><h3>🖥️ Windows Power Bundle</h3><p style="font-size:0.8rem; color:#777;">Surface Pro 8/9 or Dell XPS 13</p><span class="price-tag">From 3,800 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Type Cover / Wireless Mouse</li><li>Factory screen protector</li><li>1-hour CPU stress test</li></ul><a href="https://wa.me/8613501552311?text=Windows%20Power%20Bundle" class="btn-wa">Reserve this pack</a></div>
         </div>
 
-        <div class="card">
-            <h2>📰 Latest Updates / 最新动态</h2>
-            <div class="row">
-                <span>Market news and announcements · 市场新闻和公告</span>
-                <a href="news.html" class="pill">View all →</a>
-            </div>
+        <!-- HARDCORE GAMER BUNDLES -->
+        <h2 class="section-title">🎮 Hardcore Gamer Bundles (3rd Floor)</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">MAX PERFORMANCE</span><h3>🚀 Elite Gamer Pack</h3><p style="font-size:0.8rem; color:#777;">Legion/ROG/Razer RTX 3070/4060</p><span class="price-tag">5,500 CNY est.</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>144Hz/165Hz Display</li><li>Pro Gaming Mouse</li><li>Cooling Pad + XL Mouse Pad</li><li>TimeSpy Benchmark + Thermal Paste</li></ul><a href="https://wa.me/8613501552311?text=Elite%20Gamer%20Pack" class="btn-wa">Check Inventory</a></div>
+            <div class="bundle-card"><span class="tag">PERIPHERALS</span><h3>⌨️ Pro Gaming Gear</h3><p style="font-size:0.8rem; color:#777;">Mechanical Keyboard + Mouse + Headset</p><span class="price-tag">From 510 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Hot-swappable mechanical keyboard (RGB)</li><li>25K DPI gaming mouse</li><li>7.1 surround headset</li><li>Input lag tested</li></ul><a href="https://wa.me/8613501552311?text=Pro%20Gaming%20Gear" class="btn-wa">Customize</a></div>
         </div>
 
-        <div class="contact-universel" style="background:rgba(255,255,255,.03); padding:24px; border-radius:18px; border:1px solid var(--border); margin-top:30px; text-align:center;">
-            <h3 style="color:var(--text); margin-bottom:20px;">📞 Contact / 联系方式</h3>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:60px; height:60px; border-radius:8px;">
-                    <div style="text-align:left;">
-                        <strong style="color:var(--text);">WhatsApp</strong><br>
-                        <span style="color:var(--muted); font-family:monospace;">+86 135 0155 2311</span>
-                    </div>
-                </div>
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:60px; height:60px; border-radius:8px;">
-                    <div style="text-align:left;">
-                        <strong style="color:var(--text);">WeChat / 微信</strong><br>
-                        <span style="color:var(--muted); font-family:monospace;">luc-2025</span>
-                    </div>
-                </div>
-                <div style="text-align:left;">
-                    <strong style="color:var(--text);">📧 Email / 邮箱</strong><br>
-                    <a href="mailto:contact@segplaza.com" style="color:var(--link);">contact@segplaza.com</a><br>
-                    <strong style="color:var(--text); margin-top:8px; display:block;">📱 Phone / 电话</strong>
-                    <a href="tel:+8613501552311" style="color:var(--link);">+86 135 0155 2311</a>
-                </div>
-            </div>
-            <p style="color:var(--muted); margin-top:20px; font-size:14px;">
-                <strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets · 华强北市场外贸专家
-            </p>
+        <!-- LIVE MARKET INSIGHTS -->
+        <h2 class="section-title">📰 Live Market Insights</h2>
+        <div class="news-feed">
+            <div class="news-item"><div class="news-date">TODAY</div><div class="news-content"><h4>📉 Price Drop Alert: iPhone 15 Series</h4><p>Grade A stock flooding the market. Prices at 3-month low. Contact Luc for new price list.</p><span class="news-tag">MARKET TREND</span></div></div>
+            <div class="news-item"><div class="news-date">YESTERDAY</div><div class="news-content"><h4>📦 MacBook Pro M3 Arrival</h4><p>40 "Like New" units with <10 battery cycles. First come, first served.</p><span class="news-tag" style="background:#007bff;">NEW ARRIVAL</span></div></div>
         </div>
 
-        
-<!-- HOT_PRODUCTS_INJECTED -->
-<div class="hot-products-section" style="margin-top: 40px;">
-    <h2>🔥 Hot Products / 热门产品</h2>
-    <div class="product-grid">
-        <div class="product-card">
-    <a href="products/dell-xps-15.html"><img src="images/dell_xps_15.jpg" alt="Dell Xps 15" class="product-image"></a>
-    <div class="product-name">Dell Xps 15</div>
-    <div class="btn-group">
-        <a href="products/dell-xps-15.html" class="btn">📷 Details</a>
+        <!-- PREMIUM ANDROID & APPLE BUNDLES -->
+        <h2 class="section-title">📱 Premium Android & Apple Bundles</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">FLAGSHIP</span><h3>🚀 OnePlus 15T Pro Pack</h3><p>OnePlus 15T (16+512) + Apple Watch Ultra</p><span class="price-tag">From 9,800 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Snapdragon 8 Gen 4 / 16GB RAM</li><li>49mm Titanium Watch Ultra</li><li>Free tempered glass + case</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%2015T%20Pro%20Pack" class="btn-wa">Inquire on WhatsApp</a></div>
+            <div class="bundle-card"><span class="tag">VALUE</span><h3>💚 OnePlus ACE 6T + Watch S11</h3><p>OnePlus ACE 6T (16+512) + Apple Watch S11 46mm</p><span class="price-tag">From 5,500 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>MediaTek Dimensity 9300+ / 16GB RAM</li><li>46mm GPS Watch with fitness</li><li>USB-C fast charger included</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%20ACE%206T%20%2B%20Watch%20S11" class="btn-wa">Inquire on WhatsApp</a></div>
+            <div class="bundle-card"><span class="tag">APPLE DUO</span><h3>📱 iPad Air 8 + Watch S11</h3><p>iPad Air 8 11" (128GB) + Apple Watch S11 42mm</p><span class="price-tag">From 6,800 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>M4 chip / Liquid Retina display</li><li>42mm aluminum watch w/ GPS</li><li>Apple Pencil compatible</li></ul><a href="https://wa.me/8613501552311?text=iPad%20Air%208%20%2B%20Watch%20S11" class="btn-wa">Inquire on WhatsApp</a></div>
+            <div class="bundle-card"><span class="tag">POWER COMBO</span><h3>💜 OnePlus 15 + iPad 11</h3><p>OnePlus 15 (16+512) + iPad 11 11" (256GB)</p><span class="price-tag">From 7,800 CNY</span><ul style="font-size:0.85rem; padding-left:15px; color:#aaa;"><li>Hasselblad camera / 100W charging</li><li>A16 Bionic iPad with 256GB</li><li>Perfect for productivity & gaming</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%2015%20%2B%20iPad%2011" class="btn-wa">Inquire on WhatsApp</a></div>
+        </div>
+
+        <!-- ONEPLUS FLAGSHIP SERIES -->
+        <h2 class="section-title">📱 OnePlus Flagship Series</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">FLAGSHIP</span><h3>OnePlus 15 / 15T</h3><p>12+256GB to 16+1TB</p><span class="price-tag">Daily Rate: WhatsApp for Quote</span><ul><li>Snapdragon 8 Gen 4 / Hasselblad Camera</li><li>100W fast charging, original box</li><li>Includes: tempered glass + case</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%2015%20Price" class="btn-wa">Get OnePlus 15 Price</a></div>
+            <div class="bundle-card"><span class="tag">PERFORMANCE</span><h3>OnePlus ACE 6 / 6T</h3><p>12+256GB to 16+1TB</p><span class="price-tag">Daily Rate: WhatsApp for Quote</span><ul><li>MediaTek Dimensity 9300+ / gaming optimized</li><li>120W charging, Grade A+ condition</li><li>Includes: case + screen protector + 120W charger</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%20ACE%20Series%20Price" class="btn-wa">Get ACE Series Price</a></div>
+            <div class="bundle-card"><span class="tag">VALUE</span><h3>OnePlus Turbo 6V / ACE 5</h3><p>8+256GB to 16+512GB</p><span class="price-tag">Daily Rate: WhatsApp for Quote</span><ul><li>Great value mid-range flagships</li><li>100% tested, unlocked</li><li>Includes: fast charger + basic case</li></ul><a href="https://wa.me/8613501552311?text=OnePlus%20Turbo%20Price" class="btn-wa">Get Turbo/ACE 5 Price</a></div>
+        </div>
+
+        <!-- IPAD & CREATIVE TOOLS -->
+        <h2 class="section-title">📱 iPad & Creative Tools</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">LATEST</span><h3>iPad Air 8 (11" & 13")</h3><p>Wi-Fi or 5G, 128GB to 1TB</p><span class="price-tag">Sourcing Fee: Inquire on WhatsApp</span><ul><li>M2/M4 chip, Liquid Retina display</li><li>Apple Pencil Pro compatible</li><li>Optional: Pencil Pro & Magic Keyboard</li></ul><a href="https://wa.me/8613501552311?text=iPad%20Air%208%20Quote" class="btn-wa">Request iPad Air Quote</a></div>
+            <div class="bundle-card"><span class="tag">VALUE</span><h3>iPad 11 (11")</h3><p>Wi-Fi or Cellular, 128GB to 512GB</p><span class="price-tag">Sourcing Fee: Inquire on WhatsApp</span><ul><li>A16 Bionic chip, great for students</li><li>Full 3uTools report provided</li><li>Includes: USB-C cable & 20W adapter</li></ul><a href="https://wa.me/8613501552311?text=iPad%2011%20Quote" class="btn-wa">Request iPad 11 Quote</a></div>
+        </div>
+
+        <!-- APPLE WATCH SERIES -->
+        <h2 class="section-title">⌚ Apple Watch Series</h2>
+        <div class="grid">
+            <div class="bundle-card"><span class="tag">ULTRA</span><h3>Apple Watch Ultra 49mm</h3><p>v1, v2, v3 available</p><span class="price-tag">Sourcing Fee: Inquire on WhatsApp</span><ul><li>Titanium case, 100% functional</li><li>Battery health > 90%</li><li>Includes: original band + charger</li></ul><a href="https://wa.me/8613501552311?text=Apple%20Watch%20Ultra%20Quote" class="btn-wa">Get Ultra Quote</a></div>
+            <div class="bundle-card"><span class="tag">SERIES 11</span><h3>Apple Watch S11</h3><p>42mm & 46mm, GPS or Cellular</p><span class="price-tag">Sourcing Fee: Inquire on WhatsApp</span><ul><li>Latest sensors, tested connectivity</li><li>Grade A+ condition</li><li>Includes: sport band + magnetic charger</li></ul><a href="https://wa.me/8613501552311?text=Apple%20Watch%20S11%20Quote" class="btn-wa">Get S11 Quote</a></div>
+        </div>
+
+        <!-- VIP SUBSCRIPTION -->
+        <section class="wrap" style="margin-top: 60px; margin-bottom: 60px;">
+    <h2 style="text-align: center; color: var(--warning-red);">What Our Global Partners Say</h2>
+    <p style="text-align: center; color: #888; margin-bottom: 40px;">Trusted by resellers and individuals in Europe, Canada, and Africa.</p>
+    <div class="grid">
+        <div class="bundle-card" style="border-style: dashed;">
+            <p style="font-style: italic; color: #ccc;">"Luc est mes yeux à Shenzhen. J'ai commandé un lot de 10 iPhone 16 Pro pour ma boutique en France. Les rapports 3uTools étaient nickels et la batterie est vraiment comme promis (90%+). Envoi rapide via ligne sécurisée."</p>
+            <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;"><div style="width: 40px; height: 40px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--neon-green);">M</div><div><strong style="display: block; font-size: 14px;">Marc T.</strong><span style="font-size: 12px; color: #666;">Revendeur, Paris</span></div></div>
+        </div>
+        <div class="bundle-card" style="border-style: dashed;">
+            <p style="font-style: italic; color: #ccc;">"J'avais peur de commander un iPad Pro M4 à distance, mais Luc m'a envoyé des vidéos de l'appareil en direct de SEG Plaza. Le pack avec le Pencil Pro est arrivé super bien emballé. Un service à 300 CNY qui vaut largement le coup !"</p>
+            <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;"><div style="width: 40px; height: 40px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--neon-green);">S</div><div><strong style="display: block; font-size: 14px;">Sarah K.</strong><span style="font-size: 12px; color: #666;">Freelance, Montréal</span></div></div>
+        </div>
+        <div class="bundle-card" style="border-style: dashed;">
+            <p style="font-style: italic; color: #ccc;">"Excellent sourcing pour OnePlus. Il connaît les versions chinoises et sait lesquelles fonctionnent en Afrique. Déjà 5 commandes passées, jamais eu de problème de FaceID ou d'écran."</p>
+            <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;"><div style="width: 40px; height: 40px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--neon-green);">O</div><div><strong style="display: block; font-size: 14px;">Oumar B.</strong><span style="font-size: 12px; color: #666;">Tech Store, Dakar</span></div></div>
+        </div>
     </div>
-</div>
+</section>
+<section class="vip-block">
+            <div style="font-size: 40px; margin-bottom: 15px;">📲</div>
+            <h2 style="color: #fff; margin-bottom: 10px;">Join the Luc Junior VIP Channel</h2>
+            <p style="color: #888; max-width: 600px; margin: 0 auto 30px auto;">Receive price lists at 2:00 PM (Shenzhen Time) directly on your phone. Never miss a price drop on iPhones and OnePlus devices again.</p>
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                <a href="https://wa.me/8613501552311?text=Luc,%20add%20me%20to%20your%20VIP%20price%20list" style="background: #25d366; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"><span>Get Daily Price Alerts (WhatsApp)</span></a>
+                <p style="font-size: 12px; color: #555;">Or send "VIP" to <strong>contact@segplaza.com</strong> for the weekly Excel list.</p>
+            </div>
+        </section>
+
+        <p style="text-align: center; margin-top: 40px;"><a href="index.html" style="color: var(--warning-red); text-decoration: none;">← Back to Home</a></p>
     </div>
+
+    
+<!-- CONTACT QR CODES -->
+<div style="text-align: center; margin-top: 60px; padding: 30px; background: #111; border-radius: 20px; border: 1px solid #333;">
+    <h3 style="color: #fff; margin-bottom: 20px;">📞 Contact & Support</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+        <div style="text-align: center;">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" alt="WhatsApp QR" style="width:80px; height:80px; border-radius:10px;">
+            <p style="margin-top:10px; color:#fff;"><strong>WhatsApp</strong><br><span style="color:#888;">+86 135 0155 2311</span></p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" alt="WeChat QR" style="width:80px; height:80px; border-radius:10px;">
+            <p style="margin-top:10px; color:#fff;"><strong>WeChat</strong><br><span style="color:#888;">luc-2025</span></p>
+        </div>
+    </div>
+    <p style="color: #888; margin-top: 20px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets</p>
 </div>
 <footer>
-            <div class="wrap">
-                <div class="small">
-                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311 · Email: contact@segplaza.com</div>
-                    <div class="muted">© 2026 All rights reserved — Huaqiangbei Encyclopedia</div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <p>Luc Junior Denommee · SEG Plaza 3rd Floor, Shenzhen, China</p>
+        <p>© 2026 SEG Plaza - All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
+
 
 

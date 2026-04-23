@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Directory – Tong Tian Di Communication Market</title>
+    <meta name="description" content="Floor-by-floor guide to Tong Tian Di. Find iPhones, AirPods, parts, and services fast.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .floor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .floor-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 25px;
+            transition: transform 0.2s;
+        }
+        .floor-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent, #93c5fd);
+        }
+        .floor-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .floor-1 { background: #2e7d32; color: white; }
+        .floor-2 { background: #1565c0; color: white; }
+        .floor-3 { background: #f9a825; color: #0b1020; }
+        .floor-4 { background: #c62828; color: white; }
+        .floor-card h3 {
+            margin: 10px 0 15px;
+            font-size: 1.5rem;
+        }
+        .floor-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .floor-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(255,255,255,0.08);
+            color: var(--muted);
+        }
+        .floor-card li strong {
+            color: var(--text);
+        }
+        .quick-map {
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .map-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .map-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(147,197,253,0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .directory-tip {
+            background: linear-gradient(135deg, rgba(147,197,253,0.1), rgba(167,243,208,0.05));
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #93c5fd, #a7f3d0);
+            color: #0b1020;
+            font-weight: 700;
+            padding: 14px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent, #93c5fd);
+            color: var(--accent, #93c5fd);
+        }
+    </style>
+<style>
+    /* Bouton flottant Market (visible partout) */
+    .floating-market-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #ff0000;
+        color: white !important;
+        padding: 14px 22px;
+        border-radius: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+        z-index: 9999;
+        border: 2px solid white;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .floating-market-btn:hover {
+        background: white;
+        color: #ff0000 !important;
+        transform: scale(1.05);
+    }
+    /* Mise en évidence de l'onglet Market dans la nav */
+    .nav a[href="market.html"] {
+        color: #ff0000 !important;
+        border-bottom: 3px solid #ff0000;
+        padding-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <div class="title">Tong Tian Di</div>
+                    <div class="subtitle">Communication Market</div>
+                </div>
+            </div>
+            <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="tablettes.html">Tablettes</a>
+    <a href="airpods.html">AirPods</a>
+    <a href="directory.html" class="active">directory</a>
+    <a href="news.html">News</a>
+    <a href="guide.html">Guide</a>
+    <a href="photos.html">Photos</a>
+    <a href="videos.html">Videos</a>
+</div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h1>📂 Market Directory: Tong Tian Di</h1>
+        <p class="muted">Floor-by-floor guide to navigate 800+ shops without getting lost.</p>
+
+        <!-- FLOOR CARDS -->
+        <div class="floor-grid">
+            <!-- 1st Floor -->
+            <div class="floor-card">
+                <span class="floor-tag floor-1">🟢 1st Floor</span>
+                <h3>Accessories, Audio & Logistics</h3>
+                <ul>
+                    <li><strong>🎧 Audio & Wearables:</strong> AirPods (all grades), Apple Watch, Bluetooth speakers</li>
+                    <li><strong>📱 Accessories:</strong> Cases, certified cables, fast chargers, screen protectors</li>
+                    <li><strong>📦 Logistics:</strong> SF Express, international shipping agents, vacuum sealing</li>
+                    <li><strong>🕹️ Small Electronics:</strong> AI gadgets, handheld consoles</li>
+                </ul>
+            </div>
+            <!-- 2nd Floor -->
+            <div class="floor-card">
+                <span class="floor-tag floor-2">🔵 2nd Floor</span>
+                <h3>Premium Smartphones (Grade A/A+)</h3>
+                <ul>
+                    <li><strong>📱 Apple iPhone:</strong> 14, 15, 16 series – Pristine condition</li>
+                    <li><strong>📱 Samsung Galaxy:</strong> S23, S24 Ultra, Z Fold/Flip</li>
+                    <li><strong>📱 Google Pixel & Huawei:</strong> Limited stock, specialists only</li>
+                    <li><strong>📱 Tablets:</strong> iPad Pro, iPad Air (latest gen)</li>
+                </ul>
+            </div>
+            <!-- 3rd Floor -->
+            <div class="floor-card">
+                <span class="floor-tag floor-3">🟡 3rd Floor</span>
+                <h3>Economy Grades & Laptops</h3>
+                <ul>
+                    <li><strong>📱 iPhone Grades B/C:</strong> Functional with signs of wear – ideal for export</li>
+                    <li><strong>💻 MacBooks & Laptops:</strong> MacBook Air/Pro (M1-M3), Surface, ThinkPad</li>
+                    <li><strong>📦 Wholesale (Bulk):</strong> Trays of phones without boxes – perfect for resellers</li>
+                </ul>
+            </div>
+            <!-- 4th Floor -->
+            <div class="floor-card">
+                <span class="floor-tag floor-4">🔴 4th Floor</span>
+                <h3>Spare Parts & Repair</h3>
+                <ul>
+                    <li><strong>🖥️ Screens:</strong> Original OLED, Hard OLED, replacement LCDs</li>
+                    <li><strong>🔋 Internal Components:</strong> High-capacity batteries, cameras, ports</li>
+                    <li><strong>📱 Housings & Glass:</strong> Back covers, glass panels</li>
+                    <li><strong>🛠️ Repair Labs:</strong> Micro-soldering, motherboard swaps, data recovery</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- QUICK MAP -->
+        <div class="quick-map">
+            <h2>📍 Quick Map</h2>
+            <div class="map-grid">
+                <div class="map-item"><span class="map-icon">🚪</span> <strong>South Entrance:</strong> Direct escalators to 2nd floor</div>
+                <div class="map-item"><span class="map-icon">📱</span> <strong>East Zone (E):</strong> Android spare parts specialists</div>
+                <div class="map-item"><span class="map-icon">🍎</span> <strong>West Zone (W):</strong> Highest concentration of iPhone wholesalers</div>
+                <div class="map-item"><span class="map-icon">📦</span> <strong>Basement:</strong> Storage & freight forwarders (restricted)</div>
+            </div>
+        </div>
+
+        <!-- EXPERT TIP -->
+        <div class="directory-tip">
+            <h3>💡 Note from Luc Junior Denommee</h3>
+            <p>"If you are looking for a specific booth and can't find it, check the numbers displayed above the shops. They start with the floor number (e.g., Booth 2B102 is on the 2nd floor). If you need an introduction to a specific wholesaler, please contact me directly."</p>
+            <div class="btn-group">
+                <a href="#" class="btn">📥 Download PDF Map</a>
+                <a href="https://wa.me/8613501552311" class="btn btn-outline">📲 Contact Luc for Sourcing</a>
+            </div>
+        </div>
+
+        <!-- CONTACT UNIVERSEL -->
+        <div class="contact-universel" style="margin-top:40px;">
+            <h3>📞 Contact & Support</h3>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+                <div><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://wa.me/8613501552311" style="width:60px;border-radius:8px;"><br>WhatsApp<br>+86 135 0155 2311</div>
+                <div><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=WECHAT:luc-2025" style="width:60px;border-radius:8px;"><br>WeChat<br>luc-2025</div>
+                <div>📧 contact@segplaza.com<br>📱 +86 135 0155 2311</div>
+            </div>
+            <p style="margin-top:20px;"><strong>Luc Junior Denommee</strong> · Foreign Trade Expert for Huaqiangbei Markets</p>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="small">
+                    <div><b>Luc Junior Denommee</b> · Foreign Trade Expert for Huaqiangbei Markets · WhatsApp: +86 135 0155 2311</div>
+                    <div class="muted">© 2026 All rights reserved — Tong Tian Di Communication Market</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<a href="market.html" class="floating-market-btn" title="Go to Market">📊 MARKET</a>
+</body>
+</html>
+
+
+
+

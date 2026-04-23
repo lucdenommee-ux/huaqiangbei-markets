@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch – {{MARKET_SHORT_NAME}}</title>
+    <meta name="description" content="Apple Watch Ultra and S11 sourcing from Shenzhen. Tested, verified, with accessories included.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root { --neon-green: #00ff41; --warning-red: #ff3e3e; --bg-dark: #0a0a0a; --muted: #888; }
+        body { background-color: var(--bg-dark); color: #e0e0e0; font-family: 'Inter', sans-serif; margin: 0; }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        /* Navigation */
+        .topbar { background: #111; padding: 15px 0; border-bottom: 1px solid #333; }
+        .topbar-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav a { color: #aaa; text-decoration: none; margin-left: 20px; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .nav a:hover, .nav a.active { color: var(--warning-red); }
+
+        /* Cards */
+        .bundles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 40px 0; }
+        .bundle-card { background: #1e1e1e; border: 1px solid #333; border-radius: 20px; padding: 30px 25px; position: relative; transition: 0.3s; }
+        .bundle-card:hover { border-color: #ff8c00; transform: translateY(-5px); }
+        .bundle-badge { position: absolute; top: -12px; right: 20px; background: #ff8c00; padding: 6px 16px; font-size: 12px; font-weight: bold; border-radius: 30px; color: white; }
+        
+        .bundle-features { list-style: none; padding: 0; margin: 20px 0; font-size: 14px; color: #ccc; }
+        .bundle-features li { margin-bottom: 12px; border-bottom: 1px solid #2a2a2a; padding-bottom: 8px; }
+        .bundle-features li:last-child { border-bottom: none; }
+        
+        .price-tag { font-size: 1.3rem; margin: 20px 0; color: var(--neon-green); font-weight: bold; display: block; }
+        .bundle-btn { display: block; text-align: center; background: #25d366; color: white; text-decoration: none; padding: 14px; border-radius: 40px; font-weight: bold; transition: 0.3s; }
+        .bundle-btn:hover { background: #20b859; }
+        
+        .footer-note { background: #111; border-radius: 12px; padding: 20px; margin-top: 40px; text-align: center; border: 1px dashed #444; }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation complète (identique à index.html) -->
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <strong style="font-size: 1.5rem; color: #fff;">{{MARKET_SHORT_NAME}}</strong>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="mobile.html">iPhone</a>
+                <a href="oneplus.html">OnePlus</a>
+                <a href="ipad.html">iPad & Tablets</a>
+                <a href="laptops.html">Laptops</a>
+                <a href="airpods.html">AirPods</a>
+                <a href="watch.html" class="active">Watch</a>
+                <a href="news.html">News</a>
+                <a href="guide.html">Guide</a>
+                <a href="directory.html">Directory</a>
+                <a href="photos.html">Photos</a>
+                <a href="videos.html">Videos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h1 style="border-left: 4px solid #ff8c00; padding-left: 15px; margin-top: 40px;">⌚ Apple Watch Premium Sourcing</h1>
+        <p style="color: #888; margin-bottom: 40px;">Ultra & Series 11 – tested, inspected, and ready for global shipping. All units include Luc's 300 CNY verification fee.</p>
+
+        <div class="bundles-grid">
+            
+            <!-- Apple Watch Ultra -->
+            <div class="bundle-card" style="border-color: #ff8c00;">
+                <div class="bundle-badge">ADVENTURE</div>
+                <h3>Apple Watch Ultra 49mm</h3>
+                <p style="font-size: 0.9rem; color: #888;">Titanium case, 36h battery, dual-frequency GPS. Versions 1, 2, 3 available.</p>
+                <ul class="bundle-features">
+                    <li>✅ Rugged titanium build – original, Grade A+</li>
+                    <li>✅ Battery health > 90% – tested & verified</li>
+                    <li>📦 Includes: Alpine Loop / Ocean Band (choice) + Fast Magnetic Charger</li>
+                </ul>
+                <span class="price-tag">Market Rate + 300 CNY Fee</span>
+                <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20Apple%20Watch%20Ultra%20(49mm)" class="bundle-btn" style="background:#ff8c00;">Check Daily Price</a>
+            </div>
+
+            <!-- Apple Watch S11 46mm -->
+            <div class="bundle-card" style="border-color: #00d2ff;">
+                <div class="bundle-badge" style="background:#00d2ff;">LATEST</div>
+                <h3>Apple Watch S11 46mm</h3>
+                <p style="font-size: 0.9rem; color: #888;">GPS or Cellular. Latest health sensors, always-on Retina.</p>
+                <ul class="bundle-features">
+                    <li>✅ Advanced workout metrics & sleep tracking</li>
+                    <li>✅ Original display, no burn-in</li>
+                    <li>📦 Includes: Sport Band + Magnetic Fast Charger</li>
+                </ul>
+                <span class="price-tag">Market Rate + 300 CNY Fee</span>
+                <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20Apple%20Watch%20S11%2046mm" class="bundle-btn" style="background:#00d2ff;">Check Daily Price</a>
+            </div>
+
+            <!-- Apple Watch S11 42mm -->
+            <div class="bundle-card" style="border-color: #9b59b6;">
+                <div class="bundle-badge" style="background:#9b59b6;">COMPACT</div>
+                <h3>Apple Watch S11 42mm</h3>
+                <p style="font-size: 0.9rem; color: #888;">Smaller size, same powerful features. GPS or Cellular.</p>
+                <ul class="bundle-features">
+                    <li>✅ Perfect for smaller wrists – all-day comfort</li>
+                    <li>✅ 100% functional, Grade A condition</li>
+                    <li>📦 Includes: Sport Band + Magnetic Fast Charger</li>
+                </ul>
+                <span class="price-tag">Market Rate + 300 CNY Fee</span>
+                <a href="https://wa.me/8613501552311?text=I'd%20like%20a%20quote%20for%20Apple%20Watch%20S11%2042mm" class="bundle-btn" style="background:#9b59b6;">Check Daily Price</a>
+            </div>
+
+        </div>
+
+        <!-- Note de bas de page -->
+        <div class="footer-note">
+            <p style="font-size: 0.95rem; color: #aaa; margin: 0;">
+                ⚠️ <strong>Note:</strong> All watches are inspected for battery health, screen integrity, and sensor functionality. 
+                Prices fluctuate daily at 2:00 PM (Shenzhen Time). 
+                <strong>Luc Junior Denommee</strong> ensures 100% original parts and secure packaging.
+            </p>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="index.html" style="color: var(--warning-red); text-decoration: none;">← Back to Home</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
+
